@@ -3,10 +3,10 @@
     "id": "1",
     "title": "PlayerUnknown's Battlegrounds (PUBG)",
     "coverPhoto": "https://i.postimg.cc/MHpBBqNt/pubg.jpg",
-    "category": "Battle Royale",
+    "category": "Battle",
     "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
     "description": "PUBG is a fast-paced battle royale where 100 players fight for survival using strategy, shooting, and teamwork.",
-    "ratings": "5",
+    "ratings": "4.8",
     "developer": "Krafton"
   },
   {
@@ -16,7 +16,7 @@
     "category": "FPS",
     "downloadLink": "https://www.callofduty.com/warzone",
     "description": "Warzone brings Call of Duty's signature combat to a massive online arena with squads and high-stakes survival.",
-    "ratings": "5",
+    "ratings": "4.8",
     "developer": "Activision"
   },
   {
@@ -33,17 +33,17 @@
     "id": "4",
     "title": "Fortnite",
     "coverPhoto": "https://i.postimg.cc/tRWwvy13/fortnight.jpg",
-    "category": "Battle Royale",
+    "category": "Battle",
     "downloadLink": "https://www.epicgames.com/fortnite/",
     "description": "Fortnite mixes shooting, building, and creativity in one of the most iconic battle royale experiences.",
-    "ratings": "4.7",
+    "ratings": "4.9",
     "developer": "Epic Games"
   },
   {
     "id": "5",
     "title": "Valorant",
     "coverPhoto": "https://i.postimg.cc/7hGcq89M/1103306-valorant-le-jeu-video-signe-riot-games-est-disponible.jpg",
-    "category": "Tactical Shooter",
+    "category": "Tactical",
     "downloadLink": "https://playvalorant.com/",
     "description": "Valorant combines precise gunplay with unique hero abilities in a competitive tactical shooter.",
     "ratings": "5",
@@ -53,7 +53,7 @@
     "id": "6",
     "title": "Apex Legends",
     "coverPhoto": "https://i.postimg.cc/kgsd1Cpt/apex-legends.jpg",
-    "category": "Battle Royale",
+    "category": "Battle",
     "downloadLink": "https://www.ea.com/games/apex-legends",
     "description": "Apex Legends is a squad-based hero shooter set in a fast, futuristic battle royale arena.",
     "ratings": "4.5",
@@ -86,7 +86,7 @@
     "category": "RPG",
     "downloadLink": "https://www.cyberpunk.net/",
     "description": "Cyberpunk 2077 immerses players in a futuristic open world full of choices, chaos, and technology.",
-    "ratings": "4.9",
+    "ratings": "4.8",
     "developer": "CD Projekt Red"
   },
   {
@@ -103,20 +103,20 @@
     "id": "11",
     "title": "Elden Ring",
     "coverPhoto": "https://i.postimg.cc/DZkkmzJy/elden.jpg",
-    "category": "Action RPG",
+    "category": "RPG",
     "downloadLink": "https://en.bandainamcoent.eu/elden-ring/elden-ring",
     "description": "Elden Ring blends deep lore, brutal combat, and an open world designed by FromSoftware.",
-    "ratings": "4.9",
+    "ratings": "4.7",
     "developer": "FromSoftware"
   },
   {
     "id": "12",
     "title": "God of War Ragnarok",
     "coverPhoto": "https://i.postimg.cc/XvT3F8PH/rag.jpg",
-    "category": "Action Adventure",
+    "category": "Action",
     "downloadLink": "https://www.playstation.com/games/god-of-war-ragnarok/",
     "description": "Kratos and Atreus return in an epic journey across the Norse realms to face destiny.",
-    "ratings": "4.8",
+    "ratings": "4.9",
     "developer": "Santa Monica Studio"
   },
   {
@@ -126,7 +126,7 @@
     "category": "Adventure",
     "downloadLink": "https://www.rockstargames.com/reddeadredemption2/",
     "description": "RDR2 delivers an emotional Western epic in a beautifully crafted open world.",
-    "ratings": "4.9",
+    "ratings": "4.8",
     "developer": "Rockstar Games"
   },
   {
@@ -163,7 +163,7 @@
     "id": "17",
     "title": "Overwatch 2",
     "coverPhoto": "https://i.postimg.cc/j5Q6N85L/Ovarwatch.webp",
-    "category": "Hero Shooter",
+    "category": "Hero",
     "downloadLink": "https://overwatch.blizzard.com/",
     "description": "Overwatch 2 brings high-speed, colorful team combat with new heroes and modes.",
     "ratings": "4.4",
@@ -173,7 +173,7 @@
     "id": "18",
     "title": "Assassin’s Creed Mirage",
     "coverPhoto": "https://i.postimg.cc/WzgBMcZm/assasins.jpg",
-    "category": "Action Adventure",
+    "category": "Action",
     "downloadLink": "https://www.ubisoft.com/en-us/game/assassins-creed/mirage",
     "description": "A return to stealth roots, Assassin’s Creed Mirage takes players to ancient Baghdad.",
     "ratings": "4.5",

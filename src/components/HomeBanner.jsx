@@ -83,7 +83,7 @@ const HomeBanner = () => {
 
               <div
                 ref={(el) => (leftContentRefs.current[index] = el)}
-                className="left-content relative z-10 max-w-xl px-4 md:px-6 lg:px-20 text-white opacity-0 translate-y-10 transition-all duration-700 ease-in-out"
+                className="left-content relative z-10 max-w-xl px-4 md:px-6 lg:px-22 text-white opacity-0 translate-y-10 transition-all duration-700 ease-in-out"
               >
                 <p className="text-sm uppercase tracking-widest text-yellow-400 mb-2">
                   {slide.subtitle}
@@ -104,7 +104,7 @@ const HomeBanner = () => {
       </Swiper>
 
       {/* Custom pagination */}
-      <div className="custom-pagination absolute bottom-4 right-1/2 translate-x-1/2 flex items-center gap-3 z-20"></div>
+      <div className="custom-pagination absolute bottom-4 right-1/2 translate-x-1/2 flex items-center gap-1 z-20"></div>
     </section>
   );
 };

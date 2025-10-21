@@ -1,10 +1,16 @@
 import HomeBanner from "../components/HomeBanner";
+import PopularGameCards from "../components/PopularGameCards";
 
 const Home = () => {
   return (
-    <div>
-      <HomeBanner />
-    </div>
+    <section>
+      <div>
+        <HomeBanner />
+      </div>
+      <div className="lg:py-32 py-20">
+        <PopularGameCards />
+      </div>
+    </section>
   );
 };
 
