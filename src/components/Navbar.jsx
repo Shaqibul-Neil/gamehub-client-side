@@ -1,8 +1,11 @@
 import { Link } from "react-router";
 import MyLinks from "./MyLinks";
 import { Gamepad2 } from "lucide-react";
+import { useContext } from "react";
+import AuthContext from "../contexts/AuthContext";
 
 const Navbar = () => {
+  const { user } = useContext(AuthContext);
   return (
     <div className="navbar lg:py-6 md:py-4">
       <div className="navbar-start lg:w-1/3">
@@ -41,22 +44,35 @@ const Navbar = () => {
               <MyLinks to={"/games"}>Games</MyLinks>
             </li>
             <li>
-              <MyLinks to={"/new-releases"}>New Releases</MyLinks>
-            </li>
-            <li>
               <MyLinks to={"/events"}>Events</MyLinks>
-            </li>
-            <li>
-              <MyLinks to={"/donate"}>Donate</MyLinks>
             </li>
             <li>
               <MyLinks to={"/community"}>Community</MyLinks>
             </li>
+            {user ? (
+              "user"
+            ) : (
+              <>
+                <li>
+                  <Link
+                    to={"/login"}
+                    className={"btn btn-success text-black mb-2"}
+                  >
+                    Login
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/signin"} className={"btn btn-warning text-white"}>
+                    Sign In
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
         </div>
         <Link to={"/"} className="flex items-center gap-2">
-          <span>
-            <Gamepad2 color="#00ffe0" size={48} className="animate-pulse" />{" "}
+          <span className="md:flex hidden">
+            <Gamepad2 color="#00ffe0" size={36} className="animate-pulse" />{" "}
           </span>
           <span className="lg:text-4xl text-2xl text-[#00ffe0]">GameHub</span>
         </Link>
@@ -74,17 +90,37 @@ const Navbar = () => {
             <MyLinks to={"/games"}>Games</MyLinks>
           </li>
           <li>
-            <MyLinks to={"/new-releases"}>New Releases</MyLinks>
-          </li>
-          <li>
             <MyLinks to={"/events"}>Events</MyLinks>
-          </li>
-          <li>
-            <MyLinks to={"/donate"}>Donate</MyLinks>
           </li>
           <li>
             <MyLinks to={"/community"}>Community</MyLinks>
           </li>
+          {user ? (
+            "user"
+          ) : (
+            <>
+              <li>
+                <Link
+                  to={"/login"}
+                  className={
+                    "btn btn-success text-black border-3 border-rounded-lg border-success  hover:bg-white px-6 py-3 rounded-md font-semibold transition-colors duration-300"
+                  }
+                >
+                  Login
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/signin"}
+                  className={
+                    "btn btn-warning text-white hover:bg-white hover:text-warning px-6 py-3 rounded-md font-semibold transition-colors duration-300 border-3 border-rounded-lg"
+                  }
+                >
+                  Sign In
+                </Link>
+              </li>
+            </>
+          )}
         </ul>
       </div>
     </div>

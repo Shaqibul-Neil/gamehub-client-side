@@ -9,6 +9,8 @@
   default: true;
   --color-primary: #b0b0b0;
   --color-secondary: #ffffff;
+  --color-success: #00ffe0;
+  --color-warning: #6c63ff;
 }
 * {
   font-family: "Poppins", sans-serif;
@@ -19,6 +21,36 @@ header {
 .subscribe {
   @apply bg-linear-to-r from-[#00FFE0] to-[#6C63FF] text-white w-11/12 md:w-9/12 lg:w-8/12 rounded-lg shadow-2xl flex flex-col items-center justify-center text-center
 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 py-8 shadow-cyan-600;
+}
+/* Slide-in animation */
+.left-content.slide-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Custom pagination parallelogram bullets */
+.custom-pagination .swiper-pagination-bullet {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  transform: skewX(-15deg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 0; /* remove round */
+}
+
+/* hover effect */
+.custom-pagination .swiper-pagination-bullet:hover {
+  background-color: #6c63ff;
+  transform: skewX(-15deg) scale(1.1);
+}
+
+/* active bullet */
+.custom-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #00ffe0;
+  width: 24px;
 }
 
 /* Headings (h1-h6) White #FFFFFF 
