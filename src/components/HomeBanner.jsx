@@ -51,7 +51,7 @@ const HomeBanner = () => {
   };
 
   return (
-    <section className="home-banner w-full h-[90vh] relative overflow-hidden">
+    <section className="home-banner mx-auto h-[90vh] relative overflow-hidden">
       <Swiper
         modules={[Autoplay, Pagination, EffectFade]}
         spaceBetween={0}
@@ -76,35 +76,36 @@ const HomeBanner = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="w-full h-full bg-cover bg-center relative flex items-center"
+              className="w-full h-full lg:bg-cover bg-auto bg-no-repeat py-16 bg-center relative flex items-center"
               style={{ backgroundImage: `url(${slide.img})` }}
             >
               <div className="absolute inset-0 bg-black/50"></div>
 
-              <div
-                ref={(el) => (leftContentRefs.current[index] = el)}
-                className="left-content relative z-10 max-w-xl px-4 md:px-6 lg:px-22 text-white opacity-0 translate-y-10 transition-all duration-700 ease-in-out"
-              >
-                <p className="text-sm uppercase tracking-widest text-yellow-400 mb-2">
-                  {slide.subtitle}
-                </p>
-                <h1 className="md:text-4xl text-3xl lg:text-6xl font-bold leading-tight mb-5 drop-shadow-lg">
-                  {slide.title}
-                </h1>
-                <a
-                  href={slide.link}
-                  className="inline-block bg-success border-3 border-success text-black hover:bg-white lg:px-6 px-4 lg:py-3 py-2 rounded-md border-rounded-lg font-semibold transition-colors duration-300"
+              <Container>
+                <div
+                  ref={(el) => (leftContentRefs.current[index] = el)}
+                  className="left-content relative z-10 text-white md:px-0 px-2"
                 >
-                  Explore Now
-                </a>
-              </div>
+                  <p className="text-sm uppercase tracking-widest text-yellow-400 mb-2">
+                    {slide.subtitle}
+                  </p>
+                  <h1 className="md:text-4xl text-3xl lg:text-6xl font-bold leading-tight mb-5 drop-shadow-lg">
+                    {slide.title}
+                  </h1>
+                  <a
+                    href={slide.link}
+                    className="inline-block bg-success border-3 border-success text-black hover:bg-white lg:px-6 px-4 lg:py-3 py-2 rounded-md border-rounded-lg font-semibold transition-colors duration-300"
+                  >
+                    Explore Now
+                  </a>
+                </div>
+              </Container>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
       {/* Custom pagination */}
-      <div className="custom-pagination absolute bottom-4 right-1/2 translate-x-1/2 flex items-center gap-1 z-20"></div>
+      <div className="custom-pagination absolute bottom-4 justify-center flex items-center gap-1 z-20 w-full mx-auto"></div>
     </section>
   );
 };

@@ -1,26 +1,32 @@
+import { Star } from "lucide-react";
+
 const PopularGameCard = ({ game }) => {
-  const { title, coverPhoto, category, ratings } = game || {};
+  const { title, coverPhoto, category, ratings, description } = game || {};
   return (
-    <div className="card bg-base-100 shadow-sm">
-      <figure>
+    <div className="card bg-base-100 shadow-md shadow-cyan-600 overflow-hidden group">
+      <figure className="overflow-hidden">
         <img
           src={coverPhoto}
           alt={coverPhoto}
-          className="h-48 w-full object-cover"
+          className="h-48 w-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110"
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">
+        <h2 className="card-title text-3xl text-secondary">
           {title}
-          <div className="badge badge-secondary">{category}</div>
+          <div className="badge badge-warning">{category}</div>
         </h2>
-        <p>
-          A card component has a figure, a body part, and inside body there are
-          title and actions parts
-        </p>
-        <div className="card-actions justify-end">
-          <div className="badge badge-outline">{ratings}</div>
-          <div className="badge badge-outline">View Details</div>
+        <p>{description}</p>
+        <div className="flex justify-between items-center">
+          <div className="flex gap-1 items-center">
+            <span>
+              <Star />
+            </span>
+            <p className="text-xl text-primary">{ratings}</p>
+          </div>
+          <button className="btn btn-success text-black border-3 w-32 border-rounded-lg border-success hover:bg-white rounded-md font-semibold transition-colors duration-300">
+            View Details
+          </button>
         </div>
       </div>
     </div>

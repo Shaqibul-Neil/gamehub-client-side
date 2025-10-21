@@ -7,7 +7,7 @@ import AuthContext from "../contexts/AuthContext";
 const Navbar = () => {
   const { user } = useContext(AuthContext);
   return (
-    <div className="navbar lg:py-6 md:py-4">
+    <div className="navbar lg:py-6 md:py-4 md:px-0 px-2">
       <div className="navbar-start lg:w-1/3">
         <div className="dropdown">
           <div
@@ -32,7 +32,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-secondary border border-[#00ffe0]"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-100 mt-3 w-52 p-2 shadow text-secondary border border-[#00ffe0]"
           >
             <li>
               <MyLinks to={"/"}>Home</MyLinks>
@@ -103,7 +103,7 @@ const Navbar = () => {
                 <Link
                   to={"/login"}
                   className={
-                    "btn btn-success text-black border-3 border-rounded-lg border-success  hover:bg-white px-6 py-3 rounded-md font-semibold transition-colors duration-300"
+                    "btn btn-success text-black border-3 w-24 border-rounded-lg border-success  hover:bg-white rounded-md font-semibold transition-colors duration-300"
                   }
                 >
                   Login
@@ -113,7 +113,7 @@ const Navbar = () => {
                 <Link
                   to={"/signin"}
                   className={
-                    "btn btn-warning text-white hover:bg-white hover:text-warning px-6 py-3 rounded-md font-semibold transition-colors duration-300 border-3 border-rounded-lg"
+                    "btn btn-warning text-white w-24 hover:bg-white hover:text-warning rounded-md font-semibold transition-colors duration-300 border-3 border-rounded-lg"
                   }
                 >
                   Sign In

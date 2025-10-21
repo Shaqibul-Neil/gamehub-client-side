@@ -12,7 +12,9 @@ const PopularGameCards = () => {
     <Container>
       <div className="space-y-12">
         <div>
-          <h2 className="text-primary text-5xl text-center">Popular Games</h2>
+          <h2 className="text-secondary lg:text-5xl md:text-4xl text-3xl text-center">
+            Popular Games
+          </h2>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 px-4">
           {popularGames.map((game) => (
