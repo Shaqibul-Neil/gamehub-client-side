@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AuthContext from "./AuthContext";
 import useGame from "../hooks/useGame";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
