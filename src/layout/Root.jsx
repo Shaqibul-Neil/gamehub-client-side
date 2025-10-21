@@ -5,13 +5,13 @@ import Container from "../components/Container";
 
 const Root = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <header>
         <Container>
           <Navbar />
         </Container>
       </header>
-      <main>
+      <main className="flex-1 md:pb-32 pb-40">
         <Outlet />
       </main>
       <footer>

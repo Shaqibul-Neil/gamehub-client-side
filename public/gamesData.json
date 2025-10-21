@@ -1,0 +1,202 @@
+[
+  {
+    "id": "1",
+    "title": "PlayerUnknown's Battlegrounds (PUBG)",
+    "coverPhoto": "https://i.postimg.cc/MHpBBqNt/pubg.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG is a fast-paced battle royale where 100 players fight for survival using strategy, shooting, and teamwork.",
+    "ratings": "5",
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Call of Duty: Warzone",
+    "coverPhoto": "https://i.postimg.cc/CLHy5YSy/call-of-duty-warzone-1024x576.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/warzone",
+    "description": "Warzone brings Call of Duty's signature combat to a massive online arena with squads and high-stakes survival.",
+    "ratings": "5",
+    "developer": "Activision"
+  },
+  {
+    "id": "3",
+    "title": "Minecraft",
+    "coverPhoto": "https://i.postimg.cc/Zn4cDGgB/minecraft.jpg",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net/",
+    "description": "Minecraft lets you build, explore, and survive in endless blocky worlds filled with creativity and adventure.",
+    "ratings": "4",
+    "developer": "Mojang Studios"
+  },
+  {
+    "id": "4",
+    "title": "Fortnite",
+    "coverPhoto": "https://i.postimg.cc/tRWwvy13/fortnight.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.epicgames.com/fortnite/",
+    "description": "Fortnite mixes shooting, building, and creativity in one of the most iconic battle royale experiences.",
+    "ratings": "4.7",
+    "developer": "Epic Games"
+  },
+  {
+    "id": "5",
+    "title": "Valorant",
+    "coverPhoto": "https://i.postimg.cc/7hGcq89M/1103306-valorant-le-jeu-video-signe-riot-games-est-disponible.jpg",
+    "category": "Tactical Shooter",
+    "downloadLink": "https://playvalorant.com/",
+    "description": "Valorant combines precise gunplay with unique hero abilities in a competitive tactical shooter.",
+    "ratings": "5",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "6",
+    "title": "Apex Legends",
+    "coverPhoto": "https://i.postimg.cc/kgsd1Cpt/apex-legends.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.ea.com/games/apex-legends",
+    "description": "Apex Legends is a squad-based hero shooter set in a fast, futuristic battle royale arena.",
+    "ratings": "4.5",
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "id": "7",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://i.postimg.cc/SxhgXzVG/gen.jpg",
+    "category": "RPG",
+    "downloadLink": "https://genshin.hoyoverse.com/",
+    "description": "Genshin Impact offers an open world full of elemental magic, storytelling, and adventure.",
+    "ratings": "4.7",
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "8",
+    "title": "Counter-Strike 2",
+    "coverPhoto": "https://i.postimg.cc/5yXwGf3Z/cas.png",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_2/",
+    "description": "Counter-Strike 2 refines tactical FPS gameplay with improved visuals, smoother mechanics, and realism.",
+    "ratings": "5",
+    "developer": "Valve"
+  },
+  {
+    "id": "9",
+    "title": "Cyberpunk 2077",
+    "coverPhoto": "https://i.postimg.cc/PrN3sjJX/cyber.jpg",
+    "category": "RPG",
+    "downloadLink": "https://www.cyberpunk.net/",
+    "description": "Cyberpunk 2077 immerses players in a futuristic open world full of choices, chaos, and technology.",
+    "ratings": "4.9",
+    "developer": "CD Projekt Red"
+  },
+  {
+    "id": "10",
+    "title": "Among Us",
+    "coverPhoto": "https://i.postimg.cc/vBLjBtwY/among.jpg",
+    "category": "Party",
+    "downloadLink": "https://innersloth.com/gameAmongUs.php",
+    "description": "Among Us is a fun social deduction game where you uncover impostors aboard a spaceship.",
+    "ratings": "4",
+    "developer": "Innersloth"
+  },
+  {
+    "id": "11",
+    "title": "Elden Ring",
+    "coverPhoto": "https://i.postimg.cc/DZkkmzJy/elden.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://en.bandainamcoent.eu/elden-ring/elden-ring",
+    "description": "Elden Ring blends deep lore, brutal combat, and an open world designed by FromSoftware.",
+    "ratings": "4.9",
+    "developer": "FromSoftware"
+  },
+  {
+    "id": "12",
+    "title": "God of War Ragnarok",
+    "coverPhoto": "https://i.postimg.cc/XvT3F8PH/rag.jpg",
+    "category": "Action Adventure",
+    "downloadLink": "https://www.playstation.com/games/god-of-war-ragnarok/",
+    "description": "Kratos and Atreus return in an epic journey across the Norse realms to face destiny.",
+    "ratings": "4.8",
+    "developer": "Santa Monica Studio"
+  },
+  {
+    "id": "13",
+    "title": "Red Dead Redemption 2",
+    "coverPhoto": "https://i.postimg.cc/7hrHvVMz/red.jpg",
+    "category": "Adventure",
+    "downloadLink": "https://www.rockstargames.com/reddeadredemption2/",
+    "description": "RDR2 delivers an emotional Western epic in a beautifully crafted open world.",
+    "ratings": "4.9",
+    "developer": "Rockstar Games"
+  },
+  {
+    "id": "14",
+    "title": "The Witcher 3: Wild Hunt",
+    "coverPhoto": "https://i.postimg.cc/x8Ldq7Tb/geralt-of-rivia-the-3840x2160-14024.jpg",
+    "category": "RPG",
+    "downloadLink": "https://thewitcher.com/en/witcher3",
+    "description": "The Witcher 3 is a masterpiece RPG filled with rich storytelling and monster hunting.",
+    "ratings": "4.9",
+    "developer": "CD Projekt Red"
+  },
+  {
+    "id": "15",
+    "title": "League of Legends",
+    "coverPhoto": "https://i.postimg.cc/BvhPGdXC/lol.jpg",
+    "category": "MOBA",
+    "downloadLink": "https://www.leagueoflegends.com/",
+    "description": "LoL is a competitive 5v5 MOBA where strategy, teamwork, and skill decide victory.",
+    "ratings": "4.6",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "16",
+    "title": "Dota 2",
+    "coverPhoto": "https://i.postimg.cc/tRcJk3Vf/dota.jpg",
+    "category": "MOBA",
+    "downloadLink": "https://www.dota2.com/",
+    "description": "Dota 2 is a deep and complex strategy MOBA with intense team battles.",
+    "ratings": "4.5",
+    "developer": "Valve"
+  },
+  {
+    "id": "17",
+    "title": "Overwatch 2",
+    "coverPhoto": "https://i.postimg.cc/j5Q6N85L/Ovarwatch.webp",
+    "category": "Hero Shooter",
+    "downloadLink": "https://overwatch.blizzard.com/",
+    "description": "Overwatch 2 brings high-speed, colorful team combat with new heroes and modes.",
+    "ratings": "4.4",
+    "developer": "Blizzard Entertainment"
+  },
+  {
+    "id": "18",
+    "title": "Assassin’s Creed Mirage",
+    "coverPhoto": "https://i.postimg.cc/WzgBMcZm/assasins.jpg",
+    "category": "Action Adventure",
+    "downloadLink": "https://www.ubisoft.com/en-us/game/assassins-creed/mirage",
+    "description": "A return to stealth roots, Assassin’s Creed Mirage takes players to ancient Baghdad.",
+    "ratings": "4.5",
+    "developer": "Ubisoft"
+  },
+  {
+    "id": "19",
+    "title": "The Legend of Zelda: Tears of the Kingdom",
+    "coverPhoto": "https://i.postimg.cc/MTWfkz6p/Tears-of-the-Kingdom-wallpaper-1170x720.jpg",
+    "category": "Adventure",
+    "downloadLink": "https://www.zelda.com/tears-of-the-kingdom/",
+    "description": "Zelda: TOTK continues Link’s journey with physics-based puzzles and vast exploration.",
+    "ratings": "4.9",
+    "developer": "Nintendo"
+  },
+  {
+    "id": "20",
+    "title": "Grand Theft Auto V",
+    "coverPhoto": "https://i.postimg.cc/NFcJv9KW/gta.webp",
+    "category": "Open World",
+    "downloadLink": "https://www.rockstargames.com/gta-v",
+    "description": "GTA V is an iconic open-world action game full of freedom, chaos, and storytelling.",
+    "ratings": "4.8",
+    "developer": "Rockstar Games"
+  }
+]
