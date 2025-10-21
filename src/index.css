@@ -1,2 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: luxury --default;
+}
+@plugin "daisyui/theme" {
+  name: "luxury";
+  default: true;
+  --color-primary: #b0b0b0;
+  --color-secondary: #ffffff;
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  background: radial-gradient(circle at top left, #1a1a1a, #0d0d0d 70%);
+}
+
+/* Headings (h1-h6) White #FFFFFF 
+Paragraphs / Description (p)Light gray #B0B0B0
+Highlight / Neon text Neon Cyan #00FFE0
+button
+Primary (Install / Support) Neon Cyan #00FFE0 Dark #121212
+Secondary (View Details / Wishlist) Dark gray #2A2A2A Neon Cyan #00FFE0
+Banner Background background: linear-gradient(135deg, #1e1e1e 0%, #3a0ca3 50%, #00FFE0 100%);
+Tips:
+Add subtle particle animation / small glow effect for gaming vibe
+Overlay text in white or neon cyan for contrast
+
+Cards / Tiles (Games)
+Part	Color / Style
+Card BG	Dark gray #1E1E1E
+Card Border / Hover	Neon Cyan #00FFE0 / slight scale transform scale(1.02)
+Shadow	Soft black rgba(0,0,0,0.5)
+Title	White #FFFFFF
+Description	Light gray #B0B0B0
+Genre / Badge	Neon Cyan #00FFE0 or Gold #FFD700
+
+Footer / Misc Elements
+Footer BG: Very dark #121212
+Footer text: Gray #888888
+Links hover: Neon cyan #00FFE0
+*/
