@@ -94,7 +94,7 @@ const HomeBanner = () => {
                   </h1>
                   <a
                     href={slide.link}
-                    className="inline-block bg-success border-3 border-success text-black hover:bg-white lg:px-6 px-4 lg:py-3 py-2 rounded-md border-rounded-lg font-semibold transition-colors duration-300"
+                    className="inline-block bg-success border-3 border-success text-black hover:bg-white lg:px-6 px-4 lg:py-3 py-2 rounded-md font-semibold transition-colors duration-300"
                   >
                     Explore Now
                   </a>

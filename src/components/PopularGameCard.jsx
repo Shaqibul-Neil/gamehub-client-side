@@ -11,12 +11,12 @@ const PopularGameCard = ({ game }) => {
           className="h-48 w-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-110"
         />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title text-3xl text-secondary">
-          {title}
+      <div className="card-body space-y-8">
+        <div className="flex md:flex-row flex-col gap-4 justify-between md:items-center">
+          <h2 className="text-3xl text-secondary">{title}</h2>
           <div className="badge badge-warning">{category}</div>
-        </h2>
-        <p>{description}</p>
+        </div>
+        <p className="poppins">{description}</p>
         <div className="flex justify-between items-center">
           <div className="flex gap-1 items-center">
             <span>
@@ -24,7 +24,7 @@ const PopularGameCard = ({ game }) => {
             </span>
             <p className="text-xl text-primary">{ratings}</p>
           </div>
-          <button className="btn btn-success text-black border-3 w-32 border-rounded-lg border-success hover:bg-white rounded-md font-semibold transition-colors duration-300">
+          <button className="btn btn-success text-black border-3 w-32 border-rounded-lg border-success hover:bg-white rounded-md font-semibold transition-colors duration-300 poppins">
             View Details
           </button>
         </div>

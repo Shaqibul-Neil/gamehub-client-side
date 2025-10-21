@@ -31,7 +31,7 @@
   },
   {
     "id": "4",
-    "title": "Fortnite",
+    "title": "Fortnite Royale",
     "coverPhoto": "https://i.postimg.cc/tRWwvy13/fortnight.jpg",
     "category": "Battle",
     "downloadLink": "https://www.epicgames.com/fortnite/",
@@ -41,7 +41,7 @@
   },
   {
     "id": "5",
-    "title": "Valorant",
+    "title": "Valorant Riot Gear",
     "coverPhoto": "https://i.postimg.cc/7hGcq89M/1103306-valorant-le-jeu-video-signe-riot-games-est-disponible.jpg",
     "category": "Tactical",
     "downloadLink": "https://playvalorant.com/",
@@ -181,7 +181,7 @@
   },
   {
     "id": "19",
-    "title": "The Legend of Zelda",
+    "title": "Legend of Zelda",
     "coverPhoto": "https://i.postimg.cc/MTWfkz6p/Tears-of-the-Kingdom-wallpaper-1170x720.jpg",
     "category": "Adventure",
     "downloadLink": "https://www.zelda.com/tears-of-the-kingdom/",

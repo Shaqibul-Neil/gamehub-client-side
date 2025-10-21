@@ -3,12 +3,13 @@ import Root from "../layout/Root";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Login from "../pages/Login";
-import SignIn from "../pages/SignIn";
 import NewReleases from "../pages/NewReleases";
 import Events from "../pages/Events";
 import Donate from "../pages/Donate";
 import Community from "../pages/Community";
 import Games from "../pages/Games";
+import SignUp from "../pages/SignUp";
+import ForgetPassword from "../pages/ForgetPassword";
 
 const router = createBrowserRouter([
   {
@@ -48,8 +49,12 @@ const router = createBrowserRouter([
         Component: Login,
       },
       {
-        path: "/signin",
-        Component: SignIn,
+        path: "/signup",
+        Component: SignUp,
+      },
+      {
+        path: "/forget-password",
+        Component: ForgetPassword,
       },
     ],
   },

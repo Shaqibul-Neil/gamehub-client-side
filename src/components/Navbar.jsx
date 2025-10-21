@@ -35,19 +35,29 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-100 mt-3 w-52 p-2 shadow text-secondary border border-[#00ffe0]"
           >
             <li>
-              <MyLinks to={"/"}>Home</MyLinks>
+              <MyLinks className="poppins" to={"/"}>
+                Home
+              </MyLinks>
             </li>
             <li>
-              <MyLinks to={"/about"}>About</MyLinks>
+              <MyLinks className="poppins" to={"/about"}>
+                About
+              </MyLinks>
             </li>
             <li>
-              <MyLinks to={"/games"}>Games</MyLinks>
+              <MyLinks className="poppins" to={"/games"}>
+                Games
+              </MyLinks>
             </li>
             <li>
-              <MyLinks to={"/events"}>Events</MyLinks>
+              <MyLinks className="poppins" to={"/events"}>
+                Events
+              </MyLinks>
             </li>
             <li>
-              <MyLinks to={"/community"}>Community</MyLinks>
+              <MyLinks className="poppins" to={"/community"}>
+                Community
+              </MyLinks>
             </li>
             {user ? (
               "user"
@@ -56,14 +66,17 @@ const Navbar = () => {
                 <li>
                   <Link
                     to={"/login"}
-                    className={"btn btn-success text-black mb-2"}
+                    className={"btn btn-success text-black mb-2 poppins"}
                   >
                     Login
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/signin"} className={"btn btn-warning text-white"}>
-                    Sign In
+                  <Link
+                    to={"/signup"}
+                    className={"btn btn-warning text-white poppins"}
+                  >
+                    Sign Up
                   </Link>
                 </li>
               </>
@@ -81,19 +94,29 @@ const Navbar = () => {
       <div className="navbar-end hidden lg:flex lg:w-full">
         <ul className="flex items-center gap-6 text-secondary">
           <li>
-            <MyLinks to={"/"}>Home</MyLinks>
+            <MyLinks className="poppins" to={"/"}>
+              Home
+            </MyLinks>
           </li>
           <li>
-            <MyLinks to={"/about"}>About</MyLinks>
+            <MyLinks className="poppins" to={"/about"}>
+              About
+            </MyLinks>
           </li>
           <li>
-            <MyLinks to={"/games"}>Games</MyLinks>
+            <MyLinks className="poppins" to={"/games"}>
+              Games
+            </MyLinks>
           </li>
           <li>
-            <MyLinks to={"/events"}>Events</MyLinks>
+            <MyLinks className="poppins" to={"/events"}>
+              Events
+            </MyLinks>
           </li>
           <li>
-            <MyLinks to={"/community"}>Community</MyLinks>
+            <MyLinks className="poppins" to={"/community"}>
+              Community
+            </MyLinks>
           </li>
           {user ? (
             "user"
@@ -103,7 +126,7 @@ const Navbar = () => {
                 <Link
                   to={"/login"}
                   className={
-                    "btn btn-success text-black border-3 w-24 border-rounded-lg border-success  hover:bg-white rounded-md font-semibold transition-colors duration-300"
+                    "btn btn-success text-black border-3 w-28  border-success  hover:bg-white rounded-md font-semibold transition-colors duration-300 poppins"
                   }
                 >
                   Login
@@ -111,12 +134,12 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to={"/signin"}
+                  to={"/signup"}
                   className={
-                    "btn btn-warning text-white w-24 hover:bg-white hover:text-warning rounded-md font-semibold transition-colors duration-300 border-3 border-rounded-lg"
+                    "btn btn-warning text-white w-28 hover:bg-white hover:text-warning rounded-md font-semibold transition-colors duration-300 border-3  poppins"
                   }
                 >
-                  Sign In
+                  Sign Up
                 </Link>
               </li>
             </>
