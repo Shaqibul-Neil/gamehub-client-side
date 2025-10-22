@@ -15,28 +15,28 @@ const UpdateProfile = () => {
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 py-12">
           {/* Left side: Context / Welcome */}
           <div className="max-w-lg text-center lg:text-left text-white space-y-6 drop-shadow-lg">
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-widest audiowide">
+            <h1 className="text-3xl md:text-5xl font-extrabold tracking-widest audiowide">
               Update Your Profile, Warrior
             </h1>
-            <p className="text-lg text-white/80 leading-relaxed tracking-widest">
+            <p className="text-md text-white/80 leading-relaxed tracking-widest">
               Refresh your{" "}
               <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-lg audiowide audiowide">
                 display name
               </span>{" "}
               and{" "}
-              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-lg audiowide audiowide">
+              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-md audiowide audiowide">
                 profile picture
               </span>{" "}
               to stay active on the{" "}
-              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-lg audiowide audiowide">
+              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-md audiowide audiowide">
                 battlefield
               </span>{" "}
               . Keep your stats visible, your
-              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-lg audiowide audiowide">
+              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-md audiowide audiowide">
                 avatar
               </span>{" "}
               shining, and show the arena your avatar{" "}
-              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-lg audiowide audiowide">
+              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-md audiowide audiowide">
                 presence!
               </span>{" "}
             </p>
@@ -74,7 +74,7 @@ const UpdateProfile = () => {
 
               <button
                 type="submit"
-                className="btn btn-success text-black w-full rounded-md font-semibold text-xl py-5 hover:bg-white transition-colors duration-300"
+                className="btn btn-success text-black w-full rounded-md font-semibold lg:text-xl md:text-lg text-md py-5 hover:bg-white transition-colors duration-300"
               >
                 Update Information
               </button>

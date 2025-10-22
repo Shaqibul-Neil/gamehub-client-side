@@ -33,28 +33,28 @@ const MyProfilePage = () => {
         <div className="relative z-10 container mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 py-12">
           {/* Left side: context / welcome text */}
           <div className="max-w-lg text-center lg:text-left text-white space-y-6 drop-shadow-lg">
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-widest audiowide">
+            <h1 className="text-3xl md:text-5xl font-extrabold tracking-widest audiowide">
               Welcome Back, {profile.username}!
             </h1>
-            <p className="text-lg text-white/80 leading-relaxed tracking-wide">
+            <p className="text-md text-white/80 leading-relaxed tracking-wide">
               Gear up, check your{" "}
-              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-lg audiowide audiowide">
+              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-md audiowide audiowide">
                 stats
               </span>{" "}
               , level up your{" "}
-              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-lg audiowide audiowide">
+              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-md audiowide audiowide">
                 gear
               </span>{" "}
-              , and explore your favorite gear
-              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-lg audiowide audiowide">
+              , and explore your favorite gear{" "}
+              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-md audiowide audiowide">
                 games.
               </span>{" "}
               The battlefield is waiting — your next{" "}
-              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-lg audiowide audiowide">
+              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-md audiowide audiowide">
                 victory
               </span>{" "}
               begins here. Stay sharp and conquer your{" "}
-              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-lg audiowide audiowide">
+              <span className="text-[#00FFE0] font-semibold uppercase md:text-xl text-md audiowide audiowide">
                 challenges!
               </span>
             </p>
