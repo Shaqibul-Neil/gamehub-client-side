@@ -26,10 +26,10 @@ const UpdateProfile = () => {
       className="relative w-full bg-cover bg-center py-16"
       style={{ backgroundImage: `url(${obg2})` }}
     >
+      <title>GameHub - Update Profile</title>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 mix-blend-multiply"></div>
       <div className="absolute inset-0 bg-linear-to-r from-[#6C63FF]/60 to-[#00FFE0]/60 mix-blend-multiply"></div>
-
       <Container>
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 py-12">
           {/* Left side: Context / Welcome */}

@@ -59,7 +59,7 @@ const Navbar = () => {
               <MyLinks to={"/events"}>Events</MyLinks>
             </li>
             <li>
-              <MyLinks to={"/community"}>Community</MyLinks>
+              <MyLinks to={"/profile"}>Profile</MyLinks>
             </li>
             {user ? (
               <></>
@@ -107,7 +107,7 @@ const Navbar = () => {
             <MyLinks to={"/events"}>Events</MyLinks>
           </li>
           <li>
-            <MyLinks to={"/community"}>Community</MyLinks>
+            <MyLinks to={"/profile"}>Profile</MyLinks>
           </li>
           {user ? (
             <>

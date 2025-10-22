@@ -5,8 +5,6 @@ import About from "../pages/About";
 import Login from "../pages/Login";
 import NewReleases from "../pages/NewReleases";
 import Events from "../pages/Events";
-import Donate from "../pages/Donate";
-import Community from "../pages/Community";
 import Games from "../pages/Games";
 import SignUp from "../pages/SignUp";
 import ForgetPassword from "../pages/ForgetPassword";
@@ -14,6 +12,7 @@ import MyProfile from "../pages/MyProfile";
 import UpdateProfile from "../pages/UpdateProfile";
 import GameDetails from "../pages/GameDetails";
 import PrivateRoutes from "./PrivateRoutes";
+import TermsConditions from "../pages/TermsConditions";
 
 const router = createBrowserRouter([
   {
@@ -41,10 +40,6 @@ const router = createBrowserRouter([
         Component: Events,
       },
       {
-        path: "/community",
-        Component: Community,
-      },
-      {
         path: "/login",
         Component: Login,
       },
@@ -55,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/forget-password",
         Component: ForgetPassword,
+      },
+      {
+        path: "/terms-conditions",
+        Component: TermsConditions,
       },
       {
         path: "/profile",

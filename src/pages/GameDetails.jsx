@@ -11,19 +11,17 @@ import Character from "../components/Character";
 const GameDetails = () => {
   const { title } = useParams();
   const { gamesData, gameLoading, gameError } = useContext(AuthContext);
-  console.log(title);
   const particularGame = gamesData.find(
     (game) => slugify(game.title, { lower: true, strict: true }) === title
   );
-  console.log(particularGame);
+
   if (gameLoading) return <GameDetailsLoading />;
   if (gameError) return <ErrorPage />;
   if (!particularGame) return <GameError />;
 
-  console.log(particularGame);
-
   return (
     <div>
+      <title>GameHub - Game Details</title>
       <div className="w-full h-[80vh] bg-black flex items-center justify-center">
         <img
           src={particularGame?.coverPhoto}

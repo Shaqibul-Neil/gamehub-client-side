@@ -57,6 +57,7 @@ const Login = () => {
       .then(() => {
         setUserLoading(false);
         toast.success("Google verified your soul 👾 — you're in!");
+        navigate(location?.state || "/");
       })
       .catch((err) => toast.error("⚔️ Mission failed: " + err.message));
   };
@@ -74,6 +75,7 @@ const Login = () => {
       className="relative w-full bg-cover bg-center py-16"
       style={{ backgroundImage: `url(${lol})` }}
     >
+      <title>GameHub - Login</title>
       {/* Overlay */}
       <div className="absolute inset-0 bg-linear-to-r from-[#00FFE0]/60 to-[#6C63FF]/60 mix-blend-multiply"></div>
 

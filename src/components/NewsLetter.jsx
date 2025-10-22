@@ -5,7 +5,7 @@ import news from "../assets/news.png";
 const NewsLetter = () => {
   return (
     <Container className="lg:py-24 py-16 md:px-10">
-      <div className="absolute -left-18 -top-31 lg:flex hidden">
+      <div className="absolute -left-18 -top-30 lg:flex hidden">
         <img
           src={news}
           alt=""
@@ -16,8 +16,9 @@ const NewsLetter = () => {
         <h3 className="mb-3">
           <TypeText />
         </h3>
-        <p className="text-sm opacity-90 mb-4 px-4">
-          Get the latest apps, tools, and tech straight to your inbox.
+        <p className="text-md opacity-90 mb-4 px-4">
+          From alpha builds to pro tips — get gaming news and tools in your
+          inbox.
         </p>
         <form className="flex flex-col sm:flex-row gap-3 w-10/12 sm:w-8/12">
           <input

@@ -5,7 +5,7 @@ const Character = ({ character }) => {
         <img
           src={character?.image}
           alt={character?.name}
-          className="w-64 h-64"
+          className="w-64 h-64 drop-shadow-[0_0_5px_rgba(0,255,224,0.8)]"
         />
       </figure>
       <div className="space-y-8 text-center">

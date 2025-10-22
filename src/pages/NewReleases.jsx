@@ -1,5 +1,9 @@
 const NewReleases = () => {
-  return <div></div>;
+  return (
+    <div>
+      <title>GameHub - New Releases</title>
+    </div>
+  );
 };
 
 export default NewReleases;

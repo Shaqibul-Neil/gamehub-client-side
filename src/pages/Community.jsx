@@ -1,5 +1,9 @@
 const Community = () => {
-  return <div></div>;
+  return (
+    <div>
+      <title>GameHub - Community</title>
+    </div>
+  );
 };
 
 export default Community;

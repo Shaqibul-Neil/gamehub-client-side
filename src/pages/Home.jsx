@@ -5,6 +5,7 @@ import PopularGameCards from "../components/PopularGameCards";
 const Home = () => {
   return (
     <section>
+      <title>GameHub - Home</title>
       <div>
         <HomeBanner />
       </div>

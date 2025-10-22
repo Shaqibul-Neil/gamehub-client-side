@@ -84,6 +84,7 @@ const SignUp = () => {
       className="relative w-full bg-cover bg-center py-16"
       style={{ backgroundImage: `url(${val})` }}
     >
+      <title>GameHub - Sign Up</title>
       {/* Overlay */}
       <div className="absolute inset-0 bg-linear-to-r from-[#00FFE0]/60 to-[#6C63FF]/60 mix-blend-multiply"></div>
 

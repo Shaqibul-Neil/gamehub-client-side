@@ -39,6 +39,7 @@ const ForgetPassword = () => {
       className="relative w-full min-h-screen bg-cover bg-center py-16"
       style={{ backgroundImage: `url(${forg})` }} // tmr background image
     >
+      <title>GameHub - Forget Password</title>
       {/* Overlay */}
       <div className="absolute inset-0 bg-linear-to-r from-[#6C63FF]/60 to-[#6C63FF]/40 mix-blend-multiply"></div>
 

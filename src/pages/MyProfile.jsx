@@ -25,6 +25,7 @@ const MyProfilePage = () => {
       className="relative w-full min-h-screen bg-cover bg-center py-16"
       style={{ backgroundImage: `url(${ovg})` }}
     >
+      <title>GameHub - Profile</title>
       {/* Overlay */}
       <div className="absolute inset-0 bg-linear-to-r from-[#00FFE0]/60 to-[#6C63FF]/60 mix-blend-multiply"></div>
       <div className="absolute inset-0 bg-black/50 mix-blend-multiply"></div>
