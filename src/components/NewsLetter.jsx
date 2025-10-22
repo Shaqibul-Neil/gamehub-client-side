@@ -4,8 +4,8 @@ import news from "../assets/news.png";
 
 const NewsLetter = () => {
   return (
-    <Container className="lg:py-24 py-16 md:px-10">
-      <div className="absolute -left-18 -top-30 lg:flex hidden">
+    <Container className="lg:py-36 py-16 md:px-10 ">
+      <div className="absolute -top-10 left-1/2 lg:flex hidden transform -translate-x-1/2 -translate-y-1/2 -z-1">
         <img
           src={news}
           alt=""
