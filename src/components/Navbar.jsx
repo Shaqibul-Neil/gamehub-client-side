@@ -113,11 +113,13 @@ const Navbar = () => {
           {user ? (
             <>
               <li>
-                <img
-                  src={user.photoURL}
-                  alt=""
-                  className="w-8 h-8 rounded-full"
-                />
+                <Link to={"/profile"}>
+                  <img
+                    src={user.photoURL}
+                    alt=""
+                    className="w-8 h-8 rounded-full"
+                  />
+                </Link>
               </li>
               <li>
                 <button
@@ -160,11 +162,13 @@ const Navbar = () => {
         {user ? (
           <ul className="flex items-center gap-2 md:gap-4">
             <li>
-              <img
-                src={user.photoURL}
-                alt=""
-                className="w-8 h-8 rounded-full"
-              />
+              <Link to={"/profile"}>
+                <img
+                  src={user.photoURL}
+                  alt=""
+                  className="w-8 h-8 rounded-full"
+                />
+              </Link>
             </li>
             <li>
               <button

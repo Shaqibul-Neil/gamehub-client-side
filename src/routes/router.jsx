@@ -10,6 +10,8 @@ import Community from "../pages/Community";
 import Games from "../pages/Games";
 import SignUp from "../pages/SignUp";
 import ForgetPassword from "../pages/ForgetPassword";
+import MyProfile from "../pages/MyProfile";
+import UpdateProfile from "../pages/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +57,14 @@ const router = createBrowserRouter([
       {
         path: "/forget-password",
         Component: ForgetPassword,
+      },
+      {
+        path: "/profile",
+        Component: MyProfile,
+      },
+      {
+        path: "/update-profile",
+        Component: UpdateProfile,
       },
     ],
   },
