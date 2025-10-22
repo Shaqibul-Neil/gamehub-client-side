@@ -14,12 +14,12 @@
   --color-warning: #6c63ff;
 }
 * {
-  font-family: "Audiowide", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   /* color:#f0f5f5 */
 }
-.poppins {
-  font-family: "Poppins", sans-serif;
+.audiowide {
+  font-family: "Audiowide", sans-serif;
 }
 header {
   background: radial-gradient(circle at top left, #1a1a1a, #0d0d0d 70%);

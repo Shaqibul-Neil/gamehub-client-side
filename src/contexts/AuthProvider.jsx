@@ -21,6 +21,7 @@ const googleProvider = new GoogleAuthProvider();
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [userLoading, setUserLoading] = useState(true);
+  const [forgetEmail, setForgetEmail] = useState("");
   const { gamesData, gameLoading, gameError } = useGame();
 
   //create user
@@ -97,6 +98,8 @@ const AuthProvider = ({ children }) => {
     userRememberPassword,
     forgetUserPassword,
     logOutUser,
+    forgetEmail,
+    setForgetEmail,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

@@ -5,14 +5,14 @@ import PopularGameCard from "./PopularGameCard";
 
 const PopularGameCards = () => {
   const { gamesData, gameLoading, gameError } = useContext(AuthContext);
-  console.log(gamesData);
+  // console.log(gamesData);
   const popularGames = gamesData.filter((games) => games.ratings >= "4.9");
-  console.log(popularGames);
+  // console.log(popularGames);
   return (
     <Container>
       <div className="space-y-12">
         <div>
-          <h2 className="text-secondary lg:text-5xl md:text-4xl text-3xl text-center">
+          <h2 className="text-secondary lg:text-5xl md:text-4xl text-3xl text-center audiowide">
             Popular Games
           </h2>
         </div>

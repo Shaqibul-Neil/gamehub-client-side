@@ -17,25 +17,25 @@ const slides = [
     title: "PlayerUnknown’s Battlegrounds",
     subtitle: "Survive. Fight. Conquer.",
     img: pubg,
-    link: "#",
+    link: "/games",
   },
   {
     title: "Call of Duty: Warzone",
     subtitle: "Enter the battlefield of chaos.",
     img: cas,
-    link: "#",
+    link: "/games",
   },
   {
     title: "Cyberpunk 2077",
     subtitle: "Wake up, Samurai. There’s a city to burn.",
     img: cyber,
-    link: "#",
+    link: "/games",
   },
   {
     title: "The Witcher 3: Wild Hunt",
     subtitle: "Monster hunter for hire.",
     img: witcher,
-    link: "#",
+    link: "/games",
   },
 ];
 
@@ -89,12 +89,12 @@ const HomeBanner = () => {
                   <p className="text-sm uppercase tracking-widest text-yellow-400 mb-2">
                     {slide.subtitle}
                   </p>
-                  <h1 className="md:text-4xl text-3xl lg:text-6xl font-bold leading-tight mb-5 drop-shadow-lg">
+                  <h1 className="md:text-4xl text-3xl lg:text-6xl font-bold leading-tight mb-5 drop-shadow-lg audiowide">
                     {slide.title}
                   </h1>
                   <a
                     href={slide.link}
-                    className="inline-block bg-success border-3 border-success text-black hover:bg-white lg:px-6 px-4 lg:py-3 py-2 rounded-md font-semibold transition-colors duration-300"
+                    className="inline-block bg-success border-3 border-success text-black hover:bg-white lg:px-6 px-4 lg:py-3 py-2 rounded-md font-semibold transition-colors duration-300 audiowide lg:text-xl"
                   >
                     Explore Now
                   </a>

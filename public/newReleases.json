@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Battlefield 6",
+    "img": "https://example.com/images/battlefield6.jpg",
+    "longDescription": "Battlefield 6 brings the franchise back to its roots with massive multiplayer battles, realistic weapon mechanics, and immersive environments. Players can engage in large-scale warfare with destructible terrains and vehicles.",
+    "shortDescription": "Massive battles with realistic gameplay and destructible environments.",
+    "rating": 9.2,
+    "category": "Shooter",
+    "developer": "DICE"
+  },
+  {
+    "id": 2,
+    "title": "Vampire: The Masquerade",
+    "img": "https://example.com/images/vampire-masquerade.jpg",
+    "longDescription": "Dive into a dark world of vampires, politics, and supernatural powers. Explore your choices, build alliances, and manipulate the undead society while struggling with your own humanity.",
+    "shortDescription": "Dark vampire RPG full of intrigue and supernatural powers.",
+    "rating": 8.7,
+    "category": "RPG",
+    "developer": "Shah Games"
+  },
+  {
+    "id": 3,
+    "title": "Arc Raiders",
+    "img": "https://example.com/images/arc-raiders.jpg",
+    "longDescription": "Arc Raiders is a co-op action RPG where players battle alien creatures across different dimensions. Gather rare resources, upgrade your gear, and team up with friends to survive high-intensity missions.",
+    "shortDescription": "Co-op action RPG with alien battles and gear upgrades.",
+    "rating": 8.5,
+    "category": "Action RPG",
+    "developer": "Embark Studios"
+  },
+  {
+    "id": 4,
+    "title": "Cyberpunk Rebellion",
+    "img": "https://example.com/images/cyberpunk-rebellion.jpg",
+    "longDescription": "Step into a neon-lit dystopia filled with cybernetic enhancements and rogue AI. Hack systems, complete missions, and navigate the moral grey of a futuristic city.",
+    "shortDescription": "Neon cyberpunk adventure with hacking and missions.",
+    "rating": 8.3,
+    "category": "Action",
+    "developer": "NeoSoft"
+  },
+  {
+    "id": 5,
+    "title": "Mystic Legends",
+    "img": "https://example.com/images/mystic-legends.jpg",
+    "longDescription": "An epic fantasy RPG where magic, mythical creatures, and legendary quests await. Build your hero, forge alliances, and change the fate of the realm.",
+    "shortDescription": "Fantasy RPG with magic, creatures, and epic quests.",
+    "rating": 9.0,
+    "category": "RPG",
+    "developer": "EpicQuest Studios"
+  },
+  {
+    "id": 6,
+    "title": "Rogue Skies",
+    "img": "https://example.com/images/rogue-skies.jpg",
+    "longDescription": "Rogue Skies is an aerial combat simulator where you pilot high-tech aircraft in intense dogfights. Customize planes, join squadrons, and dominate the skies.",
+    "shortDescription": "High-speed aerial combat with plane customization.",
+    "rating": 8.1,
+    "category": "Simulation",
+    "developer": "Skyward Games"
+  },
+  {
+    "id": 7,
+    "title": "Zombie Outbreak X",
+    "img": "https://example.com/images/zombie-outbreak-x.jpg",
+    "longDescription": "Survive a global zombie apocalypse by scavenging, crafting, and fighting hordes of undead. Team up with survivors or go solo in this high-stakes survival game.",
+    "shortDescription": "Zombie survival game with crafting and combat.",
+    "rating": 8.6,
+    "category": "Survival",
+    "developer": "DeadPixel Studios"
+  },
+  {
+    "id": 8,
+    "title": "Star Voyager: Beyond",
+    "img": "https://example.com/images/star-voyager-beyond.jpg",
+    "longDescription": "Explore distant galaxies, colonize planets, and engage in space battles. Star Voyager: Beyond combines strategy, exploration, and real-time combat in a massive universe.",
+    "shortDescription": "Space exploration and strategy with epic battles.",
+    "rating": 9.1,
+    "category": "Strategy",
+    "developer": "Galactic Games"
+  },
+  {
+    "id": 9,
+    "title": "Ancient Warriors",
+    "img": "https://example.com/images/ancient-warriors.jpg",
+    "longDescription": "Ancient Warriors is a historical action game where you fight epic battles, master ancient weapons, and lead armies in historically inspired campaigns.",
+    "shortDescription": "Historical action game with epic battles and weapons.",
+    "rating": 8.4,
+    "category": "Action",
+    "developer": "Heritage Studios"
+  }
+]
