@@ -39,10 +39,6 @@ const router = createBrowserRouter([
         Component: Events,
       },
       {
-        path: "/donate",
-        Component: Donate,
-      },
-      {
         path: "/community",
         Component: Community,
       },

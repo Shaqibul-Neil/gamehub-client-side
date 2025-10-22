@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const TypeText = () => {
   return (
-    <span className="text-white font-semibold text-lg md:text-2xl lg:text-3xl">
+    <span className="text-gray-800 font-semibold text-lg md:text-2xl lg:text-3xl">
       <TypeAnimation
         sequence={[
           "Discover epic games 🎮",

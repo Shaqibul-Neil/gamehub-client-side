@@ -1,4 +1,5 @@
 import HomeBanner from "../components/HomeBanner";
+import NewsLetter from "../components/NewsLetter";
 import PopularGameCards from "../components/PopularGameCards";
 
 const Home = () => {
@@ -9,6 +10,9 @@ const Home = () => {
       </div>
       <div className="lg:py-32 py-20">
         <PopularGameCards />
+      </div>
+      <div className="relative">
+        <NewsLetter />
       </div>
     </section>
   );

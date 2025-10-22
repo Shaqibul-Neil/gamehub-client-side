@@ -11,7 +11,7 @@ const Root = () => {
           <Navbar />
         </Container>
       </header>
-      <main className="flex-1 md:pb-32 pb-40">
+      <main className="flex-1">
         <Outlet />
       </main>
       <footer>
