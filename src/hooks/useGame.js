@@ -11,7 +11,7 @@ const useGame = () => {
       .get("../gamesData.json")
       .then((res) => setGamesData(res.data))
       .catch((err) => setGameError(err))
-      .finally();
+      .finally(() => setGameLoading(false));
   }, []);
   return { gamesData, gameLoading, gameError };
 };

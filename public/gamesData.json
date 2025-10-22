@@ -1,202 +1,398 @@
 [
   {
     "id": "1",
-    "title": "PlayerUnknown's Battlegrounds (PUBG)",
-    "coverPhoto": "https://i.postimg.cc/MHpBBqNt/pubg.jpg",
-    "category": "Battle",
-    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
-    "description": "PUBG is a fast-paced battle royale where 100 players fight for survival using strategy, shooting, and teamwork.",
-    "ratings": "4.8",
-    "developer": "Krafton"
+    "title": "The Witcher 3: Wild Hunt",
+    "coverPhoto": "https://i.postimg.cc/x8Ldq7Tb/geralt-of-rivia-the-3840x2160-14024.jpg",
+    "category": "RPG",
+    "downloadLink": "https://thewitcher.com/en/witcher3",
+    "description": "The Witcher 3 immerses players in a dark fantasy world where choices have consequences.",
+    "ratings": "4.9",
+    "developer": "CD Projekt Red",
+    "longDescription": [
+      "Step into the world of The Witcher 3, a dark and immersive RPG where monster hunting, political intrigue, and moral choices shape every adventure. Explore vast landscapes teeming with life and danger, unravel ancient mysteries, and encounter unforgettable characters along the way.",
+      "Players take on the role of Geralt of Rivia, a masterful monster hunter navigating morally complex decisions that affect the world around them. Engage in tactical combat, craft powerful gear, and delve into rich storylines filled with unexpected twists and epic encounters.",
+      "The Witcher 3 balances intense gameplay with a deep narrative, rewarding exploration and strategic thinking. Each choice carries weight, creating a living, breathing world where every quest and interaction leaves a lasting impact."
+    ],
+    "characters": [
+      {
+        "name": "Geralt of Rivia",
+        "bio": [
+          "Geralt is a seasoned monster hunter known for his skill, intellect, and morally complex choices, navigating a world fraught with danger, intrigue, and intrigue.",
+          "Throughout his journeys, Geralt encounters allies and enemies alike, balancing his duty, personal desires, and the ever-changing landscape of politics and conflict."
+        ],
+        "image": "https://i.postimg.cc/2jgybwXw/fantasy-style-fire.jpg"
+      },
+      {
+        "name": "Yennefer of Vengerberg",
+        "bio": [
+          "A powerful sorceress and Geralt’s love interest, Yennefer wields immense magic while navigating political games and personal ambitions.",
+          "Her intelligence and charm influence events around her, making her an indispensable ally in Geralt’s perilous adventures."
+        ],
+        "image": "https://i.postimg.cc/Y0LcBQ60/woman-with-shield-b-her-head.jpg"
+      }
+    ]
   },
   {
     "id": "2",
-    "title": "Call of Duty: Warzone",
-    "coverPhoto": "https://i.postimg.cc/CLHy5YSy/call-of-duty-warzone-1024x576.jpg",
-    "category": "FPS",
-    "downloadLink": "https://www.callofduty.com/warzone",
-    "description": "Warzone brings Call of Duty's signature combat to a massive online arena with squads and high-stakes survival.",
-    "ratings": "4.8",
-    "developer": "Activision"
-  },
-  {
-    "id": "3",
-    "title": "Minecraft",
-    "coverPhoto": "https://i.postimg.cc/Zn4cDGgB/minecraft.jpg",
-    "category": "Sandbox",
-    "downloadLink": "https://www.minecraft.net/",
-    "description": "Minecraft lets you build, explore, and survive in endless blocky worlds filled with creativity and adventure.",
-    "ratings": "4",
-    "developer": "Mojang Studios"
-  },
-  {
-    "id": "4",
-    "title": "Fortnite Royale",
-    "coverPhoto": "https://i.postimg.cc/tRWwvy13/fortnight.jpg",
-    "category": "Battle",
-    "downloadLink": "https://www.epicgames.com/fortnite/",
-    "description": "Fortnite mixes shooting, building, and creativity in one of the most iconic battle royale experiences.",
-    "ratings": "4.9",
-    "developer": "Epic Games"
-  },
-  {
-    "id": "5",
-    "title": "Valorant Riot Gear",
-    "coverPhoto": "https://i.postimg.cc/7hGcq89M/1103306-valorant-le-jeu-video-signe-riot-games-est-disponible.jpg",
-    "category": "Tactical",
-    "downloadLink": "https://playvalorant.com/",
-    "description": "Valorant combines precise gunplay with unique hero abilities in a competitive tactical shooter.",
-    "ratings": "5",
-    "developer": "Riot Games"
-  },
-  {
-    "id": "6",
-    "title": "Apex Legends",
-    "coverPhoto": "https://i.postimg.cc/kgsd1Cpt/apex-legends.jpg",
-    "category": "Battle",
-    "downloadLink": "https://www.ea.com/games/apex-legends",
-    "description": "Apex Legends is a squad-based hero shooter set in a fast, futuristic battle royale arena.",
-    "ratings": "4.5",
-    "developer": "Respawn Entertainment"
-  },
-  {
-    "id": "7",
-    "title": "Genshin Impact",
-    "coverPhoto": "https://i.postimg.cc/SxhgXzVG/gen.jpg",
-    "category": "RPG",
-    "downloadLink": "https://genshin.hoyoverse.com/",
-    "description": "Genshin Impact offers an open world full of elemental magic, storytelling, and adventure.",
-    "ratings": "4.7",
-    "developer": "HoYoverse"
-  },
-  {
-    "id": "8",
-    "title": "Counter-Strike 2",
-    "coverPhoto": "https://i.postimg.cc/5yXwGf3Z/cas.png",
-    "category": "FPS",
-    "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_2/",
-    "description": "Counter-Strike 2 refines tactical FPS gameplay with improved visuals, smoother mechanics, and realism.",
-    "ratings": "5",
-    "developer": "Valve"
-  },
-  {
-    "id": "9",
     "title": "Cyberpunk 2077",
     "coverPhoto": "https://i.postimg.cc/PrN3sjJX/cyber.jpg",
     "category": "RPG",
     "downloadLink": "https://www.cyberpunk.net/",
     "description": "Cyberpunk 2077 immerses players in a futuristic open world full of choices, chaos, and technology.",
     "ratings": "4.8",
-    "developer": "CD Projekt Red"
+    "developer": "CD Projekt Red",
+    "longDescription": [
+      "Enter Night City, a sprawling urban landscape in Cyberpunk 2077, where technology and crime collide. Players navigate a complex society filled with cybernetic enhancements, rival gangs, and corporate intrigue, making choices that define their story.",
+      "Customization and exploration are key as players develop their character, acquire advanced tech, and engage in high-stakes missions. Every decision affects relationships, opportunities, and the evolving narrative of the city.",
+      "Cyberpunk 2077 blends fast-paced combat, stealth, and role-playing elements with a rich, immersive environment. The game challenges players to think strategically and creatively to survive and thrive in Night City."
+    ],
+    "characters": [
+      {
+        "name": "V",
+        "bio": [
+          "The customizable protagonist, V navigates Night City with skill in hacking, combat, and social strategy, shaping their destiny.",
+          "Choices made by V influence alliances, outcomes, and the ultimate fate of the sprawling city, making every decision impactful."
+        ],
+        "image": "https://i.postimg.cc/5N2KZBmL/fantasy-8790369-640.jpg"
+      },
+      {
+        "name": "Johnny Silverhand",
+        "bio": [
+          "A legendary rocker and rebel with cybernetic enhancements, Johnny influences events through charisma and skill.",
+          "His history and choices intertwine with V’s journey, impacting both personal and city-wide outcomes in a high-stakes narrative."
+        ],
+        "image": "https://i.postimg.cc/YqPMvqnZ/178851532-10732349-1.png"
+      }
+    ]
   },
   {
-    "id": "10",
-    "title": "Among Us",
-    "coverPhoto": "https://i.postimg.cc/vBLjBtwY/among.jpg",
-    "category": "Party",
-    "downloadLink": "https://innersloth.com/gameAmongUs.php",
-    "description": "Among Us is a fun social deduction game where you uncover impostors aboard a spaceship.",
-    "ratings": "4",
-    "developer": "Innersloth"
+    "id": "3",
+    "title": "Counter Strike 2",
+    "coverPhoto": "https://i.postimg.cc/5yXwGf3Z/cas.png",
+    "category": "FPS",
+    "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_2/",
+    "description": "Counter-Strike 2 refines tactical FPS gameplay with improved visuals, smoother mechanics, and realism.",
+    "ratings": "5",
+    "developer": "Valve",
+    "longDescription": [
+      "Step into the world of Counter-Strike 2, where tactical precision, strategy, and teamwork determine victory. Players choose between terrorists and counter-terrorists to complete objectives in intense multiplayer matches.",
+      "Advanced mechanics and refined visuals enhance gameplay, while maps demand skillful navigation, coordination, and critical decision-making under pressure.",
+      "With competitive play at its core, Counter-Strike 2 rewards strategy, accuracy, and communication, offering a thrilling experience for both casual and professional players in the ever-evolving FPS landscape."
+    ],
+    "characters": [
+      {
+        "name": "Ghost",
+        "bio": [
+          "A stealth expert in Counter-Strike 2, Ghost excels in infiltration and silent takedowns, blending strategy and precision.",
+          "His tactical prowess and adaptability make him an invaluable member of any operation, capable of turning the tide of battle."
+        ],
+        "image": "https://i.postimg.cc/RVWQ7Xdv/2151278548.jpg"
+      },
+      {
+        "name": "Phoenix",
+        "bio": [
+          "An expert in bomb defusal and tactical execution, Phoenix thrives under pressure, coordinating with team members.",
+          "His experience and leadership in high-stakes situations ensure mission success and strategic dominance on the battlefield."
+        ],
+        "image": "https://i.postimg.cc/4NcBcXs2/178851536-10732360.png"
+      }
+    ]
   },
   {
-    "id": "11",
-    "title": "Elden Ring",
-    "coverPhoto": "https://i.postimg.cc/DZkkmzJy/elden.jpg",
-    "category": "RPG",
-    "downloadLink": "https://en.bandainamcoent.eu/elden-ring/elden-ring",
-    "description": "Elden Ring blends deep lore, brutal combat, and an open world designed by FromSoftware.",
-    "ratings": "4.7",
-    "developer": "FromSoftware"
+    "id": "4",
+    "title": "PlayerUnknown’s Battlegrounds",
+    "coverPhoto": "https://i.postimg.cc/MHpBBqNt/pubg.jpg",
+    "category": "Battle",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG is a fast-paced battle royale where 100 players fight for survival using strategy, shooting, and teamwork.",
+    "ratings": "4.8",
+    "developer": "Krafton",
+    "longDescription": [
+      "Step into the adrenaline-fueled world of PUBG, a battle royale where 100 players fight to be the last one standing. Every match challenges your strategy, reflexes, and decision-making in a dynamic environment filled with weapons, loot, and tactical opportunities.",
+      "Players must scavenge, collaborate, and outsmart opponents across vast terrains, balancing survival instincts with offensive strategies. Quick thinking and adaptability are crucial to navigating unpredictable encounters and changing zones.",
+      "PUBG blends intense combat, strategic depth, and social interaction. Each match is a unique experience where skill, timing, and situational awareness determine who claims victory in the ultimate survival showdown."
+    ],
+    "characters": [
+      {
+        "name": "Victor Cross",
+        "bio": [
+          "Victor Cross is a former special forces operative with unmatched stealth and reconnaissance skills, navigating the battleground with precision and tactical awareness.",
+          "His experience in high-stakes combat allows him to anticipate threats, outmaneuver opponents, and survive in chaotic encounters, making him a formidable competitor."
+        ],
+        "image": "https://i.postimg.cc/Hny4btDJ/ai-generated-7884416-640.jpg"
+      },
+      {
+        "name": "Lena Frost",
+        "bio": [
+          "Lena Frost is a survivalist expert known for sharp shooting and a keen sense of danger in combat, always staying one step ahead.",
+          "Her tactical instincts, combined with resourcefulness, enable her to navigate unpredictable situations, ensuring survival and operational success in every engagement."
+        ],
+        "image": "https://i.postimg.cc/0270QZCy/2150985635.jpg"
+      }
+    ]
   },
   {
-    "id": "12",
+    "id": "5",
+    "title": "Fortnite Royale",
+    "coverPhoto": "https://i.postimg.cc/tRWwvy13/fortnight.jpg",
+    "category": "Battle",
+    "downloadLink": "https://www.epicgames.com/fortnite/",
+    "description": "Fortnite mixes shooting, building, and creativity in one of the most iconic battle royale experiences.",
+    "ratings": "4.9",
+    "developer": "Epic Games",
+    "longDescription": [
+      "Fortnite Royale immerses players in a vibrant battle royale world where creativity and combat collide. Construct defenses, gather resources, and adapt to dynamic zones in fast-paced matches.",
+      "Players must combine building skills with strategic shooting, scouting opponents, and leveraging the environment to secure victory. Constantly shrinking zones demand adaptability and quick decision-making.",
+      "The game offers a colorful, engaging experience with unique events, diverse skins, and multiplayer interaction. Success requires a blend of tactical skill, creativity, and reflexes, making every match an intense, dynamic adventure."
+    ],
+    "characters": [
+      {
+        "name": "Jonesy",
+        "bio": [
+          "Jonesy is a versatile soldier embodying Fortnite’s hero roster, ready to adapt to challenges and combat scenarios.",
+          "His agility, creativity, and strategic thinking make him an essential player, capable of turning chaotic battles into victories."
+        ],
+        "image": "https://i.postimg.cc/cCy8Gy2h/2151278795.jpg"
+      },
+      {
+        "name": "Peely",
+        "bio": [
+          "Peely is a sentient banana with combat skills and quirky personality, bringing both humor and skill to the battlefield.",
+          "His unpredictable movements and playful tactics make him an unconventional but effective competitor in Fortnite matches."
+        ],
+        "image": "https://i.postimg.cc/8Cx7Lg1m/ai-generated-7934824-640.jpg"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Valorant Riot Gear",
+    "coverPhoto": "https://i.postimg.cc/7hGcq89M/1103306-valorant-le-jeu-video-signe-riot-games-est-disponible.jpg",
+    "category": "Tactical",
+    "downloadLink": "https://playvalorant.com/",
+    "description": "Valorant combines precise gunplay with unique hero abilities in a competitive tactical shooter.",
+    "ratings": "5",
+    "developer": "Riot Games",
+    "longDescription": [
+      "Valorant Riot Gear is a tactical shooter emphasizing teamwork, precise shooting, and hero abilities. Players must coordinate strategies, control key points, and use their agent’s unique powers effectively.",
+      "Every match challenges reflexes, positioning, and communication, requiring adaptability under pressure. Map knowledge and skillful execution are key to securing victories in competitive matches.",
+      "Valorant combines classic gunplay with unique abilities, creating intense tactical depth. Each agent brings a different playstyle, making every game strategically rich, exciting, and rewarding for skilled players."
+    ],
+    "characters": [
+      {
+        "name": "Jett",
+        "bio": [
+          "Jett is a nimble duelist excelling in swift strikes and evasive maneuvers, making her deadly in agile combat.",
+          "Her agility, precision, and tactical acumen allow her to outmaneuver opponents and create opportunities for her team."
+        ],
+        "image": "https://i.postimg.cc/HkxnKkn9/ai-generated-8015427-640.jpg"
+      },
+      {
+        "name": "Phoenix",
+        "bio": [
+          "Phoenix is a fiery agent specializing in offensive plays and area control, dominating the battlefield with skill and flair.",
+          "His expertise in timing, abilities, and positioning makes him a powerful force in shaping match outcomes."
+        ],
+        "image": "https://i.postimg.cc/YCh2RDDD/ai-generated-8170159-640.jpg"
+      }
+    ]
+  },
+  {
+    "id": "7",
     "title": "God of War Ragnarok",
     "coverPhoto": "https://i.postimg.cc/XvT3F8PH/rag.jpg",
     "category": "Action",
     "downloadLink": "https://www.playstation.com/games/god-of-war-ragnarok/",
     "description": "Kratos and Atreus return in an epic journey across the Norse realms to face destiny.",
     "ratings": "4.9",
-    "developer": "Santa Monica Studio"
+    "developer": "Santa Monica Studio",
+    "longDescription": [
+      "God of War Ragnarok continues the saga of Kratos and Atreus, delivering a blend of mythological storytelling, intense combat, and intricate puzzles across Norse realms.",
+      "Players navigate massive landscapes, battle formidable enemies, and experience emotional depth in a rich narrative, combining exploration and epic confrontations.",
+      "The game challenges players to think strategically, utilize weapons effectively, and solve environmental puzzles. Every encounter requires skill, timing, and tactical decision-making in a story-driven epic adventure."
+    ],
+    "characters": [
+      {
+        "name": "Kratos",
+        "bio": [
+          "Kratos is a fierce warrior of unmatched strength and determination, leading battles and guiding his son through perilous journeys.",
+          "His mastery of combat, strategy, and endurance shapes the outcome of epic confrontations and narrative challenges in the Norse world."
+        ],
+        "image": "https://i.postimg.cc/90LVtydR/ai-generated-8284506-640.jpg"
+      },
+      {
+        "name": "Atreus",
+        "bio": [
+          "Atreus is Kratos’ son, skilled with bow and strategy, learning to navigate the complex world of gods and mortals.",
+          "His growth, intelligence, and courage contribute to both tactical engagements and the unfolding epic story alongside his father."
+        ],
+        "image": "https://i.postimg.cc/hP3cXb4H/ai-generated-8303928-640.png"
+      }
+    ]
   },
   {
-    "id": "13",
-    "title": "Red Dead Redemption 2",
-    "coverPhoto": "https://i.postimg.cc/7hrHvVMz/red.jpg",
-    "category": "Adventure",
-    "downloadLink": "https://www.rockstargames.com/reddeadredemption2/",
-    "description": "RDR2 delivers an emotional Western epic in a beautifully crafted open world.",
-    "ratings": "4.8",
-    "developer": "Rockstar Games"
-  },
-  {
-    "id": "14",
-    "title": "The Witcher 3: Wild Hunt",
-    "coverPhoto": "https://i.postimg.cc/x8Ldq7Tb/geralt-of-rivia-the-3840x2160-14024.jpg",
-    "category": "RPG",
-    "downloadLink": "https://thewitcher.com/en/witcher3",
-    "description": "The Witcher 3 is a masterpiece RPG filled with rich storytelling and monster hunting.",
-    "ratings": "4.9",
-    "developer": "CD Projekt Red"
-  },
-  {
-    "id": "15",
-    "title": "League of Legends",
-    "coverPhoto": "https://i.postimg.cc/BvhPGdXC/lol.jpg",
-    "category": "MOBA",
-    "downloadLink": "https://www.leagueoflegends.com/",
-    "description": "LoL is a competitive 5v5 MOBA where strategy, teamwork, and skill decide victory.",
-    "ratings": "4.6",
-    "developer": "Riot Games"
-  },
-  {
-    "id": "16",
-    "title": "Dota 2",
-    "coverPhoto": "https://i.postimg.cc/tRcJk3Vf/dota.jpg",
-    "category": "MOBA",
-    "downloadLink": "https://www.dota2.com/",
-    "description": "Dota 2 is a deep and complex strategy MOBA with intense team battles.",
-    "ratings": "4.5",
-    "developer": "Valve"
-  },
-  {
-    "id": "17",
-    "title": "Overwatch 2",
-    "coverPhoto": "https://i.postimg.cc/j5Q6N85L/Ovarwatch.webp",
-    "category": "Hero",
-    "downloadLink": "https://overwatch.blizzard.com/",
-    "description": "Overwatch 2 brings high-speed, colorful team combat with new heroes and modes.",
-    "ratings": "4.4",
-    "developer": "Blizzard Entertainment"
-  },
-  {
-    "id": "18",
-    "title": "Assassin’s Creed Mirage",
-    "coverPhoto": "https://i.postimg.cc/WzgBMcZm/assasins.jpg",
-    "category": "Action",
-    "downloadLink": "https://www.ubisoft.com/en-us/game/assassins-creed/mirage",
-    "description": "A return to stealth roots, Assassin’s Creed Mirage takes players to ancient Baghdad.",
-    "ratings": "4.5",
-    "developer": "Ubisoft"
-  },
-  {
-    "id": "19",
+    "id": "8",
     "title": "Legend of Zelda",
     "coverPhoto": "https://i.postimg.cc/MTWfkz6p/Tears-of-the-Kingdom-wallpaper-1170x720.jpg",
     "category": "Adventure",
     "downloadLink": "https://www.zelda.com/tears-of-the-kingdom/",
     "description": "Zelda: TOTK continues Link’s journey with physics-based puzzles and vast exploration.",
     "ratings": "4.9",
-    "developer": "Nintendo"
+    "developer": "Nintendo",
+    "longDescription": [
+      "The Legend of Zelda: TOTK invites players into an expansive adventure filled with exploration, puzzles, and dynamic combat. Traverse diverse landscapes, interact with NPCs, and uncover secrets in Hyrule.",
+      "Players control Link, navigating environmental challenges and complex dungeons. Strategic thinking, timing, and curiosity are rewarded as every discovery enriches the journey.",
+      "Zelda blends immersive storytelling with action and problem-solving. Epic quests, hidden treasures, and magical encounters create a rich, engaging world that challenges players and rewards exploration and ingenuity."
+    ],
+    "characters": [
+      {
+        "name": "Link",
+        "bio": [
+          "Link is the courageous hero of Hyrule, skilled with sword, shield, and bow, facing countless dangers and enemies.",
+          "His bravery, resourcefulness, and sense of duty guide him through epic quests, overcoming challenges to save the kingdom."
+        ],
+        "image": "https://i.postimg.cc/tTyHKBD3/ai-generated-8406933-640.jpg"
+      },
+      {
+        "name": "Zelda",
+        "bio": [
+          "Zelda is the wise and powerful princess of Hyrule, aiding Link with magic, strategy, and guidance throughout perilous adventures.",
+          "Her intellect and abilities provide critical support, shaping outcomes and assisting in the defense of her kingdom."
+        ],
+        "image": "https://i.postimg.cc/3wQMGtsX/ai-generated-8702979-640.png"
+      }
+    ]
   },
   {
-    "id": "20",
+    "id": "9",
+    "title": "Overwatch 2",
+    "coverPhoto": "https://i.postimg.cc/j5Q6N85L/Ovarwatch.webp",
+    "category": "Hero",
+    "downloadLink": "https://overwatch.blizzard.com/",
+    "description": "Overwatch 2 brings high-speed, colorful team combat with new heroes and modes.",
+    "ratings": "4.4",
+    "developer": "Blizzard Entertainment",
+    "longDescription": [
+      "Overwatch 2 brings exhilarating team-based combat where each hero's abilities matter, offering diverse strategies and thrilling gameplay across dynamic maps.",
+      "Players coordinate to secure objectives, execute fast-paced attacks, and adapt to constantly shifting battle conditions, demanding tactical acumen and split-second reflexes.",
+      "The game's vibrant environments, seasonal events, and ongoing hero updates ensure endless engagement, rewarding skillful play and collaboration in high-stakes matches."
+    ],
+    "characters": [
+      {
+        "name": "Tracer",
+        "bio": [
+          "Tracer zips through the battlefield with unmatched speed and agility, executing daring maneuvers that confound opponents and create chaos in the enemy ranks.",
+          "Her time-jumping ability allows her to evade attacks and reposition for precise strikes, making her a master of hit-and-run tactics in any scenario."
+        ],
+        "image": "https://i.postimg.cc/k5vHbqFr/ai-generated-8763398-640.jpg"
+      },
+      {
+        "name": "Reinhardt",
+        "bio": [
+          "Reinhardt towers as a bastion of defense, using his massive hammer and protective barrier to shield allies and push through enemy lines with relentless force.",
+          "His strategic presence on the battlefield turns the tide of conflicts, combining brute strength with careful timing to control engagements and objectives effectively."
+        ],
+        "image": "https://i.postimg.cc/rw8Z2vLM/ai-generated-8899413-640.jpg"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Assassin’s Creed Mirage",
+    "coverPhoto": "https://i.postimg.cc/WzgBMcZm/assasins.jpg",
+    "category": "Action",
+    "downloadLink": "https://www.ubisoft.com/en-us/game/assassins-creed/mirage",
+    "description": "Assassin’s Creed Mirage emphasizes stealth, parkour, and tactical assassinations in ancient Baghdad.",
+    "ratings": "4.5",
+    "developer": "Ubisoft",
+    "longDescription": [
+      "Assassin’s Creed Mirage immerses players in ancient Baghdad, delivering a rich tapestry of stealth missions, parkour traversal, and strategic assassinations.",
+      "Players navigate bustling streets and hidden alleys, leveraging shadows and intelligence to outmaneuver guards and complete critical objectives.",
+      "The game combines historical authenticity with dynamic gameplay, offering engaging narratives and opportunities for clever problem-solving that test both skill and wit."
+    ],
+    "characters": [
+      {
+        "name": "Basim Ibn Ishaq",
+        "bio": [
+          "Basim Ibn Ishaq moves silently through the city, blending into crowds and striking with precision to eliminate targets efficiently and without detection.",
+          "His mastery of stealth and parkour allows him to navigate complex environments, using shadows and timing to accomplish daring missions flawlessly."
+        ],
+        "image": "https://i.postimg.cc/d326z9Hy/ai-generated-8941651-640.jpg"
+      },
+      {
+        "name": "Roshan",
+        "bio": [
+          "Roshan mentors aspiring assassins, imparting crucial skills for stealth, combat, and strategic thinking to ensure mission success.",
+          "His guidance balances discipline with creativity, preparing operatives to adapt to rapidly changing situations in dangerous urban landscapes."
+        ],
+        "image": "https://i.postimg.cc/c4cThXtk/ai-generated-8992793-640.jpg"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Elden Ring",
+    "coverPhoto": "https://i.postimg.cc/yxhqvc00/lol.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+    "description": "Elden Ring blends open-world exploration with brutal combat in a dark fantasy realm.",
+    "ratings": "4.8",
+    "developer": "FromSoftware",
+    "longDescription": [
+      "Elden Ring delivers a massive, interconnected world filled with danger, mystery, and myth. Players explore vast landscapes, uncover hidden dungeons, and face monstrous foes in a hauntingly beautiful setting.",
+      "Combat emphasizes precision and timing, combining swordplay, sorcery, and stealth for diverse strategic options. The open world invites players to experiment with builds, weapons, and playstyles.",
+      "FromSoftware’s signature difficulty and storytelling blend seamlessly into an epic experience that rewards exploration, persistence, and mastery of its unforgiving world."
+    ],
+    "characters": [
+      {
+        "name": "Tarnished",
+        "bio": [
+          "The Tarnished is a fallen hero seeking to restore their grace and claim the title of Elden Lord. They wield a mix of weapons and sorceries, adapting to any challenge.",
+          "Their journey is one of redemption, courage, and relentless pursuit of power through a world that tests every ounce of willpower."
+        ],
+        "image": "https://i.postimg.cc/c4cThXtk/ai-generated-8992793-640.jpg"
+      },
+      {
+        "name": "Melina",
+        "bio": [
+          "Melina serves as the guide and companion of the Tarnished, offering strength and insight while harboring secrets of her own.",
+          "Her calm wisdom and mysterious nature make her both an emotional anchor and a symbol of sacrifice within the dark saga of the Lands Between."
+        ],
+        "image": "https://i.postimg.cc/y81KpQQx/woman-7740264-640.jpg"
+      }
+    ]
+  },
+  {
+    "id": "12",
     "title": "Grand Theft Auto V",
     "coverPhoto": "https://i.postimg.cc/NFcJv9KW/gta.webp",
     "category": "Open World",
     "downloadLink": "https://www.rockstargames.com/gta-v",
     "description": "GTA V is an iconic open-world action game full of freedom, chaos, and storytelling.",
     "ratings": "4.8",
-    "developer": "Rockstar Games"
+    "developer": "Rockstar Games",
+    "longDescription": [
+      "GTA V immerses players in a sprawling modern city where three protagonists navigate crime, heists, and intricate storylines.",
+      "The game blends freedom, dynamic events, and interactive environments, offering countless opportunities for exploration, strategy, and chaos.",
+      "Players experience complex narratives, diverse activities, and emergent gameplay, combining action, humor, and social interactions for a rich open-world experience."
+    ],
+    "characters": [
+      {
+        "name": "Michael De Santa",
+        "bio": [
+          "Michael De Santa balances family life with a hidden criminal past, using cunning and skill to execute high-stakes heists.",
+          "His strategic thinking and adaptability make him a formidable figure in both urban adventures and intricate operations."
+        ],
+        "image": "https://i.postimg.cc/Xq4dy6LM/fantasy-8793546-640.jpg"
+      },
+      {
+        "name": "Trevor Philips",
+        "bio": [
+          "Trevor Philips thrives in chaos, bringing unpredictability and aggression to criminal endeavors across the city.",
+          "His fearless, impulsive nature creates both opportunities and dangers, making him a volatile yet indispensable ally in high-risk operations."
+        ],
+        "image": "https://i.postimg.cc/ZKY6bZ06/robot-8043131-640.jpg"
+      }
+    ]
   }
 ]

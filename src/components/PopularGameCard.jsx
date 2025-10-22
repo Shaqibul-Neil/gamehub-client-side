@@ -1,7 +1,10 @@
 import { Star } from "lucide-react";
+import { Link } from "react-router";
+import slugify from "slugify";
 
 const PopularGameCard = ({ game }) => {
   const { title, coverPhoto, category, ratings, description } = game || {};
+
   return (
     <div className="card bg-base-100 shadow-md shadow-cyan-600 overflow-hidden group">
       <figure className="overflow-hidden">
@@ -24,9 +27,15 @@ const PopularGameCard = ({ game }) => {
             </span>
             <p className="text-xl text-primary">{ratings}</p>
           </div>
-          <button className="btn btn-success text-black border-3 w-32 border-rounded-lg border-success hover:bg-white rounded-md font-semibold transition-colors duration-300">
+          <Link
+            className="btn btn-success text-black border-3 w-32 border-rounded-lg border-success hover:bg-white rounded-md font-semibold transition-colors duration-300"
+            to={`/game-details/${slugify(title, {
+              lower: true,
+              strict: true,
+            })}`}
+          >
             View Details
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -12,6 +12,8 @@ import SignUp from "../pages/SignUp";
 import ForgetPassword from "../pages/ForgetPassword";
 import MyProfile from "../pages/MyProfile";
 import UpdateProfile from "../pages/UpdateProfile";
+import GameDetails from "../pages/GameDetails";
+import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
   {
@@ -56,11 +58,27 @@ const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        Component: MyProfile,
+        element: (
+          <PrivateRoutes>
+            <MyProfile></MyProfile>
+          </PrivateRoutes>
+        ),
       },
       {
         path: "/update-profile",
-        Component: UpdateProfile,
+        element: (
+          <PrivateRoutes>
+            <UpdateProfile></UpdateProfile>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/game-details/:title",
+        element: (
+          <PrivateRoutes>
+            <GameDetails></GameDetails>
+          </PrivateRoutes>
+        ),
       },
     ],
   },

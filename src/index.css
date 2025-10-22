@@ -27,9 +27,7 @@ header {
 .myBtn {
   @apply btn btn-success text-black border-3 w-24 border-success  hover:bg-white rounded-md font-semibold transition-colors duration-300;
 }
-.subscribe {
-  @apply;
-}
+
 /* Slide-in animation */
 /* Default: hidden and below position */
 .left-content {

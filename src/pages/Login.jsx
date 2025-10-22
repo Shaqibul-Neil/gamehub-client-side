@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import lol from "../assets/lol.jpg";
 import Container from "../components/Container";
 import { useContext, useRef, useState } from "react";
@@ -13,6 +13,8 @@ const Login = () => {
   const { signInGoogle, setUserLoading, logInUser, setUser, setForgetEmail } =
     useContext(AuthContext);
   const navigate = useNavigate();
+  const location = useLocation();
+  console.log(location);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -35,6 +37,7 @@ const Login = () => {
       .then((res) => {
         setUser(res.user);
         toast.success("Welcome Back to the battlefield, Warrior ⚔️");
+        navigate(location?.state || "/");
       })
       .catch((err) => {
         if (err.code === "auth/invalid-credential") {

@@ -20,7 +20,7 @@ const slides = [
     link: "/games",
   },
   {
-    title: "Call of Duty: Warzone",
+    title: "Counter Strike 2",
     subtitle: "Enter the battlefield of chaos.",
     img: cas,
     link: "/games",
