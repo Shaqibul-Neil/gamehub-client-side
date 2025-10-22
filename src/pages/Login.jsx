@@ -44,7 +44,7 @@ const Login = () => {
           });
           return;
         }
-        toast.error(err.message);
+        toast.error("⚔️ Mission failed: " + err.message);
       });
   };
 
@@ -55,7 +55,7 @@ const Login = () => {
         setUserLoading(false);
         toast.success("Google verified your soul 👾 — you're in!");
       })
-      .catch((err) => toast.error(err.message));
+      .catch((err) => toast.error("⚔️ Mission failed: " + err.message));
   };
 
   //forget password

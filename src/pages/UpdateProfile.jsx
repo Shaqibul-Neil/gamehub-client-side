@@ -1,7 +1,26 @@
 import Container from "../components/Container";
 import obg2 from "../assets/obg2.png";
+import { useContext } from "react";
+import AuthContext from "../contexts/AuthContext";
+import toast from "react-hot-toast";
 
 const UpdateProfile = () => {
+  const { updateUserProfile, setUserLoading } = useContext(AuthContext);
+
+  const handleUpdateInfo = (e) => {
+    e.preventDefault();
+    const displayName = e.target.name.value || "";
+    const photoURL = e.target.photo.value || "";
+    updateUserProfile(displayName, photoURL)
+      .then(() => {
+        setUserLoading(false);
+        toast.success(
+          "⚡ Profile Upgraded Successfully! Your avatar's aura just got stronger, warrior!"
+        );
+      })
+      .catch((err) => toast.error("⚔️ Mission failed: " + err.message));
+  };
+
   return (
     <div
       className="relative w-full bg-cover bg-center py-16"
@@ -9,7 +28,7 @@ const UpdateProfile = () => {
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 mix-blend-multiply"></div>
-      <div className="absolute inset-0 bg-linear-to-r from-[-[#6C63FF]/60 to-[#00FFE0]/60 mix-blend-multiply"></div>
+      <div className="absolute inset-0 bg-linear-to-r from-[#6C63FF]/60 to-[#00FFE0]/60 mix-blend-multiply"></div>
 
       <Container>
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 py-12">
@@ -47,7 +66,7 @@ const UpdateProfile = () => {
             <h2 className="text-2xl font-semibold text-center text-white">
               Update Information
             </h2>
-            <form className="space-y-5">
+            <form className="space-y-5" onSubmit={handleUpdateInfo}>
               {/* Name */}
               <div className="relative">
                 <label className="block text-base mb-1 text-white">Name</label>
@@ -66,7 +85,7 @@ const UpdateProfile = () => {
                 </label>
                 <input
                   type="text"
-                  name="photoURL"
+                  name="photo"
                   placeholder="Enter photo URL"
                   className="w-full bg-white/20 placeholder-gray-300 border-b-2 border-white/30 focus:outline-none focus:border-cyan-400 transition-all duration-200 p-2 text-white"
                 />

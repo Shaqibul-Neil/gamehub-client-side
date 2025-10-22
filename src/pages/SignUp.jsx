@@ -56,14 +56,16 @@ const SignUp = () => {
               navigate("/login");
             });
           })
-          .catch((err) => toast.error(err.message));
+          .catch((err) => toast.error("⚔️ Mission failed: " + err.message));
       })
       .catch((err) => {
         if (err.code === "auth/email-already-in-use") {
-          toast.error("That email's already taken, recruit ⚠️");
+          toast.error(
+            "⚔️ Mission failed: That email's already taken, recruit ⚠️"
+          );
           return;
         }
-        toast.error(err.message);
+        toast.error("⚔️ Mission failed: " + err.message);
       });
   };
 

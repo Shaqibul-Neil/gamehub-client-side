@@ -7,7 +7,6 @@ import toast from "react-hot-toast";
 
 const Navbar = () => {
   const { user, logOutUser, setUser } = useContext(AuthContext);
-  console.log(user);
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -17,7 +16,7 @@ const Navbar = () => {
         toast.success("⚔️ Warrior has left the arena! See you next battle!");
         navigate("/");
       })
-      .catch((err) => toast.error(err.message));
+      .catch((err) => toast.error("⚔️ Mission failed: " + err.message));
   };
   return (
     <div className="navbar lg:py-6 md:py-4 md:px-0 px-2">
