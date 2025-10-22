@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 
 const Navbar = () => {
   const { user, logOutUser, setUser } = useContext(AuthContext);
+  console.log(user);
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -62,13 +63,7 @@ const Navbar = () => {
               <MyLinks to={"/community"}>Community</MyLinks>
             </li>
             {user ? (
-              <>
-                <li>
-                  <button onClick={handleLogout} className={"text-secondary"}>
-                    Logout
-                  </button>
-                </li>
-              </>
+              <></>
             ) : (
               <>
                 <li>
@@ -118,6 +113,13 @@ const Navbar = () => {
           {user ? (
             <>
               <li>
+                <img
+                  src={user.photoURL}
+                  alt=""
+                  className="w-8 h-8 rounded-full"
+                />
+              </li>
+              <li>
                 <button
                   onClick={handleLogout}
                   className={
@@ -153,6 +155,29 @@ const Navbar = () => {
             </>
           )}
         </ul>
+      </div>
+      <div className="navbar-end lg:hidden">
+        {user ? (
+          <ul className="flex items-center gap-2 md:gap-4">
+            <li>
+              <img
+                src={user.photoURL}
+                alt=""
+                className="w-8 h-8 rounded-full"
+              />
+            </li>
+            <li>
+              <button
+                onClick={handleLogout}
+                className="btn btn-success text-black border-3 w-16 md:w-20 border-success  hover:bg-white rounded-md font-semibold transition-colors duration-300"
+              >
+                Logout
+              </button>
+            </li>
+          </ul>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
