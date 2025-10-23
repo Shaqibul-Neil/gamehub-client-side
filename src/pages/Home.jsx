@@ -1,4 +1,5 @@
 import HomeBanner from "../components/HomeBanner";
+import NewReleaseGames from "../components/NewReleaseGames";
 import NewsLetter from "../components/NewsLetter";
 import PopularGameCards from "../components/PopularGameCards";
 
@@ -9,8 +10,11 @@ const Home = () => {
       <div>
         <HomeBanner />
       </div>
-      <div className="lg:py-32 py-20">
+      <div className="lg:pt-32 pt-20">
         <PopularGameCards />
+      </div>
+      <div className="lg:pb-56 py-20 lg:-mt-24">
+        <NewReleaseGames />
       </div>
       <div className="relative">
         <NewsLetter />

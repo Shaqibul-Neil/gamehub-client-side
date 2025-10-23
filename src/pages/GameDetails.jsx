@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { Link, useParams } from "react-router";
 import AuthContext from "../contexts/AuthContext";
 import slugify from "slugify";
-import GameError from "./GameError";
 import GameDetailsLoading from "../components/GameDetailsLoading";
 import Container from "../components/Container";
 import { ScrollText } from "lucide-react";
