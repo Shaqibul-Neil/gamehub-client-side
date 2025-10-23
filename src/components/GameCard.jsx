@@ -11,7 +11,7 @@ const GameCard = ({ game }) => {
   return (
     <div className="scroll-section">
       <div
-        className={`flex items-center md:p-8 p-2 gap-8 lg:flex-row flex-col ${
+        className={`flex items-center md:p-8 p-2 gap-8 lg:flex-row flex-col border-gray-600 ${
           isEven
             ? "lg:flex-row-reverse border-t-2 border-r-2"
             : "border-b-2 border-l-2"
@@ -36,14 +36,14 @@ const GameCard = ({ game }) => {
             </p>
           </div>
 
-          <p className="mt-4">{game?.description}</p>
+          <p className="mt-4 text-gray-400">{game?.description}</p>
 
-          <p className="text-md">
+          <p className="text-md text-gray-200">
             Developed By :{" "}
             <span className="text-success audiowide">{game?.developer}</span>
           </p>
           <div>
-            <p className="text-xl my-4 pb-2 border-b w-48">
+            <p className="text-xl my-4 pb-2 border-b w-48 text-gray-200">
               Main Characters :{" "}
             </p>
             <div className="flex flex-col gap-4">

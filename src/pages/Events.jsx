@@ -128,7 +128,7 @@ const Events = () => {
       <title>GameHub - Events</title>
 
       {/* Hero Section */}
-      <div className="relative w-full h-[60vh] bg-black scroll-section">
+      <div className="relative w-full h-[80vh] bg-black scroll-section">
         <img
           src={event}
           alt="Game Events Banner"

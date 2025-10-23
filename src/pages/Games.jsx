@@ -11,11 +11,11 @@ const Games = () => {
   if (gameError) return <ErrorPage />;
 
   return (
-    <div>
+    <div className="pb-24">
       <title>GameHub - Games</title>
       {/* Hero Section */}
       <div
-        className="relative w-full bg-cover bg-center py-48 scroll-section"
+        className="relative w-full h-[80vh] bg-cover bg-center py-48 scroll-section"
         style={{ backgroundImage: `url(${tron})` }}
       >
         {/* Overlay */}
