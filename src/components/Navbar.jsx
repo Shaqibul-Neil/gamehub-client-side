@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 const Navbar = () => {
   const { user, logOutUser, setUser } = useContext(AuthContext);
   const navigate = useNavigate();
-
+  console.log(user);
   const handleLogout = () => {
     logOutUser()
       .then(() => {
@@ -113,11 +113,14 @@ const Navbar = () => {
             <>
               <li>
                 <Link to={"/profile"}>
-                  <img
-                    src={user.photoURL}
-                    alt=""
-                    className="w-8 h-8 rounded-full"
-                  />
+                  <div className="w-10 h-10 p-1 rounded-full border-2 border-success flex justify-center items-center">
+                    <img
+                      src={user.photoURL || "https://i.pravatar.cc/150?img=3"}
+                      alt=""
+                      referrerPolicy="no-referrer"
+                      className="w-8 h-8 rounded-full"
+                    />
+                  </div>
                 </Link>
               </li>
               <li>
@@ -162,11 +165,14 @@ const Navbar = () => {
           <ul className="flex items-center gap-2 md:gap-4">
             <li>
               <Link to={"/profile"}>
-                <img
-                  src={user.photoURL}
-                  alt=""
-                  className="w-8 h-8 rounded-full"
-                />
+                <div className="w-10 h-10 p-1 rounded-full border-2 border-success flex justify-center items-center">
+                  <img
+                    src={user.photoURL || "https://i.pravatar.cc/150?img=3"}
+                    alt=""
+                    referrerPolicy="no-referrer"
+                    className="w-8 h-8 rounded-full"
+                  />
+                </div>
               </Link>
             </li>
             <li>

@@ -7,7 +7,7 @@ const gameNewData = [
   {
     id: 1,
     title: "Battlefield 6",
-    img: "https://example.com/images/battlefield6.jpg",
+    img: "https://i.postimg.cc/RZzMd48s/23275.jpg",
     longDescription:
       "Battlefield 6 brings the franchise back to its roots with massive multiplayer battles, realistic weapon mechanics, and immersive environments. Players can engage in large-scale warfare with destructible terrains and vehicles.",
     shortDescription:
@@ -19,7 +19,7 @@ const gameNewData = [
   {
     id: 2,
     title: "Vampire: The Masquerade",
-    img: "https://example.com/images/vampire-masquerade.jpg",
+    img: "https://i.postimg.cc/9Q4GdP6B/7414.jpg",
     longDescription:
       "Dive into a dark world of vampires, politics, and supernatural powers. Explore your choices, build alliances, and manipulate the undead society while struggling with your own humanity.",
     shortDescription:
@@ -31,7 +31,7 @@ const gameNewData = [
   {
     id: 3,
     title: "Arc Raiders",
-    img: "https://example.com/images/arc-raiders.jpg",
+    img: "https://i.postimg.cc/VL2ScxhM/19874.jpg",
     longDescription:
       "Arc Raiders is a co-op action RPG where players battle alien creatures across different dimensions. Gather rare resources, upgrade your gear, and team up with friends to survive high-intensity missions.",
     shortDescription: "Co-op action RPG with alien battles and gear upgrades.",
@@ -42,7 +42,7 @@ const gameNewData = [
   {
     id: 4,
     title: "Cyberpunk Rebellion",
-    img: "https://example.com/images/cyberpunk-rebellion.jpg",
+    img: "https://i.postimg.cc/FF8Ffjx4/22860.jpg",
     longDescription:
       "Step into a neon-lit dystopia filled with cybernetic enhancements and rogue AI. Hack systems, complete missions, and navigate the moral grey of a futuristic city.",
     shortDescription: "Neon cyberpunk adventure with hacking and missions.",
@@ -53,7 +53,7 @@ const gameNewData = [
   {
     id: 5,
     title: "Mystic Legends",
-    img: "https://example.com/images/mystic-legends.jpg",
+    img: "https://i.postimg.cc/1zmyxMyY/n.jpg",
     longDescription:
       "An epic fantasy RPG where magic, mythical creatures, and legendary quests await. Build your hero, forge alliances, and change the fate of the realm.",
     shortDescription: "Fantasy RPG with magic, creatures, and epic quests.",
@@ -65,20 +65,20 @@ const gameNewData = [
 
 const NewReleaseGames = () => {
   return (
-    <div className="bg-[#1a1a1a] text-gray-100 p-5 md:p-8 max-w-7xl mx-auto shadow-2xl">
+    <div className="text-gray-100 p-5 md:p-8 max-w-7xl mx-auto shadow-md shadow-cyan-300 rounded-md">
       <Container>
-        <h2 className="text-secondary lg:text-5xl md:text-4xl audiowide text-3xl font-extrabold mb-5 pb-2 md:-ml-8 -ml-3 border-b-2 border-cyan-700/50 uppercase tracking-wider">
+        <h2 className="text-secondary lg:text-5xl md:text-4xl audiowide text-3xl font-extrabold mb-5 pb-4 md:-ml-8 -ml-3 border-b-2 border-cyan-700/50 uppercase tracking-wider text-center">
           NEW RELEASES
         </h2>
 
         <Tabs className="flex flex-col lg:flex-row gap-5">
-          {/* Left Sidebar: Tabs */}
+          {/* Tabs */}
           <TabList className="flex-1 lg:min-w-[400px] flex flex-col">
             {gameNewData.map((game) => (
               <Tab
                 key={game.id}
                 className="flex items-center p-3 mb-2 rounded-md cursor-pointer transition-all duration-200 bg-gray-800 hover:bg-gray-700"
-                selectedClassName="bg-warning shadow-md ring-2 ring-cyan-500/50"
+                selectedClassName="bg-warning shadow-md ring-2 ring-white-500/50"
               >
                 <img
                   src={game.img}
@@ -98,7 +98,7 @@ const NewReleaseGames = () => {
             ))}
           </TabList>
 
-          {/* Right Panel: Content */}
+          {/*  Content */}
           <div className="flex-2 bg-gray-800 rounded-lg shadow-lg overflow-hidden relative min-h-[400px]">
             {gameNewData.map((game) => (
               <TabPanel key={game.id}>

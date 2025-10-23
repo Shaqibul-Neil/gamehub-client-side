@@ -23,7 +23,7 @@ const GameDetails = () => {
         <img
           src={particularGame?.coverPhoto}
           alt=""
-          className="w-full h-[80vh] object-contain lg:object-cover"
+          className="w-full h-[80vh] object-contain lg:object-fill"
         />
       </div>
       <Container className={"md:py-24 py-12"}>
