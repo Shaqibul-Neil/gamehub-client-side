@@ -1,0 +1,120 @@
+import React from "react";
+import Container from "./Container";
+import { MessageCircle } from "lucide-react";
+
+// Post Data
+const postData = [
+  {
+    category: "FPS",
+    categoryColor: "bg-cyan-500",
+    image: "https://i.postimg.cc/2jgybwXw/fantasy-style-fire.jpg",
+    title: "Mastering the Winter Battlefield",
+    longDescription:
+      "Learn key strategies to dominate Winter Edition maps. Tips include sniper positioning, stealth movement, and optimal loadouts to maximize impact. Follow these techniques to outperform opponents and lead your squad to victory in every battle scenario.",
+    date: "Dec 12, 2025",
+    comments: 14,
+  },
+  {
+    category: "Adventure",
+    categoryColor: "bg-orange-500",
+    image: "https://i.postimg.cc/Y0LcBQ60/woman-with-shield-b-her-head.jpg",
+    title: "Exploring Hidden Secrets of Eldoria",
+    longDescription:
+      "Step into Eldoria's hidden dungeons and treasure spots. This guide highlights secret collectibles, rare loot areas, and story-driven easter eggs. Perfect for adventurers aiming to complete the game 100% while enjoying every immersive narrative twist.",
+    date: "Nov 20, 2025",
+    comments: 9,
+  },
+  {
+    category: "RPG",
+    categoryColor: "bg-purple-500",
+    image: "https://i.postimg.cc/YqPMvqnZ/178851532-10732349-1.png",
+    title: "Leveling Fast in Mythic Quest",
+    longDescription:
+      "Optimized questing paths and rare item farming strategies. Save time, gain XP efficiently, and reach endgame content faster. Includes tips to avoid common pitfalls and maximize experience gain per hour in Mythic Quest's expansive world.",
+    date: "Oct 15, 2025",
+    comments: 7,
+  },
+  {
+    category: "MOBA",
+    categoryColor: "bg-green-500",
+    image: "https://i.postimg.cc/5N2KZBmL/fantasy-8790369-640.jpg",
+    title: "Top Hero Combos for Ranked Matches",
+    longDescription:
+      "Discover the best hero combinations for dominating ranked matches. Tips include lane control, ultimate timing, and team synergy strategies. Perfect for players aiming to climb the ranks with coordinated and efficient gameplay.",
+    date: "Sep 30, 2025",
+    comments: 5,
+  },
+];
+
+const RecentPosts = () => {
+  return (
+    <Container>
+      <div className="space-y-12">
+        <h2 className="text-secondary lg:text-5xl md:text-4xl audiowide text-3xl font-extrabold mb-5 pb-4 border-b-2 text-right border-cyan-700/50 uppercase tracking-wider">
+          Recent Posts
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
+          {postData.map((post, index) => (
+            <div
+              key={index}
+              className="flex flex-col md:flex-row bg-[#1c1c1c] rounded-lg shadow-md hover:shadow-cyan-300 transition-shadow duration-500 transform hover:-translate-y-1 overflow-hidden"
+            >
+              {/* Left: Image with Category + Comment */}
+              <div
+                className="relative w-full md:w-1/2 flex items-start"
+                style={{
+                  backgroundImage: `url(${post.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
+                {/* Category Badge */}
+                <div className="absolute top-4 left-4">
+                  <span
+                    className={`${post.categoryColor} text-white font-semibold px-3 py-1 text-xs rounded-md uppercase`}
+                  >
+                    {post.category}
+                  </span>
+                </div>
+
+                {/* Comment Icon */}
+                <div className="absolute bottom-4 right-4 flex items-center space-x-1 text-white text-sm bg-black/50 px-2 py-1 rounded-md backdrop-blur-sm">
+                  <MessageCircle className="w-4 h-4" />
+                  <span>{post.comments}</span>
+                </div>
+              </div>
+
+              {/* Right: Content */}
+              <div className="p-6 flex flex-col justify-between w-full md:w-1/2">
+                <h3 className="text-white text-lg font-bold mb-3 leading-tight uppercase">
+                  {post.title}
+                </h3>
+                <p className="text-gray-400 text-sm mb-4 line-clamp-5">
+                  {post.longDescription}
+                </p>
+                <div className="flex items-center justify-between mt-auto">
+                  <button className="bg-[#00FFE0] text-black hover:bg-white border-2 border-[#00FFE0] w-36 rounded-md font-semibold transition-colors duration-300 py-2 text-sm cursor-pointer">
+                    Click here to read
+                  </button>
+                  <span className="text-gray-500 text-xs flex items-center">
+                    <svg
+                      className="w-4 h-4 mr-1 fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M1 4c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 0v14h14V4H3zm2 4h10v2H5V8zm0 4h10v2H5v-2z" />
+                    </svg>
+                    {post.date}
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  );
+};
+
+export default RecentPosts;

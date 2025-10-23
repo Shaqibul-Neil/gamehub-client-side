@@ -13,7 +13,8 @@ const PrivateRoutes = ({ children }) => {
         <PacmanLoader color="#00f0ff" size={40} />
       </div>
     );
-  if (!user) <Navigate state={location.pathname} to={"/login"}></Navigate>;
+  if (!user)
+    return <Navigate state={location.pathname} to={"/login"}></Navigate>;
   return children;
 };
 

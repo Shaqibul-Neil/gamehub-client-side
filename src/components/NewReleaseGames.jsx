@@ -65,7 +65,7 @@ const gameNewData = [
 
 const NewReleaseGames = () => {
   return (
-    <div className="text-gray-100 p-5 md:p-8 max-w-7xl mx-auto shadow-md shadow-cyan-300 rounded-md">
+    <div className="text-gray-100 p-5 md:p-8 max-w-7xl mx-auto rounded-md">
       <Container>
         <h2 className="text-secondary lg:text-5xl md:text-4xl audiowide text-3xl font-extrabold mb-5 pb-4 md:-ml-8 -ml-3 border-b-2 border-cyan-700/50 uppercase tracking-wider text-center">
           NEW RELEASES
@@ -78,7 +78,7 @@ const NewReleaseGames = () => {
               <Tab
                 key={game.id}
                 className="flex items-center p-3 mb-2 rounded-md cursor-pointer transition-all duration-200 bg-gray-800 hover:bg-gray-700"
-                selectedClassName="bg-warning shadow-md ring-2 ring-white-500/50"
+                selectedClassName="bg-linear-to-r from-[#00FFE0] to-[#6C63FF] shadow-md ring-2 ring-white-500/50 text-black"
               >
                 <img
                   src={game.img}
@@ -86,11 +86,11 @@ const NewReleaseGames = () => {
                   className="w-16 h-16 object-cover mr-4 rounded-sm"
                 />
                 <div className="flex flex-col">
-                  <h3 className="text-sm md:text-base font-bold leading-tight">
+                  <h3 className="text-sm md:text-base font-bold leading-tight audiowide">
                     {game.title}
                   </h3>
-                  <p className="text-xs text-gray-300 mt-1">{game.category}</p>
-                  <p className="text-xs text-gray-400 mt-1">
+                  <p className="text-xs text-gray-500 mt-1">{game.category}</p>
+                  <p className="text-xs text-gray-600 mt-1">
                     ⭐ {game.rating} | {game.developer}
                   </p>
                 </div>
@@ -99,7 +99,7 @@ const NewReleaseGames = () => {
           </TabList>
 
           {/*  Content */}
-          <div className="flex-2 bg-gray-800 rounded-lg shadow-lg overflow-hidden relative min-h-[400px]">
+          <div className="flex-2 bg-gray-800 rounded-lg overflow-hidden relative min-h-[400px] shadow-sm shadow-cyan-300">
             {gameNewData.map((game) => (
               <TabPanel key={game.id}>
                 <div className="relative">
@@ -113,7 +113,7 @@ const NewReleaseGames = () => {
                   </span>
                 </div>
                 <div className="p-5 md:p-6">
-                  <h2 className="text-3xl font-extrabold text-white mb-3">
+                  <h2 className="text-3xl font-extrabold text-white mb-3 audiowide">
                     {game.title}
                   </h2>
                   <p className="text-gray-300 leading-relaxed mb-3">

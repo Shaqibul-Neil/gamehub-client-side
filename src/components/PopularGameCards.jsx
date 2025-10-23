@@ -10,7 +10,7 @@ const PopularGameCards = () => {
   // console.log(popularGames);
   return (
     <Container>
-      <div className="space-y-12 lg:mb-48">
+      <div className="space-y-12">
         <div>
           <h2 className="text-secondary lg:text-5xl md:text-4xl audiowide text-3xl font-extrabold mb-5 pb-4 border-b-2 text-center border-cyan-700/50 uppercase tracking-wider ml-2 md:ml-0">
             Popular Games
