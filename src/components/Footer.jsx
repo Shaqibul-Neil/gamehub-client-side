@@ -8,8 +8,8 @@ const Footer = () => {
           <Link className="link link-hover" to={"/about"}>
             About us
           </Link>
-          <Link className="link link-hover" to={"/new-releases"}>
-            New Releases
+          <Link className="link link-hover" to={"/games"}>
+            Games
           </Link>
           <Link className="link link-hover" to={"/events"}>
             Events

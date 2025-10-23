@@ -8,7 +8,6 @@ import toast from "react-hot-toast";
 const Navbar = () => {
   const { user, logOutUser, setUser } = useContext(AuthContext);
   const navigate = useNavigate();
-  console.log(user);
   const handleLogout = () => {
     logOutUser()
       .then(() => {
@@ -54,6 +53,9 @@ const Navbar = () => {
             </li>
             <li>
               <MyLinks to={"/games"}>Games</MyLinks>
+            </li>
+            <li>
+              <MyLinks to={"/upcoming-games"}>Upcoming</MyLinks>
             </li>
             <li>
               <MyLinks to={"/events"}>Events</MyLinks>
@@ -102,6 +104,9 @@ const Navbar = () => {
           </li>
           <li>
             <MyLinks to={"/games"}>Games</MyLinks>
+          </li>
+          <li>
+            <MyLinks to={"/upcoming-games"}>Upcoming</MyLinks>
           </li>
           <li>
             <MyLinks to={"/events"}>Events</MyLinks>

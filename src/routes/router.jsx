@@ -14,6 +14,7 @@ import GameDetails from "../pages/GameDetails";
 import PrivateRoutes from "./PrivateRoutes";
 import TermsConditions from "../pages/TermsConditions";
 import ErrorPage from "../pages/ErrorPage";
+import UpcomingRelease from "../pages/UpcomingRelease";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/games",
         Component: Games,
+      },
+      {
+        path: "/upcoming-games",
+        Component: UpcomingRelease,
       },
       {
         path: "/new-releases",

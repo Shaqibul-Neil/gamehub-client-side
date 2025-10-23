@@ -61,7 +61,7 @@ const Events = () => {
 
   const renderEvents = (title, data) => (
     <div className="space-y-16 my-20 scroll-section">
-      <h2 className="text-4xl text-success audiowide text-center underline underline-offset-8">
+      <h2 className="text-4xl text-white audiowide text-center underline underline-offset-8">
         {title}
       </h2>
       <div className="flex flex-col space-y-20 mt-12">
@@ -81,9 +81,7 @@ const Events = () => {
 
             {/* Right Text */}
             <div className="lg:w-1/2 w-full space-y-4">
-              <h2 className="text-3xl text-secondary audiowide">
-                {event.title}
-              </h2>
+              <h2 className="text-3xl text-success audiowide">{event.title}</h2>
               <p className="text-gray-300 text-lg leading-relaxed">
                 {event.description}
               </p>
