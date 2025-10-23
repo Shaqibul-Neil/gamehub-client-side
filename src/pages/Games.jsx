@@ -15,7 +15,7 @@ const Games = () => {
       <title>GameHub - Games</title>
       {/* Hero Section */}
       <div
-        className="relative w-full bg-cover bg-center py-48"
+        className="relative w-full bg-cover bg-center py-48 scroll-section"
         style={{ backgroundImage: `url(${tron})` }}
       >
         {/* Overlay */}
@@ -35,7 +35,7 @@ const Games = () => {
 
       {/* cards section */}
       <section className="mt-24 space-y-12">
-        <h2 className="text-success lg:text-4xl text-3xl flex items-center gap-2 justify-center">
+        <h2 className="text-success lg:text-4xl text-3xl flex items-center gap-2 justify-center scroll-section">
           <span className="md:flex hidden">
             <LandPlot size={32} />
           </span>

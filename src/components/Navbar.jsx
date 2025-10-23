@@ -113,12 +113,12 @@ const Navbar = () => {
             <>
               <li>
                 <Link to={"/profile"}>
-                  <div className="w-10 h-10 p-1 rounded-full border-2 border-success flex justify-center items-center">
+                  <div className="w-10 h-10 p-1 rounded-full flex justify-center items-center wave relative">
                     <img
                       src={user.photoURL || "https://i.pravatar.cc/150?img=3"}
                       alt=""
                       referrerPolicy="no-referrer"
-                      className="w-8 h-8 rounded-full"
+                      className="w-8 h-8 rounded-full relative z-10"
                     />
                   </div>
                 </Link>
@@ -165,12 +165,12 @@ const Navbar = () => {
           <ul className="flex items-center gap-2 md:gap-4">
             <li>
               <Link to={"/profile"}>
-                <div className="w-10 h-10 p-1 rounded-full border-2 border-success flex justify-center items-center">
+                <div className="w-10 h-10 p-1 rounded-full flex justify-center items-center wave relative">
                   <img
                     src={user.photoURL || "https://i.pravatar.cc/150?img=3"}
                     alt=""
                     referrerPolicy="no-referrer"
-                    className="w-8 h-8 rounded-full"
+                    className="w-8 h-8 rounded-full relative z-10"
                   />
                 </div>
               </Link>

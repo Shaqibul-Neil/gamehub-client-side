@@ -11,6 +11,7 @@ const Root = () => {
           <Navbar />
         </Container>
       </header>
+
       <main className="flex-1">
         <Outlet />
       </main>

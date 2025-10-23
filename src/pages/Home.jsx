@@ -9,19 +9,19 @@ const Home = () => {
   return (
     <section>
       <title>GameHub - Home</title>
-      <div>
+      <div className="scroll-section">
         <HomeBanner />
       </div>
-      <div className="lg:pt-32 pt-20">
+      <div className="lg:pt-32 pt-20 scroll-section">
         <UpcomingGames />
       </div>
       <div className="lg:pt-32 pt-20">
         <PopularGameCards />
       </div>
-      <div className="py-24 lg:py-36">
+      <div className="py-24 lg:py-36 scroll-section">
         <RecentPosts />
       </div>
-      <div className="lg:pb-64 py-20 lg:-mt-24">
+      <div className="lg:pb-64 py-20 lg:-mt-24 scroll-section">
         <NewReleaseGames />
       </div>
       <div className="relative">

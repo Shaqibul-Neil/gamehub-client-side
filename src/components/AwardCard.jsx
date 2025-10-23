@@ -1,7 +1,7 @@
 import { Play, TriangleRight, Medal } from "lucide-react";
 
 const AwardCard = ({ award }) => (
-  <div className="relative overflow-hidden rounded-lg shadow-2xl mb-10">
+  <div className="relative overflow-hidden rounded-lg shadow-2xl mb-10 scroll-section">
     <div className="absolute inset-0 bg-gray-900 bg-opacity-70">
       <img
         src={award.image}

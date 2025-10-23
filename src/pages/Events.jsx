@@ -1,6 +1,10 @@
 import event from "../assets/events.jpg";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 const Events = () => {
+  // Animate cards individually
+  useScrollAnimation(".scroll-section");
+
   const upcomingEvents = [
     {
       title: "Valorant World Championship",
@@ -56,7 +60,7 @@ const Events = () => {
   ];
 
   const renderEvents = (title, data) => (
-    <div className="space-y-16 my-20">
+    <div className="space-y-16 my-20 scroll-section">
       <h2 className="text-4xl text-success audiowide text-center underline underline-offset-8">
         {title}
       </h2>
@@ -126,7 +130,7 @@ const Events = () => {
       <title>GameHub - Events</title>
 
       {/* Hero Section */}
-      <div className="relative w-full h-[60vh] bg-black">
+      <div className="relative w-full h-[60vh] bg-black scroll-section">
         <img
           src={event}
           alt="Game Events Banner"

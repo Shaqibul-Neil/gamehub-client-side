@@ -15,6 +15,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../firebase/firebase.config";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 const googleProvider = new GoogleAuthProvider();
 
@@ -23,6 +24,9 @@ const AuthProvider = ({ children }) => {
   const [userLoading, setUserLoading] = useState(true);
   const [forgetEmail, setForgetEmail] = useState("");
   const { gamesData, gameLoading, gameError } = useGame();
+
+  // Scroll animation hook
+  useScrollAnimation();
 
   //create user
   const createUser = (email, password) => {

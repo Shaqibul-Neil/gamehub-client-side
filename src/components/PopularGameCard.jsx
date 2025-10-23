@@ -1,14 +1,17 @@
 import { Star } from "lucide-react";
 import { Link } from "react-router";
 import slugify from "slugify";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 const PopularGameCard = ({ game }) => {
+  // Animate cards individually
+  useScrollAnimation(".scroll-section");
   const { id, title, coverPhoto, category, ratings, description } = game || {};
   const isEven = id % 2 === 0;
 
   return (
     <div
-      className={`relative flex overflow-hidden group rounded-xl p-1 shadow-sm shadow-cyan-700`}
+      className={`relative flex overflow-hidden group rounded-xl p-1 shadow-sm shadow-cyan-700 scroll-section`}
     >
       {/* === Animated Glow Border Layer (only md+) === */}
       <div className="hidden lg:block absolute inset-0 rounded-xl overflow-hidden">

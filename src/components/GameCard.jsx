@@ -1,12 +1,15 @@
 import { SquareStar, Star } from "lucide-react";
 import { Link } from "react-router";
 import slugify from "slugify";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
 const GameCard = ({ game }) => {
+  // Animate cards individually
+  useScrollAnimation(".scroll-section");
   const isEven = game.id % 2 === 0;
 
   return (
-    <div>
+    <div className="scroll-section">
       <div
         className={`flex items-center md:p-8 p-2 gap-8 lg:flex-row flex-col ${
           isEven
