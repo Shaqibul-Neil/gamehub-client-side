@@ -3,7 +3,6 @@ import Root from "../layout/Root";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Login from "../pages/Login";
-import NewReleases from "../pages/NewReleases";
 import Events from "../pages/Events";
 import Games from "../pages/Games";
 import SignUp from "../pages/SignUp";
@@ -37,10 +36,6 @@ const router = createBrowserRouter([
       {
         path: "/upcoming-games",
         Component: UpcomingRelease,
-      },
-      {
-        path: "/new-releases",
-        Component: NewReleases,
       },
       {
         path: "/events",

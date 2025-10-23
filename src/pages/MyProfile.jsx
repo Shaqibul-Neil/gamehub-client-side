@@ -3,8 +3,11 @@ import AuthContext from "../contexts/AuthContext";
 import { Link } from "react-router";
 import ovg from "../assets/ovg.jpeg";
 import Container from "../components/Container";
+import { useState } from "react";
+import toast from "react-hot-toast";
 
 const MyProfilePage = () => {
+  const [showBorder, setShowBorder] = useState(false);
   const { user } = useContext(AuthContext);
 
   const profile = {
@@ -62,11 +65,19 @@ const MyProfilePage = () => {
           </div>
 
           {/* Right side: Profile card */}
-          <div className="w-full max-w-md backdrop-blur-2xl bg-white/15 border border-white/25 shadow-2xl rounded-2xl p-8">
+          <div
+            className={`w-full max-w-md bg-white/10 border border-white/25 transition-all duration-300 rounded-2xl p-8 ${
+              showBorder
+                ? "shadow-[0_0_10px_#00ffe0] backdrop-blur-xl"
+                : "backdrop-blur-md"
+            }`}
+          >
             {/* Header */}
             <div className="flex items-center space-x-4">
               <img
-                className="w-20 h-20 rounded-md border-2 border-cyan-500"
+                className={`w-20 h-20 rounded-md border-2 ${
+                  showBorder ? "border-cyan-500" : "border-gray-500"
+                }`}
                 src={profile.avatar}
                 alt={profile.username}
               />
@@ -77,8 +88,8 @@ const MyProfilePage = () => {
                   </h2>
                   <input
                     type="checkbox"
-                    defaultChecked
                     className="toggle toggle-success"
+                    onClick={() => setShowBorder(!showBorder)}
                   />
                 </div>
                 <p className="text-white/80">{profile.email}</p>
@@ -89,17 +100,33 @@ const MyProfilePage = () => {
             <div className="mt-6 grid grid-cols-3 text-center text-white">
               <div>
                 <p className="text-sm text-gray-300">Level</p>
-                <p className="font-bold text-lg text-success">
+                <p
+                  className={`font-bold text-lg  ${
+                    showBorder ? "text-success" : "text-gray-400"
+                  }`}
+                >
                   {profile.level}
                 </p>
               </div>
               <div>
                 <p className="text-sm text-gray-300">XP</p>
-                <p className="font-bold text-lg text-success">{profile.xp}</p>
+                <p
+                  className={`font-bold text-lg  ${
+                    showBorder ? "text-success" : "text-gray-400"
+                  }`}
+                >
+                  {profile.xp}
+                </p>
               </div>
               <div>
                 <p className="text-sm text-gray-300">Rank</p>
-                <p className="font-bold text-lg text-success">{profile.rank}</p>
+                <p
+                  className={`font-bold text-lg  ${
+                    showBorder ? "text-success" : "text-gray-400"
+                  }`}
+                >
+                  {profile.rank}
+                </p>
               </div>
             </div>
 
@@ -110,7 +137,9 @@ const MyProfilePage = () => {
                 {profile.achievements.map((ach, index) => (
                   <span
                     key={index}
-                    className="bg-success text-black px-2 py-1 rounded-full text-xs"
+                    className={`text-black px-2 py-1 rounded-full text-xs ${
+                      showBorder ? "bg-success" : "bg-gray-500"
+                    }`}
                   >
                     {ach}
                   </span>
@@ -138,7 +167,9 @@ const MyProfilePage = () => {
             <div className="text-center mt-6">
               <Link
                 to={"/update-profile"}
-                className="btn btn-warning text-white w-full"
+                className={`btn btn-warning text-white w-full ${
+                  showBorder ? "shadow-[0_0_10px_#00ffe0]" : ""
+                }`}
               >
                 Update Information
               </Link>

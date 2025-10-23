@@ -15,6 +15,7 @@ const gameNewData = [
     rating: 5,
     category: "Shooter",
     developer: "DICE",
+    categoryColor: "bg-cyan-500",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const gameNewData = [
     rating: 4,
     category: "RPG",
     developer: "Shah Games",
+    categoryColor: "bg-blue-500",
   },
   {
     id: 3,
@@ -38,6 +40,7 @@ const gameNewData = [
     rating: 4,
     category: "Action RPG",
     developer: "Embark Studios",
+    categoryColor: "bg-purple-500",
   },
   {
     id: 4,
@@ -49,6 +52,7 @@ const gameNewData = [
     rating: 4,
     category: "Action",
     developer: "NeoSoft",
+    categoryColor: "bg-orange-500",
   },
   {
     id: 5,
@@ -58,8 +62,9 @@ const gameNewData = [
       "An epic fantasy RPG where magic, mythical creatures, and legendary quests await. Build your hero, forge alliances, and change the fate of the realm.",
     shortDescription: "Fantasy RPG with magic, creatures, and epic quests.",
     rating: 5,
-    category: "RPG",
+    category: "FPS",
     developer: "EpicQuest Studios",
+    categoryColor: "bg-amber-500",
   },
 ];
 
@@ -112,7 +117,9 @@ const NewReleaseGames = () => {
                     alt={game.title}
                     className="w-full h-60 object-cover"
                   />
-                  <span className="absolute top-4 right-4 bg-gray-900/70 text-white text-sm px-3 py-1 rounded-sm font-semibold tracking-wider">
+                  <span
+                    className={`absolute top-4 right-4 text-gray-900 text-sm px-3 py-1 rounded-sm font-semibold tracking-wider ${game.categoryColor}`}
+                  >
                     {game.category}
                   </span>
                 </div>
