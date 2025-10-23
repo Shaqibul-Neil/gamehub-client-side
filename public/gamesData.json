@@ -6,7 +6,7 @@
     "category": "RPG",
     "downloadLink": "https://thewitcher.com/en/witcher3",
     "description": "The Witcher 3 immerses players in a dark fantasy world where choices have consequences.",
-    "ratings": "4.9",
+    "ratings": "4",
     "developer": "CD Projekt Red",
     "longDescription": [
       "Step into the world of The Witcher 3, a dark and immersive RPG where monster hunting, political intrigue, and moral choices shape every adventure. Explore vast landscapes teeming with life and danger, unravel ancient mysteries, and encounter unforgettable characters along the way.",
@@ -39,7 +39,7 @@
     "category": "RPG",
     "downloadLink": "https://www.cyberpunk.net/",
     "description": "Cyberpunk 2077 immerses players in a futuristic open world full of choices, chaos, and technology.",
-    "ratings": "4.8",
+    "ratings": "4",
     "developer": "CD Projekt Red",
     "longDescription": [
       "Enter Night City, a sprawling urban landscape in Cyberpunk 2077, where technology and crime collide. Players navigate a complex society filled with cybernetic enhancements, rival gangs, and corporate intrigue, making choices that define their story.",
@@ -101,11 +101,11 @@
   {
     "id": "4",
     "title": "PlayerUnknown’s Battlegrounds",
-    "coverPhoto": "https://i.postimg.cc/MHpBBqNt/pubg.jpg",
+    "coverPhoto": "https://i.postimg.cc/jST4CB5z/forg.jpg",
     "category": "Battle",
     "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
     "description": "PUBG is a fast-paced battle royale where 100 players fight for survival using strategy, shooting, and teamwork.",
-    "ratings": "4.8",
+    "ratings": "4",
     "developer": "Krafton",
     "longDescription": [
       "Step into the adrenaline-fueled world of PUBG, a battle royale where 100 players fight to be the last one standing. Every match challenges your strategy, reflexes, and decision-making in a dynamic environment filled with weapons, loot, and tactical opportunities.",
@@ -237,7 +237,7 @@
     "category": "Adventure",
     "downloadLink": "https://www.zelda.com/tears-of-the-kingdom/",
     "description": "Zelda: TOTK continues Link’s journey with physics-based puzzles and vast exploration.",
-    "ratings": "4.9",
+    "ratings": "3",
     "developer": "Nintendo",
     "longDescription": [
       "The Legend of Zelda: TOTK invites players into an expansive adventure filled with exploration, puzzles, and dynamic combat. Traverse diverse landscapes, interact with NPCs, and uncover secrets in Hyrule.",
@@ -270,7 +270,7 @@
     "category": "Hero",
     "downloadLink": "https://overwatch.blizzard.com/",
     "description": "Overwatch 2 brings high-speed, colorful team combat with new heroes and modes.",
-    "ratings": "4.4",
+    "ratings": "3",
     "developer": "Blizzard Entertainment",
     "longDescription": [
       "Overwatch 2 brings exhilarating team-based combat where each hero's abilities matter, offering diverse strategies and thrilling gameplay across dynamic maps.",
@@ -299,11 +299,11 @@
   {
     "id": "10",
     "title": "Assassin’s Creed Mirage",
-    "coverPhoto": "https://i.postimg.cc/WzgBMcZm/assasins.jpg",
+    "coverPhoto": "https://i.postimg.cc/BbcG3dtq/assa.jpg",
     "category": "Action",
     "downloadLink": "https://www.ubisoft.com/en-us/game/assassins-creed/mirage",
     "description": "Assassin’s Creed Mirage emphasizes stealth, parkour, and tactical assassinations in ancient Baghdad.",
-    "ratings": "4.5",
+    "ratings": "4",
     "developer": "Ubisoft",
     "longDescription": [
       "Assassin’s Creed Mirage immerses players in ancient Baghdad, delivering a rich tapestry of stealth missions, parkour traversal, and strategic assassinations.",
@@ -336,7 +336,7 @@
     "category": "Action RPG",
     "downloadLink": "https://store.steampowered.com/app/1245620/ELDEN_RING/",
     "description": "Elden Ring blends open-world exploration with brutal combat in a dark fantasy realm.",
-    "ratings": "4.8",
+    "ratings": "3",
     "developer": "FromSoftware",
     "longDescription": [
       "Elden Ring delivers a massive, interconnected world filled with danger, mystery, and myth. Players explore vast landscapes, uncover hidden dungeons, and face monstrous foes in a hauntingly beautiful setting.",
