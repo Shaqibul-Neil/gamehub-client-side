@@ -13,11 +13,13 @@ import UpdateProfile from "../pages/UpdateProfile";
 import GameDetails from "../pages/GameDetails";
 import PrivateRoutes from "./PrivateRoutes";
 import TermsConditions from "../pages/TermsConditions";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,

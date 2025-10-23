@@ -23,7 +23,7 @@ const GameCard = ({ game }) => {
         </div>
         <div className="space-y-4">
           <div className="flex items-center justify-between md:flex-row flex-col gap-4">
-            <h3 className="text-3xl font-semibold text-success audiowide pb-4 border-b border-success">
+            <h3 className="text-2xl font-semibold text-success audiowide pb-4 border-b border-success">
               {game?.title}
             </h3>
             <p className="text-2xl flex gap-1 text-success">
@@ -35,7 +35,7 @@ const GameCard = ({ game }) => {
 
           <p className="mt-4">{game?.description}</p>
 
-          <p className="text-lg">
+          <p className="text-md">
             Developed By :{" "}
             <span className="text-success audiowide">{game?.developer}</span>
           </p>

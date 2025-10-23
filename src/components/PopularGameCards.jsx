@@ -4,7 +4,7 @@ import AuthContext from "../contexts/AuthContext";
 import PopularGameCard from "./PopularGameCard";
 
 const PopularGameCards = () => {
-  const { gamesData, gameLoading, gameError } = useContext(AuthContext);
+  const { gamesData, gameLoading } = useContext(AuthContext);
   // console.log(gamesData);
   const popularGames = gamesData.filter((games) => games.ratings >= "5");
   // console.log(popularGames);

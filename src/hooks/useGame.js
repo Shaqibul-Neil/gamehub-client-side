@@ -9,7 +9,10 @@ const useGame = () => {
     setGameLoading(true);
     axios
       .get("../gamesData.json")
-      .then((res) => setGamesData(res.data))
+      .then((res) => {
+        setGamesData(res.data);
+        setGameLoading(false);
+      })
       .catch((err) => setGameError(err))
       .finally(() => setGameLoading(false));
   }, []);

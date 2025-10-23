@@ -10,16 +10,14 @@ import Character from "../components/Character";
 
 const GameDetails = () => {
   const { title } = useParams();
-  const { gamesData, gameLoading, gameError } = useContext(AuthContext);
+  const { gamesData, gameLoading } = useContext(AuthContext);
   const particularGame = gamesData.find(
     (game) => slugify(game.title, { lower: true, strict: true }) === title
   );
 
-  if (gameLoading) return <GameDetailsLoading />;
-  if (gameError) return <ErrorPage />;
-  if (!particularGame) return <GameError />;
-
-  return (
+  return gameLoading ? (
+    <GameDetailsLoading />
+  ) : (
     <div>
       <title>GameHub - Game Details</title>
       <div className="w-full h-[80vh] bg-black flex items-center justify-center">
