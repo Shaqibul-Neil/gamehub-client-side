@@ -44,7 +44,6 @@ const SignUp = () => {
         //update profile
         updateUserProfile(displayName, photoURL)
           .then(() => {
-            // console.log(res);
             setUserLoading(false);
             //signout user
             logOutUser().then(() => {

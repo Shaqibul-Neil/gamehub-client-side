@@ -6,9 +6,8 @@ import useScrollAnimation from "../hooks/useScrollAnimation";
 
 const PopularGameCards = () => {
   const { gamesData } = useContext(AuthContext);
-  // console.log(gamesData);
   const popularGames = gamesData.filter((games) => games.ratings >= "5");
-  // console.log(popularGames);
+
   // Animate cards individually
   useScrollAnimation(".scroll-section");
   return (

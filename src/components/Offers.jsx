@@ -20,7 +20,7 @@ const Offers = () => {
     >
       {/* Front Side */}
       <a.div
-        className={`absolute w-full h-full bg-cover bg-center [backface-hidden] clipClass`}
+        className={`absolute w-full h-full bg-cover bg-center backface-hidden clipClass`}
         style={{
           opacity: opacity.to((o) => 1 - o),
           transform,
@@ -56,7 +56,7 @@ const Offers = () => {
 
       {/* Back Side */}
       <a.div
-        className={`absolute w-full h-full bg-cover bg-center [backface-hidden] clipClass`}
+        className={`absolute w-full h-full bg-cover bg-center backface-hidden clipClass`}
         style={{
           opacity,
           transform: transform.to((t) => `${t} rotateX(180deg)`),

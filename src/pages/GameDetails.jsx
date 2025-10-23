@@ -7,6 +7,7 @@ import Container from "../components/Container";
 import { ScrollText } from "lucide-react";
 import Character from "../components/Character";
 import useScrollAnimation from "../hooks/useScrollAnimation";
+import ErrorPage from "./ErrorPage";
 
 const GameDetails = () => {
   const { title } = useParams();
@@ -17,6 +18,8 @@ const GameDetails = () => {
   const particularGame = gamesData.find(
     (game) => slugify(game.title, { lower: true, strict: true }) === title
   );
+
+  if (!particularGame) return <ErrorPage />;
 
   return gameLoading ? (
     <GameDetailsLoading />
