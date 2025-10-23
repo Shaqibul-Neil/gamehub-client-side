@@ -1,6 +1,7 @@
 import HomeBanner from "../components/HomeBanner";
 import NewReleaseGames from "../components/NewReleaseGames";
 import NewsLetter from "../components/NewsLetter";
+import Offers from "../components/Offers";
 import PopularGameCards from "../components/PopularGameCards";
 import RecentPosts from "../components/RecentPosts";
 import UpcomingGames from "../components/UpcomingGames";
@@ -18,12 +19,16 @@ const Home = () => {
       <div className="lg:pt-32 pt-20">
         <PopularGameCards />
       </div>
-      <div className="py-24 lg:py-36 scroll-section">
-        <RecentPosts />
-      </div>
-      <div className="lg:pb-64 py-20 lg:-mt-24 scroll-section">
+      <div className="pt-24 lg:pt-28 scroll-section">
         <NewReleaseGames />
       </div>
+      <div className="py-24 lg:py-28 scroll-section">
+        <Offers />
+      </div>
+      <div className="lg:pb-64 py-20 lg:-mt-24 scroll-section">
+        <RecentPosts />
+      </div>
+
       <div className="relative">
         <NewsLetter />
       </div>

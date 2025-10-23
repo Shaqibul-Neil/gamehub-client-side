@@ -17,7 +17,7 @@ const useScrollAnimation = (selector = ".scroll-section") => {
           opacity: 1,
           scale: 1,
           duration: 1.2,
-          ease: "power3.out",
+          ease: "back.out(1.7)",
           stagger: 0.4,
           scrollTrigger: {
             trigger: section,

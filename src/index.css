@@ -17,6 +17,10 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
+body,
+html {
+  overflow-x: hidden;
+}
 .audiowide {
   font-family: "Audiowide", sans-serif;
 }
@@ -93,4 +97,11 @@ header {
 .custom-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #00ffe0;
   width: 24px;
+}
+.contentBoxClasses {
+  @apply p-10 max-w-3xl bg-black/10 rounded-xl text-center backdrop-blur-sm;
+}
+
+.clipClass {
+  @apply clip-[polygon(0_0,120px_0,160px_15px,315px_15px,355px_0,100%_0,100%_100%,0_100%)];
 }

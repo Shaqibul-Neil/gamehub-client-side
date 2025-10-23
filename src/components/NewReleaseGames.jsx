@@ -67,7 +67,7 @@ const NewReleaseGames = () => {
   return (
     <div className="text-gray-100 p-5 md:p-8 max-w-7xl mx-auto rounded-md">
       <Container>
-        <h2 className="text-secondary lg:text-5xl md:text-4xl audiowide text-3xl font-extrabold mb-5 pb-4 md:-ml-8 -ml-3 border-b-2 border-cyan-700/50 uppercase tracking-wider text-center">
+        <h2 className="text-secondary lg:text-5xl md:text-4xl audiowide text-3xl font-extrabold mb-5 pb-4 md:-ml-8 -ml-3 border-b-2 border-cyan-700/50 uppercase tracking-wider">
           NEW RELEASES
         </h2>
 
@@ -101,7 +101,11 @@ const NewReleaseGames = () => {
           {/*  Content */}
           <div className="flex-2 bg-gray-800 rounded-lg overflow-hidden relative min-h-[400px] shadow-sm shadow-cyan-300">
             {gameNewData.map((game) => (
-              <TabPanel key={game.id}>
+              <TabPanel
+                key={game.id}
+                className="absolute inset-0 opacity-0 -translate-x-20 pointer-events-none transition-all duration-500"
+                selectedClassName="relative opacity-100 translate-x-0 pointer-events-auto"
+              >
                 <div className="relative">
                   <img
                     src={game.img}
