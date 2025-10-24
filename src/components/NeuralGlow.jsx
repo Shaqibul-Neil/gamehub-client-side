@@ -64,7 +64,7 @@ const NeuralGlow = () => {
     gl.shaderSource(shader, sourceCode);
     gl.compileShader(shader);
     if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-      console.error("Shader compile error:", gl.getShaderInfoLog(shader));
+      // console.error("Shader compile error:", gl.getShaderInfoLog(shader));
       gl.deleteShader(shader);
       return null;
     }
@@ -77,7 +77,7 @@ const NeuralGlow = () => {
     gl.attachShader(program, fragmentShader);
     gl.linkProgram(program);
     if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-      console.error("Program link error:", gl.getProgramInfoLog(program));
+      // console.error("Program link error:", gl.getProgramInfoLog(program));
       return null;
     }
     return program;

@@ -5,6 +5,7 @@ import GameCard from "../components/GameCard";
 import Container from "../components/Container";
 import { LandPlot } from "lucide-react";
 import ErrorPage from "./ErrorPage";
+import { Slide } from "react-awesome-reveal";
 
 const Games = () => {
   const { gamesData, gameError } = useContext(AuthContext);
@@ -47,7 +48,9 @@ const Games = () => {
         <Container>
           <div className="grid grid-cols-1 lg:gap-16 gap-12 lg:px-5 px-2">
             {gamesData.map((game) => (
-              <GameCard key={game.id} game={game} />
+              <Slide direction={game.id % 2 === 0 ? "" : "right"}>
+                <GameCard key={game.id} game={game} />
+              </Slide>
             ))}
           </div>
         </Container>

@@ -12,7 +12,6 @@ const Main = () => {
   const [spinnerOnLoad, setSpinnerOnLoad] = useState(true);
 
   useEffect(() => {
-    // Wait for intro animation (~3s)
     const timer = setTimeout(() => setSpinnerOnLoad(false), 3000);
     return () => clearTimeout(timer);
   }, []);

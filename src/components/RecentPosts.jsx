@@ -1,9 +1,10 @@
 import { Discuss } from "react-loader-spinner";
 import Container from "./Container";
-
+import { Slide } from "react-awesome-reveal";
 // Post Data
 const postData = [
   {
+    id: 1,
     category: "FPS",
     categoryColor: "bg-cyan-500",
     image: "https://i.postimg.cc/2jgybwXw/fantasy-style-fire.jpg",
@@ -14,6 +15,7 @@ const postData = [
     comments: 14,
   },
   {
+    id: 2,
     category: "Adventure",
     categoryColor: "bg-orange-500",
     image: "https://i.postimg.cc/Y0LcBQ60/woman-with-shield-b-her-head.jpg",
@@ -24,6 +26,7 @@ const postData = [
     comments: 9,
   },
   {
+    id: 3,
     category: "RPG",
     categoryColor: "bg-purple-500",
     image:
@@ -35,6 +38,7 @@ const postData = [
     comments: 7,
   },
   {
+    id: 4,
     category: "MOBA",
     categoryColor: "bg-green-500",
     image: "https://i.postimg.cc/5N2KZBmL/fantasy-8790369-640.jpg",
@@ -62,60 +66,62 @@ const RecentPosts = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
           {postData.map((post, index) => (
-            <div
-              key={index}
-              className="flex flex-col md:flex-row bg-[#1c1c1c] rounded-lg shadow-md hover:shadow-cyan-300 transition-all duration-500 transform hover:-translate-y-1 overflow-hidden"
-            >
-              {/* Left: Image Section */}
+            <Slide direction={post.id % 2 === 0 ? "" : "right"}>
               <div
-                className="relative w-full h-56 md:h-auto md:w-1/2 flex items-start transition-transform duration-500 hover:scale-105"
-                style={{
-                  backgroundImage: `url(${post.image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
+                key={index}
+                className="flex flex-col md:flex-row bg-[#1c1c1c] rounded-lg shadow-md hover:shadow-cyan-300 transition-all duration-500 transform hover:-translate-y-1 overflow-hidden"
               >
-                {/* Category Badge */}
-                <div className="absolute top-4 left-4">
-                  <span
-                    className={`${post.categoryColor} text-white font-semibold px-3 py-1 text-xs rounded-md uppercase`}
-                  >
-                    {post.category}
-                  </span>
-                </div>
-
-                {/* Comment Icon */}
-                <div className="absolute bottom-4 right-4 flex items-center space-x-1 text-white text-sm bg-black/50 px-2 py-1 rounded-md backdrop-blur-sm">
-                  <Discuss height="40" width="40" />
-                  <span>{post.comments}</span>
-                </div>
-              </div>
-
-              {/* Right: Content Section */}
-              <div className="p-6 flex flex-col justify-between w-full md:w-1/2 md:border-l border-[#00FFE0]/30">
-                <h3 className="text-lg font-bold mb-3 leading-wider text-[#00FFE0]">
-                  {post.title}
-                </h3>
-                <p className="text-gray-400 text-sm mb-4 line-clamp-5">
-                  {post.longDescription}
-                </p>
-                <div className="flex items-center justify-between gap-1 mt-auto">
-                  <button className="bg-[#00FFE0] text-black hover:bg-white border-2 border-[#00FFE0] w-32 rounded-md font-semibold transition-colors duration-300 py-2 text-sm cursor-pointer">
-                    Click to read
-                  </button>
-                  <span className="text-gray-500 text-xs flex items-center">
-                    <svg
-                      className="w-4 h-4 mr-1 fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
+                {/* Left: Image Section */}
+                <div
+                  className="relative w-full h-56 md:h-auto md:w-1/2 flex items-start transition-transform duration-500 hover:scale-105"
+                  style={{
+                    backgroundImage: `url(${post.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
+                  {/* Category Badge */}
+                  <div className="absolute top-4 left-4">
+                    <span
+                      className={`${post.categoryColor} text-white font-semibold px-3 py-1 text-xs rounded-md uppercase`}
                     >
-                      <path d="M1 4c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 0v14h14V4H3zm2 4h10v2H5V8zm0 4h10v2H5v-2z" />
-                    </svg>
-                    {post.date}
-                  </span>
+                      {post.category}
+                    </span>
+                  </div>
+
+                  {/* Comment Icon */}
+                  <div className="absolute bottom-4 right-4 flex items-center space-x-1 text-white text-sm bg-black/50 px-2 py-1 rounded-md backdrop-blur-sm">
+                    <Discuss height="40" width="40" />
+                    <span>{post.comments}</span>
+                  </div>
+                </div>
+
+                {/* Right: Content Section */}
+                <div className="p-6 flex flex-col justify-between w-full md:w-1/2 md:border-l border-[#00FFE0]/30">
+                  <h3 className="text-lg font-bold mb-3 leading-wider text-[#00FFE0]">
+                    {post.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-4 line-clamp-5">
+                    {post.longDescription}
+                  </p>
+                  <div className="flex items-center justify-between gap-1 mt-auto">
+                    <button className="bg-[#00FFE0] text-black hover:bg-white border-2 border-[#00FFE0] w-32 rounded-md font-semibold transition-colors duration-300 py-2 text-sm cursor-pointer">
+                      Click to read
+                    </button>
+                    <span className="text-gray-500 text-xs flex items-center">
+                      <svg
+                        className="w-4 h-4 mr-1 fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M1 4c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm2 0v14h14V4H3zm2 4h10v2H5V8zm0 4h10v2H5v-2z" />
+                      </svg>
+                      {post.date}
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Slide>
           ))}
         </div>
       </div>

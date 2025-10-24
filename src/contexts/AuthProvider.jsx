@@ -2,13 +2,11 @@ import { useEffect, useState } from "react";
 import AuthContext from "./AuthContext";
 import useGame from "../hooks/useGame";
 import {
-  browserLocalPersistence,
   createUserWithEmailAndPassword,
   GoogleAuthProvider,
   onAuthStateChanged,
   sendEmailVerification,
   sendPasswordResetEmail,
-  setPersistence,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -75,12 +73,6 @@ const AuthProvider = ({ children }) => {
     return sendPasswordResetEmail(auth, email);
   };
 
-  //remember password
-  const userRememberPassword = () => {
-    setUserLoading(true);
-    return setPersistence(auth, browserLocalPersistence);
-  };
-
   //logout
   const logOutUser = () => {
     return signOut(auth);
@@ -99,7 +91,6 @@ const AuthProvider = ({ children }) => {
     updateUserProfile,
     signInGoogle,
     logInUser,
-    userRememberPassword,
     forgetUserPassword,
     logOutUser,
     forgetEmail,

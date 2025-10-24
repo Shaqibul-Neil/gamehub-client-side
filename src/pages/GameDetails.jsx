@@ -8,6 +8,7 @@ import { ScrollText } from "lucide-react";
 import Character from "../components/Character";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import ErrorPage from "./ErrorPage";
+import { Fade } from "react-awesome-reveal";
 
 const GameDetails = () => {
   const { title } = useParams();
@@ -38,6 +39,7 @@ const GameDetails = () => {
           className="w-full h-[80vh] object-contain lg:object-cover"
         /> */}
       </div>
+
       <Container className={"md:py-24 py-12"}>
         <div className="lg:px-5 px-3 space-y-12">
           <div className="flex gap-4 justify-center scroll-section text-xl">
@@ -70,7 +72,7 @@ const GameDetails = () => {
               </div>
 
               {particularGame.longDescription.map((el) => (
-                <p className="mb-2 text-primary">{el}</p>
+                <p className="mb-2 text-primary text-center">{el}</p>
               ))}
             </div>
           </div>

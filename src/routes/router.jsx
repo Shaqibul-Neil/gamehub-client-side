@@ -35,11 +35,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/upcoming-games",
-        Component: UpcomingRelease,
+        element: (
+          <PrivateRoutes>
+            <UpcomingRelease></UpcomingRelease>
+          </PrivateRoutes>
+        ),
       },
       {
         path: "/events",
-        Component: Events,
+        element: (
+          <PrivateRoutes>
+            <Events></Events>
+          </PrivateRoutes>
+        ),
       },
       {
         path: "/login",
