@@ -44,7 +44,7 @@ const PopularGameCard = ({ game }) => {
 
       {/* Inner Box */}
       <div
-        className={`relative z-10 bg-gray-900 rounded-lg overflow-hidden flex flex-col md:flex-row  ${
+        className={`relative z-10 bg-gray-900 rounded-lg overflow-hidden flex flex-col md:flex-row ${
           isEven ? "md:flex-row-reverse" : ""
         }`}
       >

@@ -3,6 +3,7 @@ import call from "../assets/call.jpg";
 import rob from "../assets/rob.png";
 import gun from "../assets/gun.jpg";
 import cod from "../assets/video/cod.mp4";
+import { Link } from "react-router";
 
 const UpcomingGames = () => {
   return (
@@ -33,9 +34,14 @@ const UpcomingGames = () => {
               </p>
             </div>
             <div className="flex justify-end my-4">
-              <button className="btn btn-success text-black border-3 w-48 border-success  hover:bg-white rounded-md font-semibold transition-colors duration-300">
+              <a
+                className="btn btn-success text-black border-3 w-48 border-success  hover:bg-white rounded-md font-semibold transition-colors duration-300"
+                href="https://www.youtube.com/watch?v=9txkGBj_trg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Watch Trailer
-              </button>
+              </a>
             </div>
           </div>
           <div>

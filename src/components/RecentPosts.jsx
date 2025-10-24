@@ -26,7 +26,8 @@ const postData = [
   {
     category: "RPG",
     categoryColor: "bg-purple-500",
-    image: "https://i.postimg.cc/YqPMvqnZ/178851532-10732349-1.png",
+    image:
+      "https://i.postimg.cc/1RHBjFpB/Evie-Assassins-Creed-Game-Character.jpg",
     title: "Leveling Fast in Mythic Quest",
     longDescription:
       "Optimized questing paths and rare item farming strategies. Save time, gain XP efficiently, and reach endgame content faster. Includes tips to avoid common pitfalls and maximize experience gain per hour in Mythic Quest's expansive world.",

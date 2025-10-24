@@ -52,29 +52,29 @@ const Footer = () => {
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">
-            <Link
-              to="https://www.facebook.com"
+            <a
+              href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebookF size={24} color="#00ffe0" />
-            </Link>
+              <FaFacebookF size={20} color="#00ffe0" />
+            </a>
 
-            <Link
-              to="https://discord.com/users"
+            <a
+              href="https://discord.com/users"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaDiscord size={24} color="#00ffe0" />
-            </Link>
+            </a>
 
-            <Link
-              to="https://www.instagram.com"
+            <a
+              href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <TiSocialInstagram size={24} color="#00ffe0" />
-            </Link>
+            </a>
           </div>
         </nav>
         <aside>

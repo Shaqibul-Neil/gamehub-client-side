@@ -24,7 +24,7 @@ const PopularGameCards = () => {
             Top Charts
           </h2>
         </div>
-        <div className="grid grid-cols-1 lg:gap-12 gap-10 lg:w-8/12 mx-auto px-3 scroll-section">
+        <div className="grid grid-cols-1 lg:gap-12 gap-10 lg:w-9/12 mx-auto px-3 scroll-section">
           {popularGames.map((game) => (
             <PopularGameCard game={game} key={game.id} />
           ))}
