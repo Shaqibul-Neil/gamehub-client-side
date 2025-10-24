@@ -1,8 +1,10 @@
 ## 🎮 GameHub 🎮
 
-**GameHub** is a cutting-edge, interactive gaming portal designed for gamers, enthusiasts, and developers who want to explore the world of **popular games, upcoming releases, and exclusive game insights**. Whether you are a casual gamer or a hardcore fan, GameHub gives you everything in one place. <br/><br/>
+**GameHub** is a cutting-edge, interactive gaming portal designed for gamers, enthusiasts, and developers who want to explore the world of **popular games, upcoming releases, and exclusive game insights**. Whether you are a casual gamer or a hardcore fan, GameHub gives you everything in one place. <br/>
 
-> **Purpose:** To provide gamers a seamless platform where they can discover, explore, and interact with their favorite games while staying updated with the latest gaming trends.<br/><br/>
+**Purpose:**
+To provide gamers a seamless platform where they can discover, explore, and interact with their favorite games while staying updated with the latest gaming trends.
+<br/>
 
 **Key Highlights:** <br/>
 
@@ -14,8 +16,6 @@
 - Fully **responsive and mobile-friendly design**<br/>
 
 ---
-
-<br/><br/>
 
 ## 🕹️ Features
 
@@ -43,8 +43,6 @@
 
 ---
 
-<br/><br/>
-
 ## 🛠️ Technologies & Libraries
 
 <br/>
@@ -55,15 +53,14 @@
 👾 GSAP – Scroll animations & interactions <br/>
 👾 React Spring – Animations & interactive effects <br/>
 👾 Embla Carousel – Content sliders <br/>
-👾 Axios – API calls & custom hooks <br/>
+👾 Axios – API calls <br/>
 👾 Cursify – Custom cursor <br/>
 👾 Lottie React – Animated SVGs <br/>
 👾 React Router 7 – Client-side routing <br/>
 👾 React Icons & Lucide React – Iconography <br/>
 👾 React Hot Toast – Notifications <br/>
 👾 Swiper – Optional sliders <br/>
-
-<br/><br/>
+👾 Loaders - React Loader Spinner <br/>
 
 ## ⚡ Dependencies
 
