@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "The Witcher 3: Wild Hunt",
-    "coverPhoto": "https://i.postimg.cc/x8Ldq7Tb/geralt-of-rivia-the-3840x2160-14024.jpg",
+    "coverPhoto": "https://i.postimg.cc/7PQb1pwD/witcher.jpg",
     "category": "RPG",
     "downloadLink": "https://thewitcher.com/en/witcher3",
     "description": "The Witcher 3 immerses players in a dark fantasy world where choices have consequences.",
@@ -35,7 +35,7 @@
   {
     "id": "2",
     "title": "Cyberpunk 2077",
-    "coverPhoto": "https://i.postimg.cc/PrN3sjJX/cyber.jpg",
+    "coverPhoto": "https://i.postimg.cc/4yB9gd9g/cyber.jpg",
     "category": "RPG",
     "downloadLink": "https://www.cyberpunk.net/",
     "description": "Cyberpunk 2077 immerses players in a futuristic open world full of choices, chaos, and technology.",
@@ -68,7 +68,7 @@
   {
     "id": "3",
     "title": "Counter Strike 2",
-    "coverPhoto": "https://i.postimg.cc/5yXwGf3Z/cas.png",
+    "coverPhoto": "https://i.postimg.cc/vBS4qjFD/counter-strike-2-3840x2160-11129.png",
     "category": "FPS",
     "downloadLink": "https://store.steampowered.com/app/730/CounterStrike_2/",
     "description": "Counter-Strike 2 refines tactical FPS gameplay with improved visuals, smoother mechanics, and realism.",
@@ -101,7 +101,7 @@
   {
     "id": "4",
     "title": "PlayerUnknown’s Battlegrounds",
-    "coverPhoto": "https://i.postimg.cc/jST4CB5z/forg.jpg",
+    "coverPhoto": "https://i.postimg.cc/ZYxYVn3g/pubg-action-game-3840x2160-21057.jpg",
     "category": "Battle",
     "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
     "description": "PUBG is a fast-paced battle royale where 100 players fight for survival using strategy, shooting, and teamwork.",
@@ -134,7 +134,7 @@
   {
     "id": "5",
     "title": "Fortnite Royale",
-    "coverPhoto": "https://i.postimg.cc/tRWwvy13/fortnight.jpg",
+    "coverPhoto": "https://i.postimg.cc/XJ03g6Yw/fortnite-battle-3840x2160-21599.jpg",
     "category": "Battle",
     "downloadLink": "https://www.epicgames.com/fortnite/",
     "description": "Fortnite mixes shooting, building, and creativity in one of the most iconic battle royale experiences.",
@@ -167,7 +167,7 @@
   {
     "id": "6",
     "title": "Valorant Riot Gear",
-    "coverPhoto": "https://i.postimg.cc/7hGcq89M/1103306-valorant-le-jeu-video-signe-riot-games-est-disponible.jpg",
+    "coverPhoto": "https://i.postimg.cc/xTF24zdN/valorant-season-3840x2160-21087.jpg",
     "category": "Tactical",
     "downloadLink": "https://playvalorant.com/",
     "description": "Valorant combines precise gunplay with unique hero abilities in a competitive tactical shooter.",

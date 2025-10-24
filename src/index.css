@@ -20,6 +20,7 @@
 body,
 html {
   overflow-x: hidden;
+  background-color: #040404;
 }
 .audiowide {
   font-family: "Audiowide", sans-serif;
@@ -102,6 +103,6 @@ header {
   @apply p-10 max-w-3xl bg-black/10 rounded-xl text-center backdrop-blur-sm;
 }
 
-.clipClass {
+/* .clipClass {
   @apply clip-[polygon(0_0,120px_0,160px_15px,315px_15px,355px_0,100%_0,100%_100%,0_100%)];
-}
+} */

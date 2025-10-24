@@ -21,7 +21,7 @@ const useScrollAnimation = (selector = ".scroll-section") => {
           stagger: 0.4,
           scrollTrigger: {
             trigger: section,
-            start: "top 80%",
+            start: "top 90%",
             end: "bottom 70%",
             toggleActions: "play none none reverse",
           },

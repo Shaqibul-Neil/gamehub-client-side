@@ -26,16 +26,21 @@ const GameDetails = () => {
   ) : (
     <div>
       <title>GameHub - Game Details</title>
-      <div className="w-full h-[80vh] bg-black flex items-center justify-center scroll-section">
-        <img
-          src={particularGame?.coverPhoto}
+      <div
+        className="w-full lg:h-screen md:h-[70vh] h-[30vh] bg-black flex items-center md:bg-cover bg-contain bg-center justify-center scroll-section bg-no-repeat"
+        style={{
+          backgroundImage: `url(${particularGame?.coverPhoto})`,
+        }}
+      >
+        {/* <img
+          src={}
           alt=""
-          className="w-full h-[80vh] object-contain lg:object-fill"
-        />
+          className="w-full h-[80vh] object-contain lg:object-cover"
+        /> */}
       </div>
       <Container className={"md:py-24 py-12"}>
         <div className="lg:px-5 px-3 space-y-12">
-          <div className="flex gap-4 justify-center scroll-section">
+          <div className="flex gap-4 justify-center scroll-section text-xl">
             <p>
               Category :{" "}
               <span className="text-white">{particularGame?.category}</span>{" "}
@@ -47,7 +52,7 @@ const GameDetails = () => {
           </div>
 
           <div className="scroll-section">
-            <div className="text-4xl text-success audiowide text-center mb-12">
+            <div className="lg:text-5xl text-3xl text-success audiowide text-center mb-12">
               {particularGame?.title}
             </div>
 

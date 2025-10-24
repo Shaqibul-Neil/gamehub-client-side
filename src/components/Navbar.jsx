@@ -167,7 +167,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end lg:hidden">
         {user ? (
-          <ul className="flex items-center gap-2 md:gap-4">
+          <ul className="flex items-center gap-3 md:gap-4">
             <li>
               <Link to={"/profile"}>
                 <div className="w-10 h-10 p-1 rounded-full flex justify-center items-center wave relative">

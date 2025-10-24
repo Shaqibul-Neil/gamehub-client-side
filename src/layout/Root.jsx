@@ -6,13 +6,13 @@ import Container from "../components/Container";
 const Root = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <header>
+      <header className="fixed z-50 top-0 w-full">
         <Container>
           <Navbar />
         </Container>
       </header>
 
-      <main className="flex-1">
+      <main className="flex-1 lg:pt-20 pt-16">
         <Outlet />
       </main>
       <footer>
