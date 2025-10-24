@@ -1,14 +1,27 @@
-import { RouterProvider } from "react-router";
-import { StrictMode } from "react";
+import { StrictMode, useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
+import { RouterProvider } from "react-router";
 import AuthProvider from "./contexts/AuthProvider";
-import "./index.css";
-import router from "./routes/router";
 import { Toaster } from "react-hot-toast";
 import NeonCursor from "./components/NeonCursor";
+import router from "./routes/router";
+import "./index.css";
+import { Rings } from "react-loader-spinner";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
+const Main = () => {
+  const [spinnerOnLoad, setSpinnerOnLoad] = useState(true);
+
+  useEffect(() => {
+    // Wait for intro animation (~3s)
+    const timer = setTimeout(() => setSpinnerOnLoad(false), 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return spinnerOnLoad ? (
+    <div className="flex justify-center items-center min-h-screen">
+      <Rings height="120" width="120" color="rgb(0, 255, 224)" />
+    </div>
+  ) : (
     <AuthProvider>
       <RouterProvider router={router} />
       <Toaster
@@ -18,7 +31,7 @@ createRoot(document.getElementById("root")).render(
           success: {
             style: {
               background: "linear-gradient(90deg, #00ffe0, #6c63ff)",
-              color: "#0a0a0a", // dark text for contrast
+              color: "#0a0a0a",
               fontFamily: "Poppins, sans-serif",
               fontWeight: "600",
               border: "1px solid #00ffe0",
@@ -47,5 +60,11 @@ createRoot(document.getElementById("root")).render(
       />
       <NeonCursor />
     </AuthProvider>
+  );
+};
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <Main />
   </StrictMode>
 );

@@ -1,5 +1,5 @@
+import { Discuss } from "react-loader-spinner";
 import Container from "./Container";
-import { MessageCircle } from "lucide-react";
 
 // Post Data
 const postData = [
@@ -86,7 +86,7 @@ const RecentPosts = () => {
 
                 {/* Comment Icon */}
                 <div className="absolute bottom-4 right-4 flex items-center space-x-1 text-white text-sm bg-black/50 px-2 py-1 rounded-md backdrop-blur-sm">
-                  <MessageCircle className="w-4 h-4" />
+                  <Discuss height="40" width="40" />
                   <span>{post.comments}</span>
                 </div>
               </div>
