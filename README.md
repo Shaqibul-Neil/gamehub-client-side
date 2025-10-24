@@ -104,5 +104,5 @@ To provide gamers a seamless platform where they can discover, explore, and inte
 <br/>
 
 ```html
-(https://gamehub-57423.web.app/)
+https://gamehub-57423.web.app/
 ```
