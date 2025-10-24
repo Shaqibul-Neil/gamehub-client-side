@@ -4,7 +4,6 @@ import { Link } from "react-router";
 import ovg from "../assets/ovg.jpeg";
 import Container from "../components/Container";
 import { useState } from "react";
-import toast from "react-hot-toast";
 
 const MyProfilePage = () => {
   const [showBorder, setShowBorder] = useState(false);
