@@ -175,25 +175,15 @@ const Login = () => {
                   )}
                 </span>
               </div>
-              <div className="flex md:flex-row flex-col md:justify-between md:items-center gap-4">
-                {/* Remember Me */}
-                <div className="flex gap-2 items-center">
-                  <input
-                    type="checkbox"
-                    name="checkbox"
-                    className="checkbox checkbox-success"
-                  />
-                  <p className="text-white ">Remember Me</p>
-                </div>
-                {/* Forgot password */}
-                <div>
-                  <a
-                    className="text-cyan-300 underline cursor-pointer hover:text-amber-600 "
-                    onClick={handleForgetPassword}
-                  >
-                    Forgot Password?
-                  </a>
-                </div>
+
+              {/* Forgot password */}
+              <div>
+                <a
+                  className="text-cyan-300 underline cursor-pointer hover:text-amber-600 "
+                  onClick={handleForgetPassword}
+                >
+                  Forgot Password?
+                </a>
               </div>
 
               {/* Login button */}
