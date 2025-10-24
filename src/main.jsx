@@ -5,6 +5,7 @@ import AuthProvider from "./contexts/AuthProvider";
 import "./index.css";
 import router from "./routes/router";
 import { Toaster } from "react-hot-toast";
+import NeonCursor from "./components/NeonCursor";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -44,6 +45,7 @@ createRoot(document.getElementById("root")).render(
           },
         }}
       />
+      <NeonCursor />
     </AuthProvider>
   </StrictMode>
 );
