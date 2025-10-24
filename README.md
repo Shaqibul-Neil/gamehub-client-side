@@ -13,6 +13,7 @@ To provide gamers a seamless platform where they can discover, explore, and inte
 - **Gamified experience** with smooth animations and carousel sliders<br/>
 - **Secure authentication system** for personalized experiences<br/>
 - **Newsletter system** to keep users updated<br/>
+- **Countdown system** for upcoming game releases and events<br/><br/>
 - Fully **responsive and mobile-friendly design**<br/>
 
 ---
@@ -37,6 +38,7 @@ To provide gamers a seamless platform where they can discover, explore, and inte
 - **Dynamic Blog/Posts Section:** Showcase latest news or updates.<br/>
 - **Lottie Animations:** Lightweight animated SVGs for extra polish.<br/>
 - **Iconography:** React Icons & Lucide React for consistent visual design.<br/>
+- **Countdown Timer:** Display real-time countdowns for upcoming releases, events, or special in-game drops using react-countdown.<br/>
 - **Performance Optimized:** TailwindCSS + DaisyUI for fast, maintainable styles.<br/>
 - **SEO Friendly:** Semantic structure, optimized components, and clean routing.<br/>
 - **Future-ready Architecture:** Easy to extend with AI features, recommendations, or real-time stats.<br/>
@@ -61,6 +63,7 @@ To provide gamers a seamless platform where they can discover, explore, and inte
 👾 React Hot Toast – Notifications <br/>
 👾 Swiper – Optional sliders <br/>
 👾 Loaders - React Loader Spinner <br/>
+👾 React Countdown – Live countdown timers for upcoming game releases or events <br/>
 
 ## ⚡ Dependencies
 
@@ -80,6 +83,7 @@ To provide gamers a seamless platform where they can discover, explore, and inte
   "lucide-react": "^0.546.0",
   "motion": "^12.23.24",
   "react": "^19.1.1",
+  "react-countdown": "^2.3.6",
   "react-dom": "^19.1.1",
   "react-fast-marquee": "^1.6.5",
   "react-hot-toast": "^2.6.0",
