@@ -48,20 +48,26 @@ const postData = [
 const RecentPosts = () => {
   return (
     <Container>
-      <div className="space-y-12">
-        <h2 className="text-secondary lg:text-5xl md:text-4xl audiowide text-3xl font-extrabold mb-5 pb-4 border-b-2 text-right border-cyan-700/50 uppercase tracking-wider">
-          Recent Posts
+      <div className="space-y-12 px-3">
+        <h2
+          className="text-3xl md:text-4xl lg:text-5xl font-extrabold audiowide mb-5 pb-4 border-b-2 border-cyan-700/50 uppercase tracking-wider ml-2 md:ml-0 bg-linear-to-r from-[#00FFE0] to-white bg-clip-text text-white text-right transition-all duration-300"
+          style={{
+            color: "#00FFE0",
+            textShadow: "0 0 6px #00FFE0",
+          }}
+        >
+          Game Diaries
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
           {postData.map((post, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row bg-[#1c1c1c] rounded-lg shadow-md hover:shadow-cyan-300 transition-shadow duration-500 transform hover:-translate-y-1 overflow-hidden"
+              className="flex flex-col md:flex-row bg-[#1c1c1c] rounded-lg shadow-md hover:shadow-cyan-300 transition-all duration-500 transform hover:-translate-y-1 overflow-hidden"
             >
-              {/* Left: Image with Category + Comment */}
+              {/* Left: Image Section */}
               <div
-                className="relative w-full md:w-1/2 flex items-start"
+                className="relative w-full h-56 md:h-auto md:w-1/2 flex items-start transition-transform duration-500 hover:scale-105"
                 style={{
                   backgroundImage: `url(${post.image})`,
                   backgroundSize: "cover",
@@ -84,17 +90,17 @@ const RecentPosts = () => {
                 </div>
               </div>
 
-              {/* Right: Content */}
-              <div className="p-6 flex flex-col justify-between w-full md:w-1/2">
-                <h3 className="text-white text-lg font-bold mb-3 leading-tight uppercase">
+              {/* Right: Content Section */}
+              <div className="p-6 flex flex-col justify-between w-full md:w-1/2 md:border-l border-[#00FFE0]/30">
+                <h3 className="text-lg font-bold mb-3 leading-wider text-[#00FFE0]">
                   {post.title}
                 </h3>
                 <p className="text-gray-400 text-sm mb-4 line-clamp-5">
                   {post.longDescription}
                 </p>
-                <div className="flex items-center justify-between mt-auto">
-                  <button className="bg-[#00FFE0] text-black hover:bg-white border-2 border-[#00FFE0] w-36 rounded-md font-semibold transition-colors duration-300 py-2 text-sm cursor-pointer">
-                    Click here to read
+                <div className="flex items-center justify-between gap-1 mt-auto">
+                  <button className="bg-[#00FFE0] text-black hover:bg-white border-2 border-[#00FFE0] w-32 rounded-md font-semibold transition-colors duration-300 py-2 text-sm cursor-pointer">
+                    Click to read
                   </button>
                   <span className="text-gray-500 text-xs flex items-center">
                     <svg

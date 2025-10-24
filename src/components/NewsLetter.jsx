@@ -5,14 +5,14 @@ import news from "../assets/news.png";
 const NewsLetter = () => {
   return (
     <Container className="lg:py-36 py-16 md:px-10 ">
-      <div className="absolute -top-10 left-1/2 lg:flex hidden transform -translate-x-1/2 -translate-y-1/2 -z-1">
+      <div className="absolute -top-10 left-1/2 lg:flex hidden transform -translate-x-1/2 -translate-y-1/2 z-10">
         <img
           src={news}
           alt=""
           className="drop-shadow-[0_0_30px_rgba(108,99,255,0.6)]"
         />
       </div>
-      <div className="bg-linear-to-r from-[#00FFE0] to-[#6C63FF] text-white w-11/12 md:w-9/12 lg:w-8/12 rounded-lg shadow-2xl flex flex-col items-center justify-center text-center transform py-8 shadow-cyan-600 mx-auto">
+      <div className="bg-linear-to-r from-[#00FFE0] to-[#6C63FF] text-white w-11/12 md:w-9/12 lg:w-8/12 rounded-lg shadow-2xl flex flex-col items-center justify-center text-center transform py-8 shadow-cyan-600 mx-auto relative z-11">
         <h3 className="mb-3">
           <TypeText />
         </h3>

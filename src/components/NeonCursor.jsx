@@ -12,7 +12,11 @@ const NeonCursor = () => {
     const handleMouseDown = () => setIsClicking(true);
     const handleMouseUp = () => setIsClicking(false);
     const handleMouseOver = (e) => {
-      if (e.target.matches('a, button, input, [data-hover="true"]'))
+      if (
+        e.target.matches(
+          'a, h1, h2, h3, h4, h5, h6, p, button, input, [data-hover="true"]'
+        )
+      )
         setIsHovering(true);
     };
     const handleMouseOut = (e) => setIsHovering(false);
@@ -41,7 +45,7 @@ const NeonCursor = () => {
           x: pos.x - 10,
           y: pos.y - 10,
           scale: isClicking ? 0.8 : 1,
-          opacity: isHovering ? 0.2 : 1, // hover hole inner transparent
+          opacity: isHovering ? 0.2 : 1, // hover inner transparent
         }}
         transition={{ type: "spring", stiffness: 500, damping: 28 }}
       />
@@ -52,7 +56,7 @@ const NeonCursor = () => {
         animate={{
           x: pos.x - 20,
           y: pos.y - 20,
-          scale: isHovering ? 1.8 : 1, // hover hole boro
+          scale: isHovering ? 1.8 : 1, // hover scale
         }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       />

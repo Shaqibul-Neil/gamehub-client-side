@@ -72,8 +72,14 @@ const NewReleaseGames = () => {
   return (
     <div className="text-gray-100 p-5 md:p-8 max-w-7xl mx-auto rounded-md">
       <Container>
-        <h2 className="text-secondary lg:text-5xl md:text-4xl audiowide text-3xl font-extrabold mb-5 pb-4 md:-ml-8 -ml-3 border-b-2 border-cyan-700/50 uppercase tracking-wider">
-          NEW RELEASES
+        <h2
+          className="text-3xl md:text-4xl lg:text-5xl font-extrabold audiowide mb-5 pb-4 border-b-2 border-cyan-700/50 uppercase tracking-wider ml-2 md:ml-0 bg-linear-to-r from-[#00FFE0] to-white bg-clip-text text-white transition-all duration-300"
+          style={{
+            color: "#00FFE0",
+            textShadow: "0 0 6px #00FFE0",
+          }}
+        >
+          Fresh Drops
         </h2>
 
         <Tabs className="flex flex-col lg:flex-row gap-5">
