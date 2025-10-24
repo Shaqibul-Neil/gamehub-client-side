@@ -36,12 +36,12 @@ const Games = () => {
 
       {/* cards section */}
       <section className="mt-24 space-y-12">
-        <h2 className="lg:text-4xl text-white text-3xl flex items-center gap-2 justify-center scroll-section underline underline-offset-8">
-          <span className="md:flex hidden text-success">
+        <h2 className="lg:text-4xl text-white text-3xl flex items-center gap-2 justify-center scroll-section underline underline-offset-8 px-3">
+          <span className="text-success">
             <LandPlot size={32} />
           </span>
           <span className="audiowide">Step into the arena of legends</span>{" "}
-          <span className="md:flex hidden text-success">
+          <span className="text-success">
             <LandPlot size={32} />
           </span>
         </h2>

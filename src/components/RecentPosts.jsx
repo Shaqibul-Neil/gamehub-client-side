@@ -29,8 +29,7 @@ const postData = [
     id: 3,
     category: "RPG",
     categoryColor: "bg-purple-500",
-    image:
-      "https://i.postimg.cc/1RHBjFpB/Evie-Assassins-Creed-Game-Character.jpg",
+    image: "https://i.postimg.cc/ZKY6bZ06/robot-8043131-640.jpg",
     title: "Leveling Fast in Mythic Quest",
     longDescription:
       "Optimized questing paths and rare item farming strategies. Save time, gain XP efficiently, and reach endgame content faster. Includes tips to avoid common pitfalls and maximize experience gain per hour in Mythic Quest's expansive world.",
@@ -73,10 +72,9 @@ const RecentPosts = () => {
               >
                 {/* Left: Image Section */}
                 <div
-                  className="relative w-full h-56 md:h-auto md:w-1/2 flex items-start transition-transform duration-500 hover:scale-105"
+                  className="relative w-full h-56 md:h-auto md:w-1/2 flex items-start transition-transform duration-500 hover:scale-105 bg-no-repeat bg-cover md:bg-cover"
                   style={{
                     backgroundImage: `url(${post.image})`,
-                    backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
                 >

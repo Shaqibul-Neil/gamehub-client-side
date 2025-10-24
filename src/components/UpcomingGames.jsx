@@ -91,12 +91,12 @@ const UpcomingGames = () => {
                   autoPlay
                   loop
                   muted
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover shadow-md shadow-success"
                 />
               </Slide>
               <Slide direction="down">
                 <div
-                  className="lg:w-84 w-full h-[331px] lg:bg-cover bg-cover bg-no-repeat bg-center lg:flex justify-end relative z-10 hidden"
+                  className="lg:w-84 w-full h-[331px] lg:bg-cover bg-cover bg-no-repeat bg-center lg:flex justify-end relative z-10 hidden shadow-md shadow-success"
                   style={{ backgroundImage: `url(${gun})` }}
                 >
                   <div>

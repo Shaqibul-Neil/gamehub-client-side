@@ -72,13 +72,13 @@ const Testimonials = () => {
     <div className="text-gray-100 p-5 md:p-8 max-w-7xl mx-auto rounded-md">
       <Container>
         <h2
-          className="text-3xl md:text-4xl lg:text-5xl font-extrabold audiowide mb-5 pb-4 border-b-2 border-cyan-700/50 uppercase tracking-wider ml-2 md:ml-0 text-center"
+          className="text-3xl md:text-4xl lg:text-5xl font-extrabold audiowide md:mb-5 pb-4 border-b-2 border-cyan-700/50 uppercase tracking-wider ml-2 md:ml-0 text-center"
           style={{ color: "#00FFE0", textShadow: "0 0 6px #00FFE0" }}
         >
           Player Voices
         </h2>
       </Container>
-      <div className="py-16">
+      <div className="md:py-16 py-8">
         <EmblaCarousel slides={slides} options={OPTIONS} />
       </div>
     </div>

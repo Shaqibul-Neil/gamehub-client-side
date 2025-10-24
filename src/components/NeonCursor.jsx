@@ -37,7 +37,7 @@ const NeonCursor = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-[9999]">
+    <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-9999 lg:block hidden">
       {/* Inner cursor */}
       <motion.div
         className="absolute w-5 h-5 rounded-full bg-[#00ffe0] shadow-[0_0_10px_#00ffe0,0_0_20px_#00ffe0,0_0_30px_#00ffe0]"

@@ -29,11 +29,10 @@ const Home = () => {
       <div className="scroll-section lg:pb-24">
         <RecentPosts />
       </div>
-      <div className="lg:pb-64 py-20 lg:-mt-24 scroll-section">
+      <div className="lg:pb-64 md:py-20 py-12 lg:-mt-24 scroll-section">
         <Testimonials />
       </div>
-
-      <div className="relative">
+      <div className="relative -mt-10 md:mt-0">
         <NewsLetter />
       </div>
     </section>

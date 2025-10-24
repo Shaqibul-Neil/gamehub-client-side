@@ -66,7 +66,7 @@ const MyProfilePage = () => {
 
           {/* Right side: Profile card */}
           <div
-            className={`w-full max-w-md bg-white/10 border border-white/25 transition-all duration-300 rounded-2xl p-8 ${
+            className={`w-full max-w-md bg-white/10 border border-white/25 transition-all duration-300 rounded-2xl md:p-8 p-4 ${
               showBorder
                 ? "shadow-[0_0_10px_#00ffe0] backdrop-blur-xl"
                 : "backdrop-blur-md"
@@ -82,7 +82,7 @@ const MyProfilePage = () => {
                 alt={profile.username}
               />
               <div className="space-y-1 w-full">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between md:flex-row flex-col md:items-center">
                   <h2 className="text-xl font-bold text-white">
                     {profile.username}
                   </h2>
@@ -92,7 +92,9 @@ const MyProfilePage = () => {
                     onClick={() => setShowBorder(!showBorder)}
                   />
                 </div>
-                <p className="text-white/80">{profile.email}</p>
+                <p className="text-white/80 text-sm md:text-md">
+                  {profile.email}
+                </p>
               </div>
             </div>
 

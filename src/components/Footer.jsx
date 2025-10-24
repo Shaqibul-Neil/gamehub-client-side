@@ -14,13 +14,13 @@ const Footer = () => {
       {/* Footer Content */}
       <div className="footer footer-horizontal footer-center rounded px-10 py-16 relative z-10">
         <Link to={"/"} className="flex items-center gap-2">
-          <span className="md:flex hidden">
+          <span>
             <Gamepad2 color="#00ffe0" size={36} className="animate-pulse" />{" "}
           </span>
           <span className="lg:text-4xl text-2xl text-[#00ffe0] audiowide animate-pulse">
             GameHub
           </span>
-          <span className="md:flex hidden">
+          <span>
             <Gamepad2 color="#00ffe0" size={36} className="animate-pulse" />{" "}
           </span>
         </Link>
