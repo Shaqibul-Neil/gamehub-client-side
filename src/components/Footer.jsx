@@ -7,7 +7,7 @@ import { Gamepad2 } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="relative w-full overflow-hidden text-white">
+    <footer className="relative w-full overflow-hidden text-white bg-[#0f0f0f] lg:bg-black">
       {/* Glow Background */}
       <NeuralGlow />
 
@@ -29,7 +29,7 @@ const Footer = () => {
             to={"/about"}
             className="hover:text-success transition-all duration-300"
           >
-            About us
+            About
           </Link>
           <Link
             to={"/games"}

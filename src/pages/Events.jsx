@@ -60,11 +60,11 @@ const Events = () => {
   ];
 
   const renderEvents = (title, data) => (
-    <div className="space-y-16 my-20 scroll-section">
+    <div className="space-y-16 my-12 lg:my-16 scroll-section">
       <h2 className="text-4xl text-white audiowide text-center underline underline-offset-8">
         {title}
       </h2>
-      <div className="flex flex-col space-y-20 mt-12">
+      <div className="flex flex-col space-y-16 md:mt-12 mt-8">
         {data.map((event, i) => (
           <div
             key={i}
@@ -128,7 +128,7 @@ const Events = () => {
       <title>GameHub - Events</title>
 
       {/* Hero Section */}
-      <div className="relative w-full h-[80vh] bg-black scroll-section">
+      <div className="relative w-full h-[90vh] bg-black scroll-section">
         <img
           src={event}
           alt="Game Events Banner"
@@ -146,7 +146,7 @@ const Events = () => {
       </div>
 
       {/* Events Sections */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-10">
         {renderEvents("Upcoming Events", upcomingEvents)}
         {renderEvents("Live Events", liveEvents)}
         {renderEvents("Past Events", pastEvents)}

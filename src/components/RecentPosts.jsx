@@ -64,12 +64,9 @@ const RecentPosts = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
-          {postData.map((post, index) => (
-            <Slide direction={post.id % 2 === 0 ? "" : "right"}>
-              <div
-                key={index}
-                className="flex flex-col md:flex-row bg-[#1c1c1c] rounded-lg shadow-md hover:shadow-cyan-300 transition-all duration-500 transform hover:-translate-y-1 overflow-hidden"
-              >
+          {postData.map((post) => (
+            <Slide direction={post.id % 2 === 0 ? "" : "right"} key={post.id}>
+              <div className="flex flex-col md:flex-row bg-[#1c1c1c] rounded-lg shadow-md hover:shadow-cyan-300 transition-all duration-500 transform hover:-translate-y-1 overflow-hidden">
                 {/* Left: Image Section */}
                 <div
                   className="relative w-full h-56 md:h-auto md:w-1/2 flex items-start transition-transform duration-500 hover:scale-105 bg-no-repeat bg-cover md:bg-cover"

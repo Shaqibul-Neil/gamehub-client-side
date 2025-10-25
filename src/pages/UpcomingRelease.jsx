@@ -77,10 +77,10 @@ const UpcomingRelease = () => {
 
   return (
     <div className="mb-24">
-      <title>Upcoming Games</title>
+      <title>GameHub - Upcoming Games</title>
 
       {/* Hero Section */}
-      <div className="relative w-full h-[80vh] bg-black overflow-hidden scroll-section">
+      <div className="relative w-full h-[90vh] bg-black overflow-hidden scroll-section">
         <img
           src={destiny}
           alt="Upcoming Games Banner"

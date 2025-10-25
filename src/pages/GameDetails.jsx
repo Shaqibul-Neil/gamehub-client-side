@@ -40,9 +40,9 @@ const GameDetails = () => {
         /> */}
       </div>
 
-      <Container className={"md:py-24 py-12"}>
-        <div className="lg:px-5 px-3 space-y-12">
-          <div className="flex gap-4 justify-center scroll-section text-xl">
+      <Container className={"lg:py-20 py-12"}>
+        <div className="lg:px-5 px-3 lg:space-y-10 space-y-8">
+          <div className="flex md:flex-row flex-col lg:gap-4 gap-2 justify-center scroll-section md:text-xl text-lg items-center">
             <p>
               Category :{" "}
               <span className="text-white">{particularGame?.category}</span>{" "}
@@ -54,7 +54,7 @@ const GameDetails = () => {
           </div>
 
           <div className="scroll-section">
-            <div className="lg:text-5xl text-3xl text-success audiowide text-center mb-12">
+            <div className="lg:text-5xl text-3xl text-success audiowide text-center lg:mb-10 mb-6">
               {particularGame?.title}
             </div>
 

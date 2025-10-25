@@ -16,7 +16,7 @@ const Games = () => {
       <title>GameHub - Games</title>
       {/* Hero Section */}
       <div
-        className="relative w-full h-[80vh] bg-cover bg-center py-48 scroll-section"
+        className="relative w-full h-[90vh] bg-cover bg-center py-48 scroll-section"
         style={{ backgroundImage: `url(${tron})` }}
       >
         {/* Overlay */}
@@ -48,8 +48,8 @@ const Games = () => {
         <Container>
           <div className="grid grid-cols-1 lg:gap-16 gap-12 lg:px-5 px-2">
             {gamesData.map((game) => (
-              <Slide direction={game.id % 2 === 0 ? "" : "right"}>
-                <GameCard key={game.id} game={game} />
+              <Slide direction={game.id % 2 === 0 ? "" : "right"} key={game.id}>
+                <GameCard game={game} />
               </Slide>
             ))}
           </div>
