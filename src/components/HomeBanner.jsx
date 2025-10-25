@@ -11,6 +11,7 @@ import cas from "../assets/cas.png";
 import witcher from "../assets/witcher.jpg";
 import cyber from "../assets/cyber.jpg";
 import Container from "./Container";
+import ExploreButton from "./ExploreButton";
 
 const slides = [
   {
@@ -92,12 +93,7 @@ const HomeBanner = () => {
                   <h1 className="md:text-4xl text-3xl lg:text-6xl font-bold leading-tight mb-5 drop-shadow-lg audiowide">
                     {slide.title}
                   </h1>
-                  <a
-                    href={slide.link}
-                    className="inline-block bg-success border-3 border-success text-black hover:bg-white lg:px-6 px-4 lg:py-3 py-2 rounded-md font-semibold transition-colors duration-300 audiowide lg:text-xl"
-                  >
-                    Explore Now
-                  </a>
+                  <ExploreButton to="/games">Explore Now</ExploreButton>
                 </div>
               </Container>
             </div>

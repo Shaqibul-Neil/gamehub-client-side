@@ -75,17 +75,16 @@ header {
   transform: translateY(0) !important;
 }
 
-/* Custom pagination parallelogram bullets */
+/* Custom pagination bullets */
 .custom-pagination .swiper-pagination-bullet {
   display: inline-block;
   width: 12px;
   height: 12px;
   background-color: white;
-  transform: skewX(-15deg);
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  border-radius: 0; /* remove round */
+  border-radius: 2px;
 }
 
 /* hover effect */
