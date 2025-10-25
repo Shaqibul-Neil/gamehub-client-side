@@ -101,7 +101,11 @@ const RecentPosts = () => {
                     {post.longDescription}
                   </p>
                   <div className="flex items-center justify-between gap-1 mt-auto">
-                    <ViewDetailsAnimate>Click to read</ViewDetailsAnimate>
+                    <ViewDetailsAnimate
+                      className={"bg-success border-success w-32 h-10"}
+                    >
+                      Click to read
+                    </ViewDetailsAnimate>
                     <span className="text-gray-500 text-xs flex items-center">
                       <svg
                         className="w-4 h-4 mr-1 fill-current"

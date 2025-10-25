@@ -9,6 +9,7 @@ import Character from "../components/Character";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 import ErrorPage from "./ErrorPage";
 import { Fade } from "react-awesome-reveal";
+import ViewDetailsAnimate from "../components/ViewDetailsAnimate";
 
 const GameDetails = () => {
   const { title } = useParams();
@@ -91,19 +92,19 @@ const GameDetails = () => {
               Developed By :{" "}
               <span className="text-white">{particularGame.developer}</span>
             </h4>
-            <div className="my-8 flex md:flex-row flex-col gap-4 justify-center">
-              <Link
-                className="bg-warning border border-success text-white hover:text-warning hover:bg-white px-8 py-2 rounded-md transition-all duration-300"
+            <div className="my-8 flex md:flex-row flex-col gap-4 justify-center items-center">
+              <ViewDetailsAnimate
                 to={particularGame.downloadLink}
+                className="bg-error border-error lg:w-36 w-32 lg:h-12 h-10 lg:text-lg"
               >
                 Download
-              </Link>
-              <Link
-                className="bg-success border border-warning text-black hover:text-warning hover:bg-white px-8 py-2 rounded-md transition-all duration-300"
+              </ViewDetailsAnimate>
+              <ViewDetailsAnimate
                 to={"/games"}
+                className="bg-success border-success lg:w-36 w-32 lg:h-12 h-10 lg:text-lg"
               >
                 All Game
-              </Link>
+              </ViewDetailsAnimate>
             </div>
           </div>
         </div>

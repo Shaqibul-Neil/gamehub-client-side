@@ -53,8 +53,9 @@ const UpcomingGames = () => {
               <span>
                 <MyCountdown />
               </span>
+
               <a
-                className="btn btn-success text-black border-3 w-36 border-success hover:bg-white rounded-md font-semibold transition-colors duration-300"
+                className="btn bg-[#ff9900] text-black border-3 w-36 border-[#ff9900] hover:bg-white rounded-md font-semibold transition-colors duration-300"
                 href="https://www.youtube.com/watch?v=9txkGBj_trg"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -101,7 +102,7 @@ const UpcomingGames = () => {
                 >
                   <div>
                     <button
-                      className="btn btn-success text-black border-3 w-28 border-success hover:bg-white font-semibold transition-colors duration-300 cursor-pointer"
+                      className="btn bg-[#ff9900] text-black border-3 w-28 border-[#ff9900] hover:bg-white font-semibold transition-colors duration-300 cursor-pointer"
                       onClick={openModal} // modal trigger
                     >
                       Full Story

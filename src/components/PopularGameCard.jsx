@@ -76,6 +76,7 @@ const PopularGameCard = ({ game }) => {
             </div>
 
             <ViewDetailsAnimate
+              className={"bg-success border-success w-32 h-10"}
               to={`/game-details/${slugify(title, {
                 lower: true,
                 strict: true,

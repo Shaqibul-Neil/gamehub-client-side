@@ -40,7 +40,7 @@ const NeonCursor = () => {
     <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-9999 lg:block hidden">
       {/* Inner cursor */}
       <motion.div
-        className="absolute w-5 h-5 rounded-full bg-[#00ffe0] shadow-[0_0_10px_#00ffe0,0_0_20px_#00ffe0,0_0_30px_#00ffe0]"
+        className="absolute w-5 h-5 rounded-full bg-[#33ffff] shadow-[0_0_10px_#33ffff,0_0_20px_#00ffe0,0_0_30px_#33ffff]"
         animate={{
           x: pos.x - 10,
           y: pos.y - 10,
@@ -52,7 +52,7 @@ const NeonCursor = () => {
 
       {/* Outer circle */}
       <motion.div
-        className="absolute w-10 h-10 rounded-full border-2 border-[#00ffe0] opacity-50"
+        className="absolute w-10 h-10 rounded-full border-2 border-[#33ffff] opacity-50"
         animate={{
           x: pos.x - 20,
           y: pos.y - 20,
@@ -63,7 +63,7 @@ const NeonCursor = () => {
 
       {/* Glow */}
       <motion.div
-        className="absolute w-16 h-16 rounded-full bg-[#00ffe0]/20 blur-[15px]"
+        className="absolute w-16 h-16 rounded-full bg-[#33ffff/20 blur-[15px]"
         animate={{
           x: pos.x - 32,
           y: pos.y - 32,

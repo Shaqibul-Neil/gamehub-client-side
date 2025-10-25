@@ -12,6 +12,7 @@
   --color-secondary: #f0f5f5;
   --color-success: #00ffe0;
   --color-warning: #6c63ff;
+  --color-error: #ff9900;
 }
 * {
   font-family: "Poppins", sans-serif;

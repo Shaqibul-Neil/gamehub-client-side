@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 import { Link } from "react-router";
 import gsap from "gsap";
 
-const ViewDetailsAnimate = ({ to, children }) => {
+const ViewDetailsAnimate = ({ to, children, className }) => {
   const btnRef = useRef(null);
 
   useEffect(() => {
@@ -62,7 +62,7 @@ const ViewDetailsAnimate = ({ to, children }) => {
     <Link
       to={to}
       ref={btnRef}
-      className="relative btn bg-success text-black hover:bg-white border-2 border-success w-32 rounded-md font-semibold transition-colors duration-300 overflow-hidden h-10 flex items-center justify-center"
+      className={`relative btn text-black hover:bg-white border-2 rounded-md font-semibold transition-colors duration-300 overflow-hidden flex items-center justify-center ${className}`}
     >
       <div className="line-1 absolute inset-0 flex items-center justify-center">
         {splitText1}
