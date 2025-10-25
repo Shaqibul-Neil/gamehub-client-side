@@ -33,15 +33,28 @@ const ViewDetailsAnimate = ({ to, children }) => {
     };
   }, []);
 
+  // const splitText1 = children.split("").map((char, i) => (
+  //   <span key={`l1-${i}`} style={{ display: "inline-block" }}>
+  //     {char}
+  //   </span>
+  // ));
+
+  // const splitText2 = children.split("").map((char, i) => (
+  //   <span key={`l2-${i}`} style={{ display: "inline-block" }}>
+  //     {char}
+  //   </span>
+  // ));
+
+  // Split text for animation
   const splitText1 = children.split("").map((char, i) => (
-    <span key={`l1-${i}`} style={{ display: "inline-block" }}>
-      {char}
+    <span key={`l1-${i}`} className="inline-block">
+      {char === " " ? "\u00A0" : char} {/* non-breaking space */}
     </span>
   ));
 
   const splitText2 = children.split("").map((char, i) => (
-    <span key={`l2-${i}`} style={{ display: "inline-block" }}>
-      {char}
+    <span key={`l2-${i}`} className="inline-block">
+      {char === " " ? "\u00A0" : char} {/* non-breaking space */}
     </span>
   ));
 

@@ -1,6 +1,7 @@
 import { Discuss } from "react-loader-spinner";
 import Container from "./Container";
 import { Slide } from "react-awesome-reveal";
+import ViewDetailsAnimate from "./ViewDetailsAnimate";
 // Post Data
 const postData = [
   {
@@ -100,9 +101,7 @@ const RecentPosts = () => {
                     {post.longDescription}
                   </p>
                   <div className="flex items-center justify-between gap-1 mt-auto">
-                    <button className="bg-[#00FFE0] text-black hover:bg-white border-2 border-[#00FFE0] w-32 rounded-md font-semibold transition-colors duration-300 py-2 text-sm cursor-pointer">
-                      Click to read
-                    </button>
+                    <ViewDetailsAnimate>Click to read</ViewDetailsAnimate>
                     <span className="text-gray-500 text-xs flex items-center">
                       <svg
                         className="w-4 h-4 mr-1 fill-current"
