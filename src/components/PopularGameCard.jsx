@@ -2,6 +2,7 @@ import { Star } from "lucide-react";
 import { Link } from "react-router";
 import slugify from "slugify";
 import useScrollAnimation from "../hooks/useScrollAnimation";
+import ViewDetailsAnimate from "./ViewDetailsAnimate";
 
 const PopularGameCard = ({ game }) => {
   // Animate cards individually
@@ -74,15 +75,14 @@ const PopularGameCard = ({ game }) => {
               <p className="text-xl text-white">{ratings}</p>
             </div>
 
-            <Link
-              className="btn bg-success text-black hover:bg-white border-2 border-success w-32 rounded-md font-semibold transition-colors duration-300"
+            <ViewDetailsAnimate
               to={`/game-details/${slugify(title, {
                 lower: true,
                 strict: true,
               })}`}
             >
               View Details
-            </Link>
+            </ViewDetailsAnimate>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 
 const Root = () => {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const [scrolled, setScrolled] = useState(false);
   // console.log(windowSize);
   useEffect(() => {
     const handleSize = setWindowSize(window.innerWidth);
@@ -15,18 +16,33 @@ const Root = () => {
     return () => window.removeEventListener("resize", handleSize);
   }, []);
 
+  console.log(window.scrollY);
+  useEffect(() => {
+    const handleScroll = () => {
+      window.scrollY > 400 ? setScrolled(true) : setScrolled(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   //lg screen
   const isLarge = windowSize >= 1024;
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="fixed z-50 top-0 w-full">
-        <Container>
+      <header className="relative w-full">
+        <div
+          className={`transition-all duration-300 ease-in-out ${
+            scrolled
+              ? "fixed top-4 left-1/2 transform -translate-x-1/2 md:w-10/12 w-full lg:px-10 md:px-6 px-1 bg-white/15 backdrop-blur-2xl rounded-lg z-50"
+              : "container mx-auto lg:px-10 md:px-6 px-1 bg-transparent relative "
+          }`}
+        >
           <Navbar />
-        </Container>
+        </div>
       </header>
 
-      <main className="flex-1 lg:pt-20 pt-16">
+      <main className="flex-1">
         <Outlet />
       </main>
       <footer>

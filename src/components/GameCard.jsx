@@ -2,6 +2,7 @@ import { SquareStar, Star } from "lucide-react";
 import { Link } from "react-router";
 import slugify from "slugify";
 import useScrollAnimation from "../hooks/useScrollAnimation";
+import ViewDetailsAnimate from "./ViewDetailsAnimate";
 
 const GameCard = ({ game }) => {
   // Animate cards individually
@@ -59,15 +60,14 @@ const GameCard = ({ game }) => {
               ))}
             </div>
           </div>
-          <Link
-            className="btn btn-success text-black border-3 w-48 border-success  hover:bg-white rounded-md font-semibold transition-colors duration-300 mt-4"
+          <ViewDetailsAnimate
             to={`/game-details/${slugify(game?.title, {
               lower: true,
               strict: true,
             })}`}
           >
             View Details
-          </Link>
+          </ViewDetailsAnimate>
         </div>
       </div>
     </div>

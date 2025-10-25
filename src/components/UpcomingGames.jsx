@@ -120,7 +120,7 @@ const UpcomingGames = () => {
           <>
             {/* Overlay */}
             <motion.div
-              className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm cursor-pointer"
+              className="fixed inset-0 z-999 bg-black/50 backdrop-blur-sm cursor-pointer"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -129,7 +129,7 @@ const UpcomingGames = () => {
 
             {/* Centered Modal with polymorph & coloring style */}
             <motion.div
-              className="fixed top-1/2 left-1/2 z-50 w-[80%] max-h-[90vh] p-6 bg-white/15 text-white backdrop-blur-2xl shadow-2xl rounded-2xl overflow-y-auto transform -translate-x-1/2 -translate-y-1/2"
+              className="fixed top-1/2 left-1/2 z-1000 w-[80%] max-h-[90vh] p-6 bg-white/15 text-white backdrop-blur-2xl shadow-2xl rounded-2xl overflow-y-auto transform -translate-x-1/2 -translate-y-1/2"
               initial={{ scale: 0.8, opacity: 0, borderRadius: "1rem" }}
               animate={{ scale: 1, opacity: 1, borderRadius: "2xl" }}
               exit={{ scale: 0.8, opacity: 0, borderRadius: "1rem" }}

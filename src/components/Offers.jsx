@@ -15,7 +15,8 @@ const Offers = () => {
   return (
     <div
       className="relative flex items-center justify-center h-[80vh] w-full mx-auto cursor-pointer overflow-visible"
-      onClick={() => set(!flipped)}
+      onMouseEnter={() => set(!flipped)}
+      onMouseLeave={() => set(!flipped)}
       style={{ perspective: "1400px" }}
     >
       {/* Front Side */}
@@ -48,7 +49,7 @@ const Offers = () => {
               </span>
             </div>
             <div className="flex justify-center">
-              <button className="w-full md:w-52 py-3 bg-warning text-white font-bold rounded-lg shadow-[0_0_10px_#6c63ff]">
+              <button className="w-full md:w-52 py-3 bg-warning text-white font-bold rounded-lg shadow-[0_0_10px_#6c63ff] cursor-pointer">
                 JOIN THE QUEST
               </button>
             </div>
@@ -86,7 +87,7 @@ const Offers = () => {
               </span>
             </div>
             <div className="flex justify-center">
-              <button className="py-3 bg-success text-black font-bold rounded-lg shadow-[0_0_10px_#00ffe0] w-full md:w-52">
+              <button className="py-3 bg-success text-black font-bold rounded-lg shadow-[0_0_10px_#00ffe0] w-full md:w-52 cursor-pointer">
                 CLAIM YOUR REWARD
               </button>
             </div>
