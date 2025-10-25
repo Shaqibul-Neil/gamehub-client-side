@@ -1,8 +1,9 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Container from "./Container";
+import { Slide } from "react-awesome-reveal";
 
-//
+//New Release Games Data
 const gameNewData = [
   {
     id: 1,
@@ -112,36 +113,39 @@ const NewReleaseGames = () => {
           {/*  Content */}
           <div className="flex-2 bg-gray-800 rounded-lg overflow-hidden relative min-h-[400px] shadow-sm shadow-cyan-300">
             {gameNewData.map((game) => (
-              <TabPanel
-                key={game.id}
-                className="absolute inset-0 opacity-0 -translate-x-20 pointer-events-none transition-all duration-500"
-                selectedClassName="relative opacity-100 translate-x-0 pointer-events-auto"
-              >
-                <div className="relative">
-                  <img
-                    src={game.img}
-                    alt={game.title}
-                    className="w-full h-60 object-cover"
-                  />
-                  <span
-                    className={`absolute top-4 right-4 text-gray-900 text-sm px-3 py-1 rounded-sm font-semibold tracking-wider ${game.categoryColor}`}
-                  >
-                    {game.category}
-                  </span>
-                </div>
-                <div className="p-5 md:p-6">
-                  <h2 className="text-3xl font-extrabold text-white mb-3 audiowide">
-                    {game.title}
-                  </h2>
-                  <p className="text-gray-300 leading-relaxed mb-3">
-                    {game.longDescription}
-                  </p>
-                  <div className="text-gray-400 text-sm">
-                    <span className="font-semibold">Developer:</span>{" "}
-                    {game.developer} |{" "}
-                    <span className="font-semibold">Rating:</span> {game.rating}
+              <TabPanel key={game.id}>
+                <Slide
+                  direction={game.id % 2 === 0 ? "right" : "left"}
+                  triggerOnce
+                  duration={500}
+                >
+                  <div className="relative">
+                    <img
+                      src={game.img}
+                      alt={game.title}
+                      className="w-full h-60 object-cover"
+                    />
+                    <span
+                      className={`absolute top-4 right-4 text-gray-900 text-sm px-3 py-1 rounded-sm font-semibold tracking-wider ${game.categoryColor}`}
+                    >
+                      {game.category}
+                    </span>
                   </div>
-                </div>
+                  <div className="p-5 md:p-6">
+                    <h2 className="text-3xl font-extrabold text-white mb-3 audiowide">
+                      {game.title}
+                    </h2>
+                    <p className="text-gray-300 leading-relaxed mb-3">
+                      {game.longDescription}
+                    </p>
+                    <div className="text-gray-400 text-sm">
+                      <span className="font-semibold">Developer:</span>{" "}
+                      {game.developer} |{" "}
+                      <span className="font-semibold">Rating:</span>{" "}
+                      {game.rating}
+                    </div>
+                  </div>
+                </Slide>
               </TabPanel>
             ))}
           </div>
