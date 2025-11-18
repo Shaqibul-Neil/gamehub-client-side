@@ -137,7 +137,7 @@ const Login = () => {
                   name="email"
                   onClick={() => setLoginError({ ...loginError, email: "" })}
                   placeholder="example@email.com"
-                  className=" w-full bg-white/20 placeholder-gray-300 border-b-2 border-white/30 focus:outline-none focus:border-cyan-400 transition-all duration-200 p-2 text-secondary"
+                  className="w-full bg-white/20 placeholder-gray-300 border-b-2 border-white/30 focus:outline-none focus:border-cyan-400 transition-all duration-200 p-2 text-secondary"
                 />
                 {loginError.email && (
                   <p className="absolute -bottom-5 left-0 text-xs text-red-400">

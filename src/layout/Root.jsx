@@ -1,7 +1,6 @@
 import { Outlet } from "react-router";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Container from "../components/Container";
 import ScrollToTop from "react-scroll-to-top";
 import { ArrowBigUpDash } from "lucide-react";
 import { useEffect, useState } from "react";

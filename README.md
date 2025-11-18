@@ -1,73 +1,53 @@
-## 🎮 GameHub 🎮
+🎮 GameHub 🎮
 
-**GameHub** is a cutting-edge, interactive gaming portal designed for gamers, enthusiasts, and developers who want to explore the world of **popular games, upcoming releases, and exclusive game insights**. Whether you are a casual gamer or a hardcore fan, GameHub gives you everything in one place. <br/>
-
-**Purpose:**
-To provide gamers a seamless platform where they can discover, explore, and interact with their favorite games while staying updated with the latest gaming trends.
-<br/>
-
-**Key Highlights:** <br/>
-
-- Showcase of **popular, upcoming, and newly released games** <br/>
-- **Interactive and eye-catching UI effects** to enhance gaming vibes<br/>
-- **Gamified experience** with smooth animations and carousel sliders<br/>
-- **Secure authentication system** for personalized experiences<br/>
-- **Newsletter system** to keep users updated<br/>
-- **Countdown system** for upcoming game releases and events<br/><br/>
-- Fully **responsive and mobile-friendly design**<br/>
-
----
+GameHub is a cutting-edge, interactive gaming portal designed for gamers, enthusiasts, and developers who want to explore the world of popular games, upcoming releases, and exclusive game insights. Whether you are a casual gamer or a hardcore fan, GameHub gives you everything in one place.
 
 ## 🕹️ Features
 
-<br/>
+To provide gamers a seamless platform where they can discover, explore, and interact with their favorite games while staying updated with the latest gaming trends.
 
-- **Authentication & User Management:** Login, signup, password reset, Gmail authentication, and profile updates.<br/>
-- **Secure Protected Routes:** Certain pages accessible only by logged-in users.<br/>
-- **Interactive UI Animations:** Smooth transitions, flip-card effects, hover effects, and scroll-triggered animations.<br/>
-- **Game Discovery & Exploration:** Browse popular, upcoming, and newly released games.<br/>
-- **Detailed Game Insights:** Explore characters, stats, media, and gameplay information.<br/>
-- **Carousel & Slider Components:** Embla Carousel, Swiper sliders for testimonials and featured content.<br/>
-- **Custom Cursor:** Personalized, eye-catching cursors using Cursify.<br/>
-- **Data Handling:** Efficient API calls with Axios and custom hooks.<br/>
-- **Global State Management:** React Context for shared data across components.<br/>
-- **Responsive & Mobile-First Design:** Fully optimized for all screen sizes.<br/>
-- **Notifications & Feedback:** React Hot Toast for instant user feedback.<br/>
-- **Newsletter Subscription:** Collect emails for updates and announcements.<br/>
-- **Gamified Interactions:** Engaging effects using React Spring and GSAP.<br/>
-- **Dynamic Blog/Posts Section:** Showcase latest news or updates.<br/>
-- **Lottie Animations:** Lightweight animated SVGs for extra polish.<br/>
-- **Iconography:** React Icons & Lucide React for consistent visual design.<br/>
-- **Countdown Timer:** Display real-time countdowns for upcoming releases, events, or special in-game drops using react-countdown.<br/>
-- **Performance Optimized:** TailwindCSS + DaisyUI for fast, maintainable styles.<br/>
-- **SEO Friendly:** Semantic structure, optimized components, and clean routing.<br/>
-- **Future-ready Architecture:** Easy to extend with AI features, recommendations, or real-time stats.<br/>
-
----
+- 🔑 **Authentication & User Management:** Login, signup, password reset, Gmail authentication, and profile updates.
+- 🚫 **Secure Protected Routes:** Certain pages accessible only by logged-in users.
+- ✨ **Interactive UI Animations:** Smooth transitions, flip-card effects, hover effects, and scroll-triggered animations.
+- 🎮 **Game Discovery & Exploration:** Browse popular, upcoming, and newly released games.
+- 📊 **Detailed Game Insights:** Explore characters, stats, media, and gameplay information.
+- 🎠 **Carousel & Slider Components:** Embla Carousel, Swiper sliders for testimonials and featured content.
+- 🖱️ **Custom Cursor:** Personalized, eye-catching cursors using Cursify.
+- 🔄 **Data Handling:** Efficient API calls with Axios and custom hooks.
+- 🌐 **Global State Management:** React Context for shared data across components.
+- 📱 **Responsive & Mobile-First Design:** Fully optimized for all screen sizes.
+- 🔔 **Notifications & Feedback:** React Hot Toast for instant user feedback.
+- 📩 **Newsletter Subscription:** Collect emails for updates and announcements.
+- 🎲 **Gamified Interactions:** Engaging effects using React Spring and GSAP.
+- 📰 **Dynamic Blog/Posts Section:** Showcase latest news or updates.
+- 🎞️ **Lottie Animations:** Lightweight animated SVGs for extra polish.
+- 🖼️ **Iconography:** React Icons & Lucide React for consistent visual design.
+- ⏱️ **Countdown Timer:** Display real-time countdowns for upcoming releases, events, or special in-game drops using react-countdown.
+- ⚡ **Performance Optimized:** TailwindCSS + DaisyUI for fast, maintainable styles.
+- 🔍 **SEO Friendly:** Semantic structure, optimized components, and clean routing.
+- 🚀 **Future-ready Architecture:** Easy to extend with AI features, recommendations, or real-time stats.
 
 ## 🛠️ Technologies & Libraries
 
-<br/>
+- React 19 – Frontend framework
+- TailwindCSS + DaisyUI – Styling & UI components
+- Firebase – Authentication & backend
+- GSAP – Scroll animations & interactions
+- React Spring – Animations & interactive effects
+- Embla Carousel – Content sliders
+- Axios – API calls
+- Cursify – Custom cursor
+- Lottie React – Animated SVGs
+- React Router 7 – Client-side routing
+- React Icons & Lucide React – Iconography
+- React Hot Toast – Notifications
+- Swiper – Optional sliders
+- Loaders - React Loader Spinner
+- React Countdown – Live countdown timers for upcoming game releases or events
 
-👾 React 19 – Frontend framework <br/>
-👾 TailwindCSS + DaisyUI – Styling & UI components <br/>
-👾 Firebase – Authentication & backend <br/>
-👾 GSAP – Scroll animations & interactions <br/>
-👾 React Spring – Animations & interactive effects <br/>
-👾 Embla Carousel – Content sliders <br/>
-👾 Axios – API calls <br/>
-👾 Cursify – Custom cursor <br/>
-👾 Lottie React – Animated SVGs <br/>
-👾 React Router 7 – Client-side routing <br/>
-👾 React Icons & Lucide React – Iconography <br/>
-👾 React Hot Toast – Notifications <br/>
-👾 Swiper – Optional sliders <br/>
-👾 Loaders - React Loader Spinner <br/>
-👾 React Countdown – Live countdown timers for upcoming game releases or events <br/>
+## Project Dependencies
 
-## ⚡ Dependencies
-
-<br/>
+### ⚡ Dependencies
 
 ```json
 {
@@ -99,10 +79,64 @@ To provide gamers a seamless platform where they can discover, explore, and inte
 }
 ```
 
-<br/>
-**Live Link:** 
-<br/>
+### ⚡Dev Dependencies
 
-```html
-https://gamehub-57423.web.app/
+```json
+{
+  "@eslint/js": "^9.36.0",
+  "@types/react": "^19.1.16",
+  "@types/react-dom": "^19.1.9",
+  "@vitejs/plugin-react": "^5.0.4",
+  "eslint": "^9.36.0",
+  "eslint-plugin-react-hooks": "^5.2.0",
+  "eslint-plugin-react-refresh": "^0.4.22",
+  "globals": "^16.4.0",
+  "vite": "^7.1.7"
+}
 ```
+
+## Getting Started
+
+Follow these steps to get your project up and running:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Shaqibul-Neil/gamehub-client-side.git
+   ```
+
+2. **Navigate to the project folder:**
+
+```
+cd your-repository
+```
+
+3. **Install dependencies:**
+
+```
+npm install
+```
+
+4. **Configure environment variables:**
+   Create a .env file in the project root and configure any necessary environment variables. For example:
+
+```
+VITE_apiKey= AIzaSyBEWDxo5KBQ7a-af-GNl-yPa8CqEYZZxM4
+VITE_authDomain= gamehub-57423.firebaseapp.com
+VITE_projectId= gamehub-57423
+VITE_storageBucket= gamehub-57423.firebasestorage.app
+VITE_messagingSenderId= 38307380155
+VITE_appId= 1:38307380155:web:ef70beb8140b18a6d8a29e
+```
+
+3. **Run the application:**
+
+```
+npm run dev
+```
+
+Your application should now be running at http://localhost:5173.
+
+## 🔗 Live Preview & Repositories
+
+🚀 Live Site: https://gamehub-57423.web.app/
