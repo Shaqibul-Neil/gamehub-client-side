@@ -1,4 +1,4 @@
-🎮 GameHub 🎮
+## 🎮 GameHub 🎮
 
 GameHub is a cutting-edge, interactive gaming portal designed for gamers, enthusiasts, and developers who want to explore the world of popular games, upcoming releases, and exclusive game insights. Whether you are a casual gamer or a hardcore fan, GameHub gives you everything in one place.
 
