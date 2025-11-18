@@ -140,3 +140,10 @@ Your application should now be running at http://localhost:5173.
 ## 🔗 Live Preview & Repositories
 
 🚀 Live Site: https://gamehub-57423.web.app/
+
+## 👨‍💻 Author
+Developed  by Shaqibul Neil
+
+## 📄 License
+© 2025 Shaqibul Neil 
+All rights reserved. You may not use, copy, modify, or distribute this project without explicit permission.
